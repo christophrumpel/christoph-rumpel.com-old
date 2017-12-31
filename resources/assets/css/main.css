@@ -23,6 +23,12 @@
  * @import "components/forms";
  */
 
+.profile-column {
+    background: url(http://cr18.test/images/cr_image.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.

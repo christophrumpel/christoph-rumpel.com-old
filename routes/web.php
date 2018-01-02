@@ -4,6 +4,8 @@ Route::feeds();
 
 Route::get('/', 'HomeController@index')->name('home');
 
+Route::get('/talks', 'TalksController@index')->name('talks');
+
 Route::get('/about', 'AboutController@index')->name('about');
 
 Route::get('/open-source', 'OpenSourceController@index')->name('openSource');

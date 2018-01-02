@@ -215,6 +215,7 @@ module.exports = {
 
     fonts: {
         'sans': [
+            'Montserrat',
             '-apple-system',
             'BlinkMacSystemFont',
             'Segoe UI',
@@ -228,7 +229,7 @@ module.exports = {
             'sans-serif',
         ],
         'serif': [
-            'Dosis',
+            'Lora',
             'Constantia',
             'Lucida Bright',
             'Lucidabright',
@@ -247,7 +248,7 @@ module.exports = {
             'Liberation Mono',
             'Courier New',
             'monospace',
-        ]
+        ],
     },
 
 

@@ -1,7 +1,11 @@
 @component('layouts.app')
     <div class="flex w-screen h-screen relative flex-row flex-wrap">
-        <div class="profile-column relative overflow-hidden w-1/2">
-            <div class="profile-column flex flex-col flex-wrap p-8 justify-center h-full w-full bg-teal-lighter bg-center">
+        <div class="profile-column relative overflow-hidden w-1/2 flex justify-center">
+            <div class="profile-column flex items-end p-8 justify-center h-full w-full bg-teal-lighter bg-center text-white">
+                <div class="text-center pb-8">
+                    <h1 class="mb-4">christoph rumpel</h1>
+                    <p class="text-green text-xl">web developer</p>
+                </div>
             </div>
         </div>
         <div class="bg-cover relative overflow-hidden w-1/2 h-full">

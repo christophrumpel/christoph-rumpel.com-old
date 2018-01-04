@@ -10,7 +10,7 @@ class HomeController
 {
     public function index(Posts $posts)
     {
-        $posts = $posts->all()->take(3);
+        $posts = $posts->all()->simplePaginate(3);
 
         $posts->each(function($post) {
             $date = Carbon::parse($post->date);

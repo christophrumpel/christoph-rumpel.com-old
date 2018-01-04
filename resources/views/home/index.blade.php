@@ -8,9 +8,9 @@
                 </div>
             </div>
         </div>
-        <div class="bg-cover relative overflow-hidden w-1/2 h-full">
+        <div class="bg-cover relative overflow-hidden w-1/2 h-full flex-col flex flex-row">
             @include('partials.nav')
-            <ul class="flex flex-col flex-wrap p-4 justify-center h-full w-full white">
+            <ul class="flex flex-col flex-wrap p-4 justify-center w-full white flex-grow">
                 @foreach($posts as $post)
                     <li class="pb-8 mb-4 pl-4 pr-4 w-full list-reset">
                         <p class="mb-2 text-grey-darkest font-bold uppercase text-sm">{{ $post->date }} | <span
@@ -27,6 +27,9 @@
                     </li>
                 @endforeach
             </ul>
+
+            <?php echo $posts->render(); ?>
+
             {{--@include('partials.social')--}}
             {{--@include('partials.footer')--}}
 

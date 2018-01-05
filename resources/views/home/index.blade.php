@@ -1,16 +1,6 @@
 @component('layouts.app')
-    <div class="flex w-screen h-screen relative flex-row flex-wrap">
-        <div class="profile-column relative overflow-hidden w-1/2 flex justify-center">
-            <div class="profile-column flex items-end p-8 justify-center h-full w-full bg-teal-lighter bg-center text-white">
-                <div class="text-center pb-8">
-                    <h1 class="mb-4">christoph rumpel</h1>
-                    <p class="text-green text-xl">web developer</p>
-                </div>
-            </div>
-        </div>
-        <div class="bg-cover relative overflow-hidden w-1/2 h-full flex-col flex flex-row">
-            @include('partials.nav')
-            <ul class="flex flex-col flex-wrap p-4 justify-center w-full white flex-grow">
+
+            <ul class="flex flex-col sm:flex-wrap p-4 sm:justify-center w-full white flex-grow">
                 @foreach($posts as $post)
                     <li class="pb-8 mb-4 pl-4 pr-4 w-full list-reset">
                         <p class="mb-2 text-grey-darkest font-bold uppercase text-sm">{{ $post->date }} | <span
@@ -32,10 +22,5 @@
 
             {{--@include('partials.social')--}}
             {{--@include('partials.footer')--}}
-
-        </div>
-
-
-    </div>
 
 @endcomponent

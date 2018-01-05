@@ -6,6 +6,6 @@ class TalksController
 {
     public function index()
     {
-
+        return view('talks.index');
     }
 }

@@ -22,10 +22,11 @@
  * @import "components/buttons";
  * @import "components/forms";
  */
-
-.profile-column {
-    background: url(http://cr18.test/images/cr_image.jpg) no-repeat top center;
-    background-size: cover;
+@responsive {
+    .profile-column {
+        background: url(http://cr18.test/images/cr_image.jpg) no-repeat top center;
+        background-size: cover;
+    }
 }
 
 /**
@@ -48,3 +49,7 @@
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+
+.text-shadow {
+    text-shadow: 1px 1px 2px #3D4855;
+}

@@ -32,7 +32,7 @@
     <div class="relative overflow-hidden w-full sm:w-1/2 flex justify-center">
         <div class="sm:profile-column flex items-end p-8 justify-center h-full w-full bg-grey-darkest bg-center text-white">
             <div class="text-center sm:pb-8">
-                {{--<img src="images/logo_cr2018_white.svg" width="50">--}}
+                <img class="sm:hidden" src="images/logo_cr2018_white.svg" width="50">
                 <h1 class="mb-4 hidden sm:block text-sh text-shadow">christoph rumpel</h1>
                 <p class="text-green text-xl hidden sm:block text-shadow">web developer</p>
             </div>

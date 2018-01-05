@@ -16,9 +16,9 @@ return [
              */
             'url' => '/feed',
 
-            'title' => 'Sebastian De Deyne',
+            'title' => 'Christoph Rumpel',
 
-            'description' => 'Full-stack developer working at Spatie in Antwerp, Belgium. I write about php, javascript, and programming in general.',
+            'description' => 'Hi, I\'m Christoph, a web developer from Austria',
         ],
     ],
 

@@ -1,13 +1,15 @@
-@component('layouts.app')
+@extends('layouts.home')
+
+@section('content')
 
             <ul class="flex flex-col sm:flex-wrap p-4 sm:justify-center w-full white flex-grow">
                 @foreach($posts as $post)
                     <li class="pb-8 mb-4 pl-4 pr-4 w-full list-reset">
-                        <p class="mb-2 text-grey-darkest font-bold uppercase text-sm">{{ $post->date }} | <span
+                        <time class="mb-2 text-grey-darkest font-bold uppercase text-sm font-sans">{{ $post->dateShort }} | <span
                                     class="text-orange"> {{ collect(['PHP', 'Chatbots', 'Git'])->random() }}</span>
-                        </p>
-                        <h2 class="mb-2 text-grey-darkest text-lg lg:text-2xl">{{ $post->title }}</h2>
-                        <p class="text-grey-dark leading-normal mb-2 font-serif hidden md:block">I'm building a
+                        </time>
+                        <h2 class="mt-2 mb-2 text-grey-darkest text-lg lg:text-2xl">{{ $post->title }}</h2>
+                        <p class="mb-2 hidden  text-lg md:block">I'm building a
                             multi-tenant Laravel
                             application. One of
                             the requirements of the
@@ -23,4 +25,4 @@
             {{--@include('partials.social')--}}
             {{--@include('partials.footer')--}}
 
-@endcomponent
+@endsection

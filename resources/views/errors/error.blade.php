@@ -7,7 +7,7 @@
     ]);
 @endphp
 
-@component('layouts.app', [
+@component('layouts.home', [
     'title' => $title,
     'header' => false,
 ])

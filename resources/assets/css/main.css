@@ -27,6 +27,34 @@
         background: url(http://cr18.test/images/cr_image.jpg) no-repeat top center;
         background-size: cover;
     }
+
+    .blogimage {
+        @apply .m-8;
+    }
+}
+
+h1, h2, h3, h4, h5, h5 {
+    @apply .text-grey-darkest .mt-12 .mb-6 .font-sans;
+}
+
+blockquote {
+    @apply .bg-grey-lighter .mt-8 .mb-8 .p-8 .font-serif .text-lg .italic .leading-normal .text-center;
+}
+
+p {
+    @apply .text-grey-darkest .leading-normal .text-xl  .font-serif;
+}
+
+ul {
+    @apply .mt-8 .mb-8;
+}
+
+li {
+    @apply .text-grey-darkest .leading-normal .text-xl  .font-serif;
+}
+
+a {
+    @apply .text-blue-light;
 }
 
 /**

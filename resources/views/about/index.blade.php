@@ -1,4 +1,4 @@
-@component('layouts.app', [
+@component('layouts.home', [
     'title' => 'About',
 ])
     <div class="container">

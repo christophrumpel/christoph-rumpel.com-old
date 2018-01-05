@@ -1,4 +1,4 @@
-@component('layouts.app', [
+@component('layouts.home', [
     'title' => 'Open Source'
 ])
     <div class="container">

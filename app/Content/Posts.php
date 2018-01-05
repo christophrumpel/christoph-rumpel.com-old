@@ -9,8 +9,13 @@ class Posts extends Provider
 {
     public function all()
     {
-        return $this->cache('posts.all', function () {
+        $posts = $this->cache('posts.all', function () {
             return $this->gather();
+        });
+
+        return $posts->each(function($post) {
+            $date = Carbon::parse($post->date);
+            $post->dateShort = $date->format('F Y');
         });
     }
 

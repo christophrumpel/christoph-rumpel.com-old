@@ -1,7 +1,7 @@
 @extends('layouts.blog')
 
 @section('content')
-    <div class="mt-8 mb-8">
+    <article class="mt-8 mb-8">
         <time class="mb-2 text-grey-darkest font-bold uppercase text-med">{{ $post->dateShort }} | <span
                     class="text-orange"> {{ collect(['PHP', 'Chatbots', 'Git'])->random() }}</span>
         </time>
@@ -12,7 +12,7 @@
         </header>
         {!! $post->contents !!}
 
-    </div>
+    </article>
 
     {{--<article class="post">--}}
     {{--<header class="post__header">--}}

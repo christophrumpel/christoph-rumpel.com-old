@@ -45,7 +45,7 @@ p {
     @apply .text-grey-darkest .leading-normal .text-xl  .font-serif;
 }
 
-ul {
+article ul {
     @apply .mt-8 .mb-8;
 }
 

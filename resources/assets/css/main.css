@@ -14,8 +14,8 @@
  *
  * Example:
  *
- * .btn { ... }
- * .form-input { ... }
+ * .btn { ...}
+ * .form-input { ...}
  *
  * Or if using a preprocessor:
  *
@@ -33,6 +33,10 @@
     }
 }
 
+.note {
+    @apply .bg-red-lightest .text-red .mt-4 .mb-4 .pt-4 .pr-8 .pb-4 .pl-8 .font-serif;
+}
+
 h1, h2, h3, h4, h5, h5 {
     @apply .text-grey-darkest .mt-12 .mb-6 .font-sans;
 }
@@ -42,7 +46,7 @@ blockquote {
 }
 
 p {
-    @apply .text-grey-darkest .leading-normal .text-xl  .font-serif;
+    @apply .text-grey-darkest .leading-normal .text-xl .font-serif;
 }
 
 article ul {
@@ -50,7 +54,7 @@ article ul {
 }
 
 li {
-    @apply .text-grey-darkest .leading-normal .text-xl  .font-serif;
+    @apply .text-grey-darkest .leading-normal .text-xl .font-serif;
 }
 
 a {
@@ -69,8 +73,8 @@ a {
  *
  * Example :
  *
- * .bg-pattern-graph-paper { ... }
- * .skew-45 { ... }
+ * .bg-pattern-graph-paper { ...}
+ * .skew-45 { ...}
  *
  * Or if using a preprocessor..
  *
@@ -80,4 +84,106 @@ a {
 
 .text-shadow {
     text-shadow: 1px 1px 2px #3D4855;
+}
+
+/**
+ * GitHub Gist Theme
+ * Author : Louis Barranqueiro - https://github.com/LouisBarranqueiro
+ */
+
+.hljs-comment,
+.hljs-meta {
+    color: #969896;
+}
+
+.hljs-string,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-strong,
+.hljs-emphasis,
+.hljs-quote {
+    color: #df5000;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-type {
+    color: #a71d5d;
+}
+
+.hljs-literal,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-attribute {
+    color: #0086b3;
+}
+
+.hljs-section,
+.hljs-name {
+    color: #63a35c;
+}
+
+.hljs-tag {
+    color: #333333;
+}
+
+.hljs-title,
+.hljs-attr,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+    color: #795da3;
+}
+
+.hljs-addition {
+    color: #55a532;
+    background-color: #eaffea;
+}
+
+.hljs-deletion {
+    color: #bd2c00;
+    background-color: #ffecec;
+}
+
+.hljs-link {
+    text-decoration: underline;
+}
+
+ code {
+    font-size: .9em;
+    font-family: Source Code Pro, Lucida Console, Lucida Sans Typewriter, monospace;
+    font-style: normal !important;
+    border-radius: 1px;
+    background: #fdfbfb;
+    border: 1px solid #f2e8e8;
+    padding: 0 .2em
+}
+
+ pre {
+    margin-bottom: 29px
+}
+
+ pre code {
+    padding: 29px;
+    padding-right: 14.5px;
+    margin-left: -.3em;
+    margin-right: -.3em;
+    display: block;
+    border-radius: 1px;
+    border: 1px solid #f2e8e8;
+    background: #fdfbfb;
+    box-shadow: 1px 2px 0 #fbf8f8
+}
+
+@media (max-width: 600px) {
+    pre code {
+        margin-left: -14.5px;
+        margin-right: -14.5px;
+        padding: 14.5px;
+        padding-right: 7.25px;
+        font-size: .8em;
+        border-left: none;
+        border-right: none
+    }
 }

@@ -13,7 +13,7 @@ class Posts extends Provider
             return $this->gather();
         });
 
-        return $posts->each(function($post) {
+        return $posts->each(function ($post) {
             $date = Carbon::parse($post->date);
             $post->dateShort = $date->format('F Y');
         });
@@ -22,32 +22,35 @@ class Posts extends Provider
     public function paginate($perPage = 15, $pageName = 'page', $page = null)
     {
         return $this->cache('posts.paginate.'.request('page', 1), function () use ($perPage, $pageName, $page) {
-            return $this->all()->simplePaginate($perPage, $pageName, $page);
+            return $this->all()
+                ->simplePaginate($perPage, $pageName, $page);
         });
     }
 
     public function find($year, $slug)
     {
-        return $this->all()->first(function ($post) use ($year, $slug) {
-            return $post->date->year == $year && $post->slug == $slug;
-        }, function () {
-            abort(404);
-        });
+        return $this->all()
+            ->first(function ($post) use ($year, $slug) {
+                return $post->date->year == $year && $post->slug == $slug;
+            }, function () {
+                abort(404);
+            });
     }
 
     public function feed()
     {
         return $this->cache('posts.feed', function () {
-            return $this->all()->map(function ($post) {
-                return [
-                    'id' => $post->url,
-                    'title' => $post->title,
-                    'updated' => $post->date,
-                    'summary' => $post->contents,
-                    'link' => $post->url,
-                    'author' => 'Sebastian De Deyne',
-                ];
-            });
+            return $this->all()
+                ->map(function ($post) {
+                    return [
+                        'id' => $post->url,
+                        'title' => $post->title,
+                        'updated' => $post->date,
+                        'summary' => $post->contents,
+                        'link' => $post->url,
+                        'author' => 'Sebastian De Deyne',
+                    ];
+                });
         });
     }
 
@@ -70,15 +73,14 @@ class Posts extends Provider
                     'path' => $path,
                     'date' => $date,
                     'slug' => $slug,
-                    'url' => route('posts.show', [$date->format('Y'), $slug]),
+                    'url' => route('posts.show', [$date->format('Y'), $date->format('m'), $slug]),
+                    'external_url' => $document->external_url ?? false,
                     'title' => $document->title,
-                    'subtitle' => $document->subtitle,
-                    'original_publication_name' => $document->original_publication_name,
-                    'original_publication_url' => $document->original_publication_url,
-                    'read_more_text' => $document->read_more_text,
-                    'read_more_url' => $document->read_more_url,
+                    'category' => $document->category ?? 'general',
                     'contents' => markdown($document->body()),
                     'summary' => markdown($document->summary ?? $document->body()),
+                    'summary_short' => mb_strimwidth($document->summary ?? $document->body(), 0, 140, "..."),
+                    'preview_image' => $document->preview_image ? 'https://christoph-rumpel.com/'.$document->preview_image : 'https://christoph-rumpel.com/images/cr_image.jpg',
                 ];
             })
             ->sortByDesc('date');

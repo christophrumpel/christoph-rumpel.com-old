@@ -2,7 +2,7 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
 <meta name="description"
-      content="{{ $meta_description ?? 'I\'m a web developer from Austria.' }}">
+      content="Hi I am Christoph, a web developer from Austria">
 <meta name="author" content="Christoph Rumpel">
 @if(isset($canonical_url) && $canonical_url)
     <link rel="canonical" href="{{ $canonical_url }}">

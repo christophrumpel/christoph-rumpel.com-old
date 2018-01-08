@@ -86,6 +86,18 @@ a {
     text-shadow: 1px 1px 2px #3D4855;
 }
 
+@media screen and (min-width: 768px) and ( max-height: 790px ){
+    .blogsummary {
+        @apply .truncate;
+    }
+}
+
+@media screen and (min-width: 768px) and ( max-height: 650px ){
+    p.blogsummary {
+        @apply .hidden;
+    }
+}
+
 /**
  * GitHub Gist Theme
  * Author : Louis Barranqueiro - https://github.com/LouisBarranqueiro

@@ -242,6 +242,7 @@ module.exports = {
             'serif',
         ],
         'mono': [
+            'Source Code Pro',
             'Menlo',
             'Monaco',
             'Consolas',
@@ -868,7 +869,7 @@ module.exports = {
         position: ['responsive'],
         resize: ['responsive'],
         shadows: ['responsive'],
-        svgFill: [],
+        svgFill: ['hover'],
         svgStroke: [],
         textAlign: ['responsive'],
         textColors: ['responsive', 'hover'],

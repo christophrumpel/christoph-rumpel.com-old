@@ -1,12 +1,8 @@
-<div class="little-seperator"></div>
-<footer class="footer">
-    <div>
-        © {{ carbon()->format('Y') }}
-        <a href="{{ url('about') }}">Christoph Rumpel</a>
-    </div>
-    <a href="{{ url('feed') }}" data-turbolinks="false" class="footer__rss">
-        <span class="icon -xs" title="RSS">
-            {{ svg('rss') }}
-        </span>
-    </a>
+<footer class="flex justify-end m-4">
+    <p class="text-lg text-grey-dark">
+        <a class="ml-4 no-underline" href="https://twitter.com/christophrumpel" data-turbolinks="false">{{ svg('twitter') }}</a>
+        <a class="ml-4 no-underline" href="{{ url('feed') }}" data-turbolinks="false">{{ svg('rss') }}</a>
+    </p>
+
+
 </footer>

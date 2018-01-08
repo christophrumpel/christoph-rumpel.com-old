@@ -83,7 +83,7 @@ a {
  */
 
 .text-shadow {
-    text-shadow: 1px 1px 2px #3D4855;
+    text-shadow: 1px 1px 1px #3D4855;
 }
 
 @media screen and (min-width: 768px) and ( max-height: 790px ){
@@ -162,30 +162,12 @@ a {
     text-decoration: underline;
 }
 
- code {
-    font-size: .9em;
-    font-family: Source Code Pro, Lucida Console, Lucida Sans Typewriter, monospace;
-    font-style: normal !important;
-    border-radius: 1px;
-    background: #fdfbfb;
-    border: 1px solid #f2e8e8;
-    padding: 0 .2em
-}
-
  pre {
-    margin-bottom: 29px
+    @apply .mt-8 .mb-8;
 }
 
  pre code {
-    padding: 29px;
-    padding-right: 14.5px;
-    margin-left: -.3em;
-    margin-right: -.3em;
-    display: block;
-    border-radius: 1px;
-    border: 1px solid #f2e8e8;
-    background: #fdfbfb;
-    box-shadow: 1px 2px 0 #fbf8f8
+    @apply .text-base .leading-normal .font-mono .p-8 .block .rounded-sm .border .border-solid .border-grey-light .bg-grey-lightest .shadow;
 }
 
 @media (max-width: 600px) {

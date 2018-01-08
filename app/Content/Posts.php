@@ -48,7 +48,7 @@ class Posts extends Provider
                         'updated' => $post->date,
                         'summary' => $post->contents,
                         'link' => $post->url,
-                        'author' => 'Sebastian De Deyne',
+                        'author' => 'Christoph Rumpel',
                     ];
                 });
         });

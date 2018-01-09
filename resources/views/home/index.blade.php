@@ -3,8 +3,8 @@
 @section('meta')
     <meta property="og:url"                content="https://christoph-rumpel.com" />
     <meta property="og:type"               content="article" />
-    <meta property="og:title"              content="Hi I'm Christph, a web developer from Austria" />
-    <meta property="og:description"        content="This is my personal blog where I write about PHP, Laravel, Git and Chatbots. I also talk about these topics." />
+    <meta property="og:title"              content="Hi I'm Christoph, a web developer from Austria" />
+    <meta property="og:description"        content="This is my personal blog where I write about PHP, Laravel, Git and Chatbots. I also talk about these topics. Checkout my site to find out more." />
     <meta property="og:image"              content="{{ asset('/images/cr_image.jpg') }}" />
 @endsection
 
@@ -17,11 +17,16 @@
                     <span
                             class="text-orange">{{ $post->category }}</span>
                 </time>
+
                 @if($post->external_url)
-                    <h2 class="mt-0 mb-2 text-grey-darkest text-lg lg:text-xl">{{ $post->title }} 🔗</h2>
+                    <a class="no-underline" href="{{ $post->external_url }}">
+                        <h2 class="mt-0 mb-2 text-grey-darkest text-lg lg:text-xl">{{ $post->title }} 🔗</h2>
+                    </a>
                     <a class="text-blue-light text-sm" href="{{ $post->external_url }}">Read more</a>
                 @else
-                    <h2 class="mt-0 mb-2 text-grey-darkest text-lg lg:text-xl">{{ $post->title }}</h2>
+                    <a class="no-underline" href="{{ $post->url }}">
+                        <h2 class="mt-0 mb-2 text-grey-darkest text-lg lg:text-xl">{{ $post->title }}</h2>
+                    </a>
                     <p class="blogsummary hidden  text-base md:block">{!! $post->summary_short !!}</p>
                     <a class="text-blue-light text-sm" href="{{ $post->url }}">Read more</a>
                 @endif

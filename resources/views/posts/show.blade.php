@@ -4,7 +4,7 @@
     <meta property="og:url" content="{{$post->url}}"/>
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="{{ $post->title }}"/>
-    <meta property="og:description" content="{{ $post->summary }}"/>
+    <meta property="og:description" content="{{ strip_tags($post->summary) }}"/>
     <meta property="og:image" content="{{ $post->preview_image }}"/>
 @endsection
 

@@ -1,5 +1,13 @@
 @extends('layouts.home')
 
+@section('meta')
+    <meta property="og:url"                content="https://christoph-rumpel.com" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="Hi I'm Christph, a web developer from Austria" />
+    <meta property="og:description"        content="This is my personal blog where I write about PHP, Laravel, Git and Chatbots. I also talk about these topics." />
+    <meta property="og:image"              content="{{ asset('/images/cr_image.jpg') }} />
+@endsection
+
 @section('content')
 
     <ul class="flex flex-col p-0 mt-0 mb-0 sm:justify-center w-full white flex-grow">

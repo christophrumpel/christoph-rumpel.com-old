@@ -24,7 +24,7 @@
  */
 @responsive {
     .profile-column {
-        background: url(http://cr18.test/images/cr_image.jpg) no-repeat top center;
+        background: url(/images/cr_image.jpg) no-repeat top center;
         background-size: cover;
     }
 

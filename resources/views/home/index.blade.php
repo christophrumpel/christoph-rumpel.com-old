@@ -5,7 +5,7 @@
     <meta property="og:type"               content="article" />
     <meta property="og:title"              content="Hi I'm Christoph, a web developer from Austria" />
     <meta property="og:description"        content="This is my personal blog where I write about PHP, Laravel, Git and Chatbots. I also talk about these topics. Checkout my site to find out more." />
-    <meta property="og:image"              content="{{ asset('/images/cr_image.jpg') }}" />
+    <meta property="og:image"              content="{{ asset('/images/cr_image_v2.jpg') }}" />
 @endsection
 
 @section('content')

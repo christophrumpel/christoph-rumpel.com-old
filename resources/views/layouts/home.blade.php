@@ -15,8 +15,8 @@
             </div>
         </div>
     </div>
-    <div class="bg-cover relative overflow-hidden w-full sm:w-1/2 sm:h-full flex-col flex p-8">
-        <header class="flex justify-between items-center mt-4 sm:mt-8 mb-12">
+    <div class="bg-cover relative overflow-hidden w-full sm:w-1/2 sm:h-full flex-col flex p-10">
+        <header class="flex justify-between items-center mt-4 sm:mt-0 mb-12">
             @include('partials.logo')
             @include('partials.nav')
         </header>

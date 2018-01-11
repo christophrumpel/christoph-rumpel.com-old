@@ -2,8 +2,8 @@
 
 namespace App\Content;
 
-use Illuminate\Contracts\Filesystem\Factory as Filesystem;
 use Illuminate\Contracts\Cache\Repository as Cache;
+use Illuminate\Contracts\Filesystem\Factory as Filesystem;
 
 abstract class Provider
 {

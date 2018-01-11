@@ -54,6 +54,10 @@ class Posts extends Provider
         });
     }
 
+    /**
+     * Get all articles and parse them to objects
+     * @return static
+     */
     private function gather()
     {
         return collect($this->disk->files('posts'))
@@ -62,11 +66,8 @@ class Posts extends Provider
             })
             ->map(function ($path) {
                 $filename = str_after($path, 'posts/');
-
                 [$date, $slug, $extension] = explode('.', $filename, 3);
-
                 $date = Carbon::createFromFormat('Y-m-d', $date);
-
                 $document = YamlFrontMatter::parse($this->disk->get($path));
 
                 return (object) [

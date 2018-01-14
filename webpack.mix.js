@@ -17,6 +17,8 @@ mix.js('resources/assets/js/app.js', 'public/js')
         tailwindcss('tailwind.js'),
    ]);
 
+mix.version();
+
 // If you want to use LESS for your preprocessing
 // mix.less('resources/assets/less/main.less', 'public/css')
 //   .options({

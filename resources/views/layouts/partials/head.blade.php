@@ -16,7 +16,7 @@
 
 <link rel="preconnect" href="https://fonts.gstatic.com/">
 
-<link href="https://fonts.googleapis.com/css?family=Amaranth:700|Lora|Montserrat:700|Source+Code+Pro" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat:700|Source+Code+Pro" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="{{ mix('css/main.css') }}">
 
 <script defer src="{{ mix('js/app.js') }}"></script>

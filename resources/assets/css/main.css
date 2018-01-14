@@ -29,7 +29,7 @@
     }
 
     .blogimage {
-        @apply .m-8;
+        @apply .ml-auto .mr-auto .mt-8 .mb-8 .text-center .block;
     }
 }
 
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h5 {
 }
 
 blockquote {
-    @apply .bg-grey-lighter .mt-8 .mb-8 .p-8 .font-serif .text-lg .italic .leading-normal .text-center;
+    @apply .bg-grey-lightest .mt-8 .mb-8 .p-8 .font-serif .text-lg .italic .leading-normal .text-center .rounded-sm .border .border-solid .border-grey-light .shadow;
 }
 
 p {
@@ -167,7 +167,7 @@ a {
 }
 
  pre code {
-    @apply .text-base .leading-normal .font-mono .p-8 .block .rounded-sm .border .border-solid .border-grey-light .bg-grey-lightest .shadow;
+    @apply .text-base .leading-normal .font-mono .p-8 .block .rounded-sm .border .border-solid .border-grey-light .bg-grey-lightest .shadow .overflow-x-scroll;
 }
 
 @media (max-width: 600px) {
@@ -180,4 +180,8 @@ a {
         border-left: none;
         border-right: none
     }
+}
+
+p code {
+    @apply .bg-red-lightest .text-red .pr-1 .pl-1;
 }

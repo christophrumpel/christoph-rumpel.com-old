@@ -53,6 +53,7 @@ let colors = {
     'red-lightest': '#fcebea',
     'orange': '#f6993f',
     'green': '#38c172',
+    'green-lightest': '#e3fcec',
     'blue-light': '#6cb2eb',
 
     get ['brand-darkest']() {

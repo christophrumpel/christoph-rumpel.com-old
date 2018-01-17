@@ -1,0 +1,21 @@
+.blognote {
+  @apply .bg-red-lightest .text-red .mt-4 .mb-4 .pt-4 .pr-8 .pb-4 .pl-8 .font-serif;
+}
+
+blockquote {
+  @apply .bg-grey-lightest .mt-8 .mb-8 .p-8 .font-serif .text-lg .italic .leading-normal .text-center .rounded-sm .border .border-solid .border-grey-light .shadow;
+}
+
+@responsive {
+  .blogimage {
+    @apply .ml-auto .mr-auto .mt-8 .mb-8 .text-center .block;
+  }
+}
+
+article ul {
+  @apply .mt-8 .mb-8;
+}
+
+li {
+  @apply .text-grey-darkest .leading-normal .text-xl .font-serif;
+}

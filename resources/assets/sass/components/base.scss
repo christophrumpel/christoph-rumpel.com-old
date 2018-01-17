@@ -1,0 +1,19 @@
+@responsive {
+  .profile-column {
+    background: url(/images/cr_image_v3.jpg) no-repeat top center;
+    background-size: cover;
+  }
+}
+
+h1, h2, h3, h4, h5, h5 {
+  @apply .text-grey-darkest .mt-12 .mb-6 .font-sans;
+}
+
+
+p {
+  @apply .text-grey-darkest .leading-normal .text-xl .font-serif;
+}
+
+a {
+  @apply .text-blue-light;
+}

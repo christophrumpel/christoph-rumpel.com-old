@@ -13,6 +13,7 @@
             @include('partials.nav')
         </header>
         @yield('content')
+        @include('partials.signup')
         @include('partials.footer')
     </div>
 </div>

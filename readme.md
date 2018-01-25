@@ -3,7 +3,7 @@
 ![Screenshot of the new blog](https://christoph-rumpel.com/images/blog/cr18_new_home.png)
 
 ## Intro
- This is the code of my new personal blog [christoph-rumpel.com](https://christoph-rumpel.com). I wrote a huge [blog article](https://christoph-rumpel.com/2018/01/how-i-redesigned-my-blog-and-moved-it-from-jekyll-to-laravel) where I described the whole redesign process, the tools I've used and how it was inspired by [Sebastian De Deyne](htps://sebastiandedeyne.com).
+ This is the code of my new personal blog [christoph-rumpel.com](https://christoph-rumpel.com). I wrote a huge [blog article](https://christoph-rumpel.com/2018/01/how-i-redesigned-my-blog-and-moved-it-from-jekyll-to-laravel) where I described the whole redesign process, the tools I've used and how it was inspired by [Sebastian De Deyne](https://sebastiandedeyne.com).
  
  Feel free to use the code to play around with the stack and to see how it is implemented. You can also create your own blog of it, that is totally fine. But: **Please do not use any of my articles and my design!**
  

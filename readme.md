@@ -13,7 +13,7 @@
  ``` bash
 git clone git@github.com:christophrumpel/christoph-rumpel.com.git
  ```
-Then load the Composer dependencies.
+Then switch to the new project directory and load the Composer dependencies.
  ``` bash
 composer install
  ```

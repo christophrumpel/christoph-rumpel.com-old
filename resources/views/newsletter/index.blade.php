@@ -9,7 +9,7 @@
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@christophrumpel" />
-    <meta name="twitter:title" content="Hi I'm Christoph, a web developer from Austria" />
+    <meta name="twitter:title" content="Hi I'm Christoph, this is my newsletter" />
     <meta name="twitter:description" content="Let's stay in touch and let me tell you from time to time what I have been working on." />
     <meta name="twitter:image" content="{{ asset('/images/cr_image_v3.jpg') }}" />
 @endsection

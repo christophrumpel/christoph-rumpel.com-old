@@ -25,7 +25,7 @@
                 </div>
                 <div class="flex items-center justify-between">
                     <button class="bg-green hover:bg-green-dark text-white font-bold py-2 px-4 rounded" type="submit">
-                        Sign me up
+                        Sounds good
                     </button>
                 </div>
             </form>

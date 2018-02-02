@@ -11,7 +11,7 @@
     <meta name="twitter:site" content="@christophrumpel" />
     <meta name="twitter:title" content="Hi I'm Christoph, I am talking about chatbots, Laravel and PHP" />
     <meta name="twitter:description" content="I see a lot of benefits in being able to talk about coding and projects in front of other people. Your audience can learn from your experiences and you get to meet lots of different people from all around the world. Additionally you will learn a lot while preparing your talks." />
-    <meta name="twitter:image" content="{{ asset('/images/blog/cr_talking.jpg') }}" />
+    <meta name="twitter:image" content="{{ asset('/images/blog/cr_talking_square.jpg') }}" />
 @endsection
 
 @section('content')

@@ -18,11 +18,11 @@
     <article class="mt-8 mb-8">
         <h1 class="mt-2 mb-8 text-grey-darkest text-4xl">Talks</h1>
 
-        <img class="mb-8" src="/images/blog/cr_talking.jpg" alt="Christoph talking on stage">
-
         <p> I see a lot of benefits in being able to talk about coding and projects in front of other people. Your
             audience can learn from your experiences and you get to meet lots of different people from all around the
             world. Additionally you will learn a lot while preparing your talks.</p>
+        <img class="my-8" src="/images/blog/cr_talking.jpg" alt="Christoph talking on stage">
+
         <br /><br />
         <p>Right now I am talking about these topics</p>
         <ul>

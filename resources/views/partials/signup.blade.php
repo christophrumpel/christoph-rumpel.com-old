@@ -3,7 +3,7 @@
         <div class="w-full sm:w-1/2">
             <h2 class="mt-0">Let's stay in touch</h2>
             <p class="text-lg">Sign up for my newsletter and I will let you know about more content and new projects of
-                mine. This won't be more than once a month, I'll promise. </p>
+                mine once a month. </p>
         </div>
         <div class="w-full sm:w-1/2 ">
             <form class="mt-4 sm:ml-8"

@@ -19,6 +19,14 @@ class Posts extends Provider
         });
     }
 
+    public function published()
+    {
+        return $this->all()
+            ->filter(function ($post) {
+                return $post->published;
+            });
+    }
+
     public function paginate($perPage = 15, $pageName = 'page', $page = null)
     {
         return $this->cache('posts.paginate.'.request('page', 1), function () use ($perPage, $pageName, $page) {
@@ -56,6 +64,7 @@ class Posts extends Provider
 
     /**
      * Get all articles and parse them to objects
+     *
      * @return static
      */
     private function gather()
@@ -82,6 +91,7 @@ class Posts extends Provider
                     'summary' => markdown($document->summary ?? $document->body()),
                     'summary_short' => mb_strimwidth($document->summary ?? $document->body(), 0, 140, "..."),
                     'preview_image' => $document->preview_image ? 'https://christoph-rumpel.com/'.$document->preview_image : 'https://christoph-rumpel.com/images/cr_image_v3.jpg',
+                    'published' => $document->published ?? true,
                 ];
             })
             ->sortByDesc('date');

@@ -10,7 +10,7 @@ class HomeController
 {
     public function index(Posts $posts)
     {
-        $posts = $posts->all()->simplePaginate(3);
+        $posts = $posts->published()->simplePaginate(3);
 
         return view('home.index', [
             'posts' => $posts,

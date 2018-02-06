@@ -2,8 +2,8 @@
 
 namespace Tests\Features;
 
-use Illuminate\Foundation\Testing\TestCase;
 use Tests\CreatesApplication;
+use Illuminate\Foundation\Testing\TestCase;
 
 class PagesTest extends TestCase
 {
@@ -14,23 +14,18 @@ class PagesTest extends TestCase
         $this->get('/')->assertStatus(200);
     }
 
-    public function test_it_displays_the_about_page()
+    public function test_it_displays_the_talks()
     {
-        $this->get('/about')->assertStatus(200);
+        $this->get('/talks')->assertStatus(200);
     }
 
-    public function test_it_displays_the_open_source_page()
+    public function test_it_displays_the_newsletter()
     {
-        $this->get('/open-source')->assertStatus(200);
-    }
-
-    public function test_it_displays_the_posts_page()
-    {
-        $this->get('/posts')->assertStatus(200);
+        $this->get('/newsletter')->assertStatus(200);
     }
 
     public function test_it_displays_a_post_page()
     {
-        $this->get('/posts/2016/adventure-time-with-webpack')->assertStatus(200);
+        $this->get('/2018/02/botman-build-a-chatbot-video-course')->assertStatus(200);
     }
 }

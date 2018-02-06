@@ -26,8 +26,19 @@
 @import "components/base";
 @import "components/code";
 @import "components/blog";
+@import "components/scroll-indicator";
 
+/* book */
+.book-bg {
+  background: #1488CC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+
+.book-yellow {
+  color: #f1ed8b;
+}
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your
@@ -51,18 +62,18 @@
  */
 
 .text-shadow {
-    text-shadow: 1px 1px 1px #3D4855;
+  text-shadow: 1px 1px 1px #3D4855;
 }
 
-@media screen and (min-width: 768px) and ( max-height: 790px ){
-    .blogsummary {
-        @apply .truncate;
-    }
+@media screen and (min-width: 768px) and (max-height: 790px) {
+  .blogsummary {
+    @apply .truncate;
+  }
 }
 
-@media screen and (min-width: 768px) and ( max-height: 650px ){
-    p.blogsummary {
-        @apply .hidden;
-    }
+@media screen and (min-width: 768px) and (max-height: 650px) {
+  p.blogsummary {
+    @apply .hidden;
+  }
 }
 

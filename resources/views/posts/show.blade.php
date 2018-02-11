@@ -16,7 +16,7 @@
 
 @section('content')
     <article class="mt-8 mb-8">
-        <time class="mb-2 text-grey-darkest font-bold uppercase text-med">{{ $post->dateShort }} | <span
+        <time class="mb-2 text-grey-darkest font-bold uppercase text-med tracking-wide">{{ $post->dateShort }} | <span
                     class="text-orange">{{ $post->category }}</span>
         </time>
         <h1 class="mt-2 mb-8 text-grey-darkest text-4xl">{{ $post->title }}</h1>

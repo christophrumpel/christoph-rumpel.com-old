@@ -19,7 +19,7 @@
     <ul class="flex flex-col p-0 mt-0 mb-0 sm:justify-center w-full white flex-grow">
         @foreach($posts as $post)
             <li class="mb-4 w-full list-reset">
-                <time class="mb-0 text-grey-darkest font-bold uppercase text-sm font-sans">{{ $post->dateShort }} |
+                <time class="mb-0 text-grey-darkest font-bold uppercase text-sm font-sans tracking-wide">{{ $post->dateShort }} |
                     <span
                             class="text-orange">{{ $post->category }}</span>
                 </time>

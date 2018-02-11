@@ -2,6 +2,7 @@
 <html lang="{{ app()->getLocale() }}">
 <head>
     @include('layouts.partials.head')
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
     <meta property="og:url" content="https://christoph-rumpel.com/talks"/>
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="Hi I'm Christoph, I am talking about chatbots, Laravel and PHP"/>

@@ -55,8 +55,8 @@ let colors = {
     'green': '#38c172',
     'green-lightest': '#e3fcec',
     'blue-light': '#6cb2eb',
-    'yellow': '#f8f491',
-    'yellow-darker': '#d6d87d',
+    'yellow': '#fcde7b',
+    'yellow-darker': '#dabc6d',
     'cyan': '#30efe2',
     'black': '#212121',
 
@@ -182,6 +182,20 @@ module.exports = {
             'Courier New',
             'monospace',
         ],
+        'landing': [
+            'Roboto Condensed',
+            '-apple-system',
+            'BlinkMacSystemFont',
+            'Segoe UI',
+            'Roboto',
+            'Oxygen',
+            'Ubuntu',
+            'Cantarell',
+            'Fira Sans',
+            'Droid Sans',
+            'Helvetica Neue',
+            'sans-serif',
+        ]
     },
 
 
@@ -587,6 +601,7 @@ module.exports = {
         '6': '1.5rem',
         '8': '2rem',
         '10': '2.5rem',
+        '30': '7.5rem',
     },
 
 

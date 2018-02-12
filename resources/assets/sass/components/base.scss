@@ -17,3 +17,7 @@ p, table {
 a {
   @apply .text-blue-light;
 }
+
+button {
+  transition: background-color 0.5s ease;
+}

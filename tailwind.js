@@ -56,7 +56,7 @@ let colors = {
     'green-lightest': '#e3fcec',
     'blue-light': '#6cb2eb',
     'yellow': '#fcde7b',
-    'yellow-darker': '#dabc6d',
+    'yellow-darker': '#e3c572',
     'cyan': '#30efe2',
     'black': '#212121',
 
@@ -601,6 +601,7 @@ module.exports = {
         '6': '1.5rem',
         '8': '2rem',
         '10': '2.5rem',
+        '16': '4rem',
         '30': '7.5rem',
     },
 
@@ -632,6 +633,7 @@ module.exports = {
         '8': '2rem',
         '10': '2.5rem',
         '12': '3em',
+        '32': '8em',
     },
 
 

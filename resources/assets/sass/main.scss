@@ -40,6 +40,11 @@
   color: #f1ed8b;
 }
 
+.gravatar {
+  @apply .absolute .rounded-full .border-solid .border-4 .border-yellow;
+  bottom: -5rem;
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.

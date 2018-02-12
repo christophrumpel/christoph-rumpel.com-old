@@ -15,7 +15,17 @@
                     <p class="mb-4 font-bold font-landing text-2xl">Hi, I am Christoph 👋 </p>
                     <p class="mb-4">I'm a chatbot developer and speaker from Vienna. In the last two years I have been building all kinds of chatbots for small and big companies. They were integrated in Facebook Messenger, Slack, Telegram or on websites with custom solutions.</p>
                     <p class="mb-4">For every project I used my favourite programming language PHP. Yes, that's possible. No need to learn another one like NodeJS. PHP is all you need!</p>
-                    <p>Be the first to get a free chapter and to get notified about the process of this e-book. Additionally, everyone from the list will get a discount at the release! 🎉</p>
+                    <p class="mb-4">Be the first to get a free chapter and to get notified about the process of this e-book. Additionally, everyone from the list will get a discount at the release! 🎉</p>
+                    <p class="mb-4 font-bold font-landing text-2xl">What the book will cover </p>
+                    <ul class="mb-4">
+                        <li>The rise of chatbots 🤖</li>
+                        <li>The state of chatbots in 2018 😲</li>
+                        <li>Why PHP is a perfect fit for chatbots 🤙</li>
+                        <li>Build your first chatbot in plain PHP 💪</li>
+                        <li>Use Laravel and BotMan to build a well tested, multi-platform chatbot 🚀 </li>
+                        <li>And more...</li>
+                    </ul>
+                    <p>Do you miss something? Let me know about it and  I'll try to cover it 👍</p>
                 </div>
             </div>
             <div class="my-12 w-4/5 md:w-100">

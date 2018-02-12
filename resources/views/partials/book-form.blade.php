@@ -5,7 +5,7 @@
         <div class="w-3/5">
             <input class="shadow appearance-none bg-white border-0 w-full py-4 px-4 text-grey-dark font-landing text-lg"
                    id="email"
-                   name="EMAIL" type="text" placeholder="Your E-Mail">
+                   name="EMAIL" type="text" placeholder="Your E-Mail...">
         </div>
         <div class="w-2/5 text-left">
             <button class="bg-yellow hover:bg-yellow-darker text-black font-landing font-bold uppercase text-lg py-4 px-2 w-full"

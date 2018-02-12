@@ -4,7 +4,7 @@
             starting point.
         </h1>
     </div>
-    <div class="md:mt-10 flex justify-center items-center flex-row">
+    <div class="md:mt-10 flex w-screen justify-center items-center flex-row">
         <div class="flex flex-col flex-col-reverse md:flex-row mb-4 w-100 items-center">
             <div class="w-1/2 mb-8 text-center">
                 <h3 class="mt-2 mb-2 book-yellow uppercase font-landing text-xl">NEW BOOK COMING SOON</h3>

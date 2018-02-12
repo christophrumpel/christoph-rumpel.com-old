@@ -2,6 +2,7 @@
 <html lang="{{ app()->getLocale() }}">
 <head>
     @include('layouts.partials.head')
+    @include('layouts.partials.fonts-blog')
     @yield('meta')
 </head>
 <body class="font-sans">

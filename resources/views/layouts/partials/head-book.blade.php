@@ -2,18 +2,15 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
 <meta name="description"
-      content="Hi I am Christoph, a web developer from Austria">
+      content="Build Chatbots with PHP">
 <meta name="author" content="Christoph Rumpel">
 @if(isset($canonical_url) && $canonical_url)
     <link rel="canonical" href="{{ $canonical_url }}">
 @endif
 
-<title>{{ isset($title) ? ($title . ' — Christoph Rumpel') : 'Christoph Rumpel' }}</title>
+<title>Build Chatbots with PHP</title>
 
-@include('feed::links')
-
-@include('layouts.partials.favicons-blog')
-
+@include('layouts.partials.favicons-book')
 
 <link rel="stylesheet" type="text/css" href="{{ mix('css/main.css') }}">
 

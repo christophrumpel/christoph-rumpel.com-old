@@ -14,7 +14,8 @@
                 <div class="w-4/5 md:w-100 font-landing text-grey-darkest text-lg">
                     <h2 class="mt-8 mb-4 font-bold font-landing text-4xl">Hi, I am Christoph 👋 </h2>
                     <p class="mb-4">I'm a chatbot developer and speaker from Vienna. For the last two years I’ve been working hard to deepen my knowledge in programming chatbots and helping others to do as well. I’ve been building several chatbots for small and big companies as well as for group chats with my friends and personal ones for myself. I’ve gathered a ton of experience with different messenger APIs while integrating bots in Facebook Messenger, Slack, Telegram or on websites with custom solutions.</p>
-                    <p class="mb-4">I used my favourite programming language PHP for these projects. Yes, that's possible. No need to learn another language like NodeJS. PHP's got you covered!</p>
+                    <p class="mb-4">I used my favourite programming language PHP for these projects. Yes, that's possible. <b>No need to learn another language like NodeJS.</b> PHP's got you covered!</p>
+                    <p class="mb-4">When I started building chatbots in 2016 there wasn't a single article available that explained how to do that in PHP. There was trial and error only, but I made it through! Now, two years later, you will find some blog posts, but still not much. With this book I want to change that and give everyone <b>the perfect starting point for building chatbots in PHP.</b></p>
 
 
                     <h2 class="mt-10 mb-4 font-bold font-landing text-4xl">What the book will cover 📕</h2>
@@ -50,7 +51,11 @@
             </div>
             <footer class="mt-8 p-8 mb-0 text-center w-screen">
                 <p class="font-landing text-lg mb-2">More information coming soon!</p>
-                <p class="font-landing text-sm">&copy; Christoph Rumpel {{ date('Y') }}</p>
+                <p class="font-landing text-sm">&copy; Christoph Rumpel {{ date('Y') }}
+                    - <a class="text-grey-darkest" href="https://christoph-rumpel.com">Blog</a>
+                    | <a class="text-grey-darkest" href="https://twitter.com/christophrumpel">Twitter</a>
+                    | <a class="text-grey-darkest" href="https://github.com/christophrumpel/christoph-rumpel.com">GitHub</a>
+                </p>
             </footer>
         </div>
     </div>

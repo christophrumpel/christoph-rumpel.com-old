@@ -1,1 +1,1 @@
-<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat:700|Source+Code+Pro" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:700|Source+Code+Pro" rel="stylesheet">

@@ -12,4 +12,6 @@
 .gravatar {
   @apply .absolute .rounded-full .border-solid .border-4 .border-yellow;
   bottom: -5rem;
+  left: 50%;
+  margin-left: -80px;
 }

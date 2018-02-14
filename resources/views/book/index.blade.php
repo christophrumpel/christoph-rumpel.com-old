@@ -42,7 +42,7 @@
                     <ul>
                         <li class="mb-2 md:ml-4">You get the first Chapter for FREE</li>
                         <li class="mb-2 md:ml-4">I will notify you about news on the book</li>
-                        <li class="mb-2 md:ml-4">You will get a discount at the release!</li>
+                        <li class="mb-2 md:ml-4">You will get a discount at the release</li>
                     </ul>
                 </div>
             </div>

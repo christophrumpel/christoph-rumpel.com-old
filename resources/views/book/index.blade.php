@@ -13,9 +13,10 @@
             <div class="flex mt-4 mb-4 justify-center">
                 <div class="w-4/5 md:w-100 font-landing text-grey-darkest text-lg">
                     <h2 class="mt-8 mb-4 font-bold font-landing text-4xl">Hi, I am Christoph 👋 </h2>
-                    <p class="mb-4">I'm a chatbot developer and speaker from Vienna. In the last two years I have been building all kinds of chatbots for small and big companies. They were integrated in Facebook Messenger, Slack, Telegram or on websites with custom solutions.</p>
-                    <p class="mb-4">For every project I used my favourite programming language PHP. Yes, that's possible. No need to learn another one like NodeJS. PHP is all you need!</p>
-                    <p class="">Be the first to get a free chapter and to get notified about the process of this e-book. Additionally, everyone from the list will get a discount at the release!</p>
+                    <p class="mb-4">I'm a chatbot developer and speaker from Vienna. For the last two years I’ve been working hard to deepen my knowledge in programming chatbots and helping others to do as well. I’ve been building several chatbots for small and big companies as well as for group chats with my friends and personal ones for myself. I’ve gathered a ton of experience with different messenger APIs while integrating bots in Facebook Messenger, Slack, Telegram or on websites with custom solutions.</p>
+                    <p class="mb-4">I used my favourite programming language PHP for these projects. Yes, that's possible. No need to learn another language like NodeJS. PHP's got you covered!</p>
+
+
                     <h2 class="mt-10 mb-4 font-bold font-landing text-4xl">What the book will cover 📕</h2>
                     <ul class="mb-4">
                         <li class="mb-2 md:ml-4">The rise of chatbots</li>
@@ -25,7 +26,23 @@
                         <li class="mb-2 md:ml-4">Use Laravel and BotMan to build a well tested, multi-platform chatbot</li>
                         <li class="mb-2 md:ml-4">And more...</li>
                     </ul>
-                    <p>Do you miss something? Let me know about it and  I'll try to cover it.</p>
+                    <h2 class="mt-10 mb-4 font-bold font-landing text-4xl">Who this book is for 🤔</h2>
+                    <p class="mb-4">You are the right person for this book if you...</p>
+                    <ul>
+                        <li class="mb-2 md:ml-4">want to learn more about chatbots</li>
+                        <li class="mb-2 md:ml-4">you're a PHP developer and want to build a chatbot</li>
+                        <li class="mb-2 md:ml-4">are interested in how to setup up a chatbot project for scratch</li>
+                        <li class="mb-2 md:ml-4">like to level up as a chatbot developer</li>
+                        <li class="mb-2 md:ml-4">want to innovate your company's or client's services</li>
+                        <li class="mb-2 md:ml-4">you want to be part of the future and conversational interfaces</li>
+                    </ul>
+                    <h2 class="mt-10 mb-4 font-bold font-landing text-4xl">Subscribe to my mailing list 💌</h2>
+                    <p class="mb-4">Do I have your attention? Perfect! Sign up and...</p>
+                    <ul>
+                        <li class="mb-2 md:ml-4">You get the first Chapter for FREE</li>
+                        <li class="mb-2 md:ml-4">I will notify you about news on the book</li>
+                        <li class="mb-2 md:ml-4">You will get a discount at the release!</li>
+                    </ul>
                 </div>
             </div>
             <div class="my-12 w-4/5 md:w-100">

@@ -10,8 +10,7 @@
                 <h2 class="mt-0 text-white font-landing text-4xl leading-normal">Build Chatbots <br/>with PHP
                 </h2>
 
-                <p class="text-white text-md mb-8 font-landing font-light leading-tight">Interested? Let me keep you
-                    up with the process of this book and be the first to grab a <b>FREE CHAPTER</b>.</p>
+                <p class="text-white text-md mb-8 font-landing font-light leading-tight">Interested? Let me keep you updated on the completion/development of my book and grab your first <b>CHAPTER</b> for <b>FREE</b>.</p>
 
                 @include('partials.book-form')
 

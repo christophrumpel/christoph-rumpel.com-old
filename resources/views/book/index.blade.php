@@ -35,10 +35,10 @@
                         <li class="mb-2 md:ml-4">are interested in how to setup up a chatbot project for scratch</li>
                         <li class="mb-2 md:ml-4">like to level up as a chatbot developer</li>
                         <li class="mb-2 md:ml-4">want to innovate your company's or client's services</li>
-                        <li class="mb-2 md:ml-4">you want to be part of the future and conversational interfaces</li>
+                        <li class="mb-2 md:ml-4">you want to contribute to the future of conversational interfaces</li>
                     </ul>
                     <h2 class="mt-10 mb-4 font-bold font-landing text-4xl">Subscribe to my mailing list 💌</h2>
-                    <p class="mb-4">Does this appeal to you? Perfect! Sign up and...</p>
+                    <p class="mb-4">Have I caught your attention? Perfect! Sign up and...</p>
                     <ul>
                         <li class="mb-2 md:ml-4">You get the first Chapter for FREE</li>
                         <li class="mb-2 md:ml-4">I will notify you about news on the book</li>

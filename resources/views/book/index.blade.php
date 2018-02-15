@@ -59,4 +59,11 @@
             </footer>
         </div>
     </div>
+    <div class="fb-customerchat"
+         page_id="224390314790045"
+         ref="landingpage"
+         theme_color="#02a3f4"
+         logged_in_greeting="Do you prefer book updates via Facebook Messenger?"
+         logged_out_greeting="I can keep you updated too">
+    </div>
 @endsection

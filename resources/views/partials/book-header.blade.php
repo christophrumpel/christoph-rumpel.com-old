@@ -23,13 +23,6 @@
             </div>
         </div>
     </div>
-    <div class="fb-send-to-messenger"
-         messenger_app_id="1961726034144563"
-         page_id="224390314790045"
-         data-ref="coming-from-landing-page"
-         color="white"
-         size="large">
-    </div>
     <a href="https://christoph-rumpel.com/">
         <img class="gravatar"
              src="https://s.gravatar.com/avatar/14d39e65f615fd6dcb9dd44ea7f7995b?s=160" width="160"

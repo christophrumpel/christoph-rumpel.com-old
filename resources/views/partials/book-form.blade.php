@@ -1,4 +1,4 @@
-<form action="https://levisstore.us5.list-manage.com/subscribe/post?u=c9b366927da1fe9e64cd96c9c&amp;id=2933ffa03f"
+<form action="https://christoph-rumpel.us5.list-manage.com/subscribe/post?u=c9b366927da1fe9e64cd96c9c&amp;id=2933ffa03f"
       method="post" id="book-form" name="mc-embedded-subscribe-form"
       class="validate" target="_blank" novalidate>
     <div class="flex mb-4 shadow-md">

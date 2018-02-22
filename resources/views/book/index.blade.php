@@ -32,7 +32,7 @@
                     <ul>
                         <li class="mb-2 md:ml-4">want to learn more about chatbots</li>
                         <li class="mb-2 md:ml-4">you're a PHP developer and want to build a chatbot</li>
-                        <li class="mb-2 md:ml-4">are interested in how to setup up a chatbot project for scratch</li>
+                        <li class="mb-2 md:ml-4">are interested in how to setup up a chatbot project from scratch</li>
                         <li class="mb-2 md:ml-4">like to level up as a chatbot developer</li>
                         <li class="mb-2 md:ml-4">want to innovate your company's or client's services</li>
                         <li class="mb-2 md:ml-4">you want to contribute to the future of conversational interfaces</li>

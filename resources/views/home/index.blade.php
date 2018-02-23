@@ -42,7 +42,4 @@
 
     <?php echo $posts->render(); ?>
 
-    {{--@include('partials.social')--}}
-    {{--@include('partials.footer')--}}
-
 @endsection

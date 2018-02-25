@@ -40,6 +40,6 @@
         @endforeach
     </ul>
 
-    <?php echo $posts->render(); ?>
+    {{ $posts->render() }}
 
 @endsection

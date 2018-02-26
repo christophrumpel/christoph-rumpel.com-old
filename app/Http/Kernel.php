@@ -38,6 +38,7 @@ class Kernel extends HttpKernel
             \Spatie\ResponseCache\Middlewares\CacheResponse::class,
             \App\Http\Middleware\CacheControl::class,
             \App\Http\Middleware\Robots::class,
+            \Spatie\Csp\AddCspHeaders::class,
         ],
 
         'api' => [

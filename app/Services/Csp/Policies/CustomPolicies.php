@@ -5,7 +5,7 @@ namespace App\Services\Csp\Policies;
 use Spatie\Csp\Directive;
 use Spatie\Csp\Policies\Basic;
 
-class GooglePolicy extends Basic
+class CustomPolicies extends Basic
 {
     public function configure()
     {
@@ -29,7 +29,6 @@ class GooglePolicy extends Basic
             ->addDirective(Directive::STYLE, [
                 'christoph-rumpel.com',
                 'christoph-rumpel.test',
-                'unsafe-inline',
                 'data:'
             ])
             ->addDirective(Directive::FORM_ACTION, [
@@ -61,7 +60,7 @@ class GooglePolicy extends Basic
     }
 
     /**
-     * @return GooglePolicy
+     * @return CustomPolicies
      * @throws \Spatie\Csp\Exceptions\InvalidDirective
      */
     protected function addDirectivesForGoogleAnalytics(): self
@@ -70,7 +69,7 @@ class GooglePolicy extends Basic
     }
 
     /**
-     * @return GooglePolicy
+     * @return CustomPolicies
      * @throws \Spatie\Csp\Exceptions\InvalidDirective
      */
     protected function addDirectivesForGoogleTagManager(): self

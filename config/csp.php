@@ -1,6 +1,6 @@
 <?php
 
-use App\Services\Csp\Policies\GooglePolicy;
+use App\Services\Csp\Policies\CustomPolicies;
 
 return [
 
@@ -8,7 +8,7 @@ return [
      * A policy will determine which CSP headers will be set. A valid CSP policy is
      * any class that extends `Spatie\Csp\Policies\Policy`
      */
-    'policy' => GooglePolicy::class,
+    'policy' => CustomPolicies::class,
 
     /*
      * This policy which will be put in report only mode. This is great for testing out

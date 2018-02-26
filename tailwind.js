@@ -750,7 +750,8 @@ module.exports = {
     */
 
     svgFill: {
-        'current': 'currentColor',
+        'blue-light': '#6cb2eb',
+        'grey-dark': '#8795a1',
     },
 
 
@@ -769,7 +770,8 @@ module.exports = {
     */
 
     svgStroke: {
-        'current': 'currentColor',
+        'blue-light': '#6cb2eb',
+        'grey-dark': '#8795a1',
     },
 
 
@@ -821,7 +823,7 @@ module.exports = {
         resize: ['responsive'],
         shadows: ['responsive'],
         svgFill: ['hover'],
-        svgStroke: [],
+        svgStroke: ['hover'],
         textAlign: ['responsive'],
         textColors: ['responsive', 'hover'],
         textSizes: ['responsive'],

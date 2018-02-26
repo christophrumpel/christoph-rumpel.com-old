@@ -14,6 +14,7 @@ class GooglePolicy extends Basic
         $this->addGeneralDirectives();
         $this->addDirectivesForGoogleFonts();
         $this->addDirectivesForGoogleAnalytics();
+        $this->addDirectivesForGoogleTagManager();
     }
 
     protected function addGeneralDirectives()

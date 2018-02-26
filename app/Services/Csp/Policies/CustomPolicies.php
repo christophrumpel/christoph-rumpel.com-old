@@ -29,7 +29,6 @@ class CustomPolicies extends Basic
             ->addDirective(Directive::STYLE, [
                 'christoph-rumpel.com',
                 'christoph-rumpel.test',
-                'unsafe-inline',
                 'data:'
             ])
             ->addDirective(Directive::FORM_ACTION, [

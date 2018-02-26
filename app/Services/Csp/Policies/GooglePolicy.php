@@ -68,4 +68,13 @@ class GooglePolicy extends Basic
         return $this->addDirective(Directive::SCRIPT, '*.google-analytics.com');
     }
 
+    /**
+     * @return GooglePolicy
+     * @throws \Spatie\Csp\Exceptions\InvalidDirective
+     */
+    protected function addDirectivesForGoogleTagManager(): self
+    {
+        return $this->addDirective(Directive::SCRIPT, '*.googletagmanager.com');
+    }
+
 }

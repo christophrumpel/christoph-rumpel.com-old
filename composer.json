@@ -14,6 +14,7 @@
         "laravel/framework": "5.5.*",
         "league/commonmark": "^0.15.0",
         "spatie/laravel-collection-macros": "^3.0",
+        "spatie/laravel-csp": "^1.0",
         "spatie/laravel-feed": "^2.0",
         "spatie/laravel-responsecache": "^4.0",
         "spatie/laravel-robots-middleware": "^1.0",

@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\SetReferrerPolicy;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -38,6 +39,8 @@ class Kernel extends HttpKernel
             \Spatie\ResponseCache\Middlewares\CacheResponse::class,
             \App\Http\Middleware\CacheControl::class,
             \App\Http\Middleware\Robots::class,
+            \Spatie\Csp\AddCspHeaders::class,
+            SetReferrerPolicy::class,
         ],
 
         'api' => [

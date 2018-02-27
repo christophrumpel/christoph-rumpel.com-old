@@ -13,7 +13,7 @@
     @include('layouts.partials.analytics')
 @endif
 
-<script>
+<script nonce="{{ cspNonce() }}">
     window.fbAsyncInit = function() {
         FB.init({
             appId            : '1961726034144563',

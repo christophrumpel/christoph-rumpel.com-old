@@ -15,6 +15,7 @@ class CustomPolicies extends Basic
         $this->addDirectivesForGoogleFonts();
         $this->addDirectivesForGoogleAnalytics();
         $this->addDirectivesForGoogleTagManager();
+        $this->addDirectivesForFacebookChatPlugin();
     }
 
     protected function addGeneralDirectives()
@@ -75,6 +76,15 @@ class CustomPolicies extends Basic
     protected function addDirectivesForGoogleTagManager(): self
     {
         return $this->addDirective(Directive::SCRIPT, '*.googletagmanager.com');
+    }
+
+    /**
+     * @return CustomPolicies
+     * @throws \Spatie\Csp\Exceptions\InvalidDirective
+     */
+    protected function addDirectivesForFacebookChatPlugin(): self
+    {
+        return $this->addDirective(Directive::SCRIPT, 'connect.facebook.net');
     }
 
 }

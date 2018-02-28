@@ -3,14 +3,12 @@
 namespace App\Services\Csp\Policies;
 
 use Spatie\Csp\Directive;
-use Spatie\Csp\Policies\Basic;
+use Spatie\Csp\Policies\Policy;
 
-class CustomPolicies extends Basic
+class CustomPolicies extends Policy
 {
     public function configure()
     {
-        parent::configure();
-
         $this->addGeneralDirectives();
         $this->addDirectivesForGoogleFonts();
         $this->addDirectivesForGoogleAnalytics();
@@ -21,6 +19,14 @@ class CustomPolicies extends Basic
     protected function addGeneralDirectives()
     {
         return $this->addDirective(Directive::BASE, 'self')
+            ->addDirective(Directive::CONNECT, 'self')
+            ->addDirective(Directive::DEFAULT, 'self')
+            ->addDirective(Directive::FORM_ACTION, 'self')
+            ->addDirective(Directive::IMG, 'self')
+            ->addDirective(Directive::MEDIA, 'self')
+            ->addDirective(Directive::OBJECT, 'none')
+            ->addDirective(Directive::SCRIPT, 'self')
+            ->addDirective(Directive::STYLE, 'self')
             ->addNonceForDirective(Directive::SCRIPT)
             ->addDirective(Directive::SCRIPT, [
                 'christoph-rumpel.com',
@@ -34,6 +40,7 @@ class CustomPolicies extends Basic
             ->addDirective(Directive::FORM_ACTION, [
                 'christoph-rumpel.com',
                 'christoph-rumpel.test',
+                'christoph-rumpel.us5.list-manage.com'
             ])
             ->addDirective(Directive::IMG, [
                 '*',
@@ -86,12 +93,15 @@ class CustomPolicies extends Basic
         return $this->addDirective(Directive::SCRIPT, [
             '*.facebook.com',
             '*.facebook.net',
-        ])->addDirective(Directive::FRAME, [
-            '*.facebook.com',
-        ])->addDirective(Directive::STYLE, [
-            '*.facebook.com',
-            '*.facebook.net',
-        ]);
+        ])
+            ->addDirective(Directive::FRAME, [
+                '*.facebook.com',
+            ])
+            ->addDirective(Directive::STYLE, [
+                '*.facebook.com',
+                '*.facebook.net',
+                'unsafe-inline',
+            ]);
     }
 
 }

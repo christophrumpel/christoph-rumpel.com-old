@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Content\Posts;
+use Illuminate\Support\Facades\App;
 
 class PostsController
 {
@@ -24,7 +25,7 @@ class PostsController
     {
         $post = $posts->find($year, $slug);
 
-        if($post->published === false) {
+        if($post->published === false && App::environment('production')) {
             return redirect()->route('home');
         }
 

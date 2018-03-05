@@ -22,8 +22,14 @@ class PostsController
 
     public function show($year, $month, $slug, Posts $posts)
     {
+        $post = $posts->find($year, $slug);
+
+        if($post->published === false) {
+            return redirect()->route('home');
+        }
+
         return view('posts.show', [
-            'post' => $posts->find($year, $slug),
+            'post' => $post,
         ]);
     }
 }

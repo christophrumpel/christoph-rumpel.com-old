@@ -48,7 +48,7 @@ class Posts extends Provider
     public function feed()
     {
         return $this->cache('posts.feed', function () {
-            return $this->all()
+            return $this->published()
                 ->map(function ($post) {
                     return [
                         'id' => $post->url,

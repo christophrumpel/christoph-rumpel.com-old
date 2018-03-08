@@ -30,6 +30,7 @@
         <ul>
             <li>Laravel PHP Framework</li>
             <li>Chatbots</li>
+            <li>Content Security Policy</li>
         </ul>
 
         <h2>Upcoming talks</h2>

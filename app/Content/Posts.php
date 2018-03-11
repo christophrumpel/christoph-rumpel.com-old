@@ -3,10 +3,14 @@
 namespace App\Content;
 
 use Carbon\Carbon;
+use Illuminate\Support\Collection;
 use Spatie\YamlFrontMatter\YamlFrontMatter;
 
 class Posts extends Provider
 {
+    /**
+     * @return Collection
+     */
     public function all()
     {
         $posts = $this->cache('posts.all', function () {
@@ -19,14 +23,23 @@ class Posts extends Provider
         });
     }
 
+    /**
+     * @return Collection
+     */
     public function published()
     {
         return $this->all()
             ->filter(function ($post) {
-                return $post->published;
+                return $post->published =! false;
             });
     }
 
+    /**
+     * @param int $perPage
+     * @param string $pageName
+     * @param null $page
+     * @return Collection
+     */
     public function paginate($perPage = 15, $pageName = 'page', $page = null)
     {
         return $this->cache('posts.paginate.'.request('page', 1), function () use ($perPage, $pageName, $page) {
@@ -42,6 +55,14 @@ class Posts extends Provider
                 return $post->date->year == $year && $post->slug == $slug;
             }, function () {
                 abort(404);
+            });
+    }
+
+    public function category($category)
+    {
+        return $this->published()
+            ->filter(function ($article) use ($category) {
+                return trim(strtolower($article->category)) === trim(strtolower($category));
             });
     }
 

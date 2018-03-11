@@ -33,4 +33,9 @@ class PostsController
             'post' => $post,
         ]);
     }
+
+    public function category($category, Posts $posts)
+    {
+    	return view('posts.category', ['posts' => $posts->category($category), 'category' => $category]);
+    }
 }

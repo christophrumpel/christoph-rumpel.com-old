@@ -30,7 +30,7 @@ class Posts extends Provider
     {
         return $this->all()
             ->filter(function ($post) {
-                return $post->published =! false;
+                return $post->published ==! false;
             });
     }
 

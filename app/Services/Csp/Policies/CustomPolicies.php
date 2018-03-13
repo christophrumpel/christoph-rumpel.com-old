@@ -7,8 +7,13 @@ use Spatie\Csp\Policies\Policy;
 
 class CustomPolicies extends Policy
 {
+    /** @var App's origin */
+    protected $origin;
+
     public function configure()
     {
+        $this->origin = parse_url(env('APP_URL'))['host'];
+
         $this->addGeneralDirectives();
         $this->addDirectivesForGoogleFonts();
         $this->addDirectivesForGoogleAnalytics();
@@ -28,18 +33,10 @@ class CustomPolicies extends Policy
             ->addDirective(Directive::SCRIPT, 'self')
             ->addDirective(Directive::STYLE, 'self')
             ->addNonceForDirective(Directive::SCRIPT)
-            ->addDirective(Directive::SCRIPT, [
-                'christoph-rumpel.com',
-                'christoph-rumpel.test',
-            ])
-            ->addDirective(Directive::STYLE, [
-                'christoph-rumpel.com',
-                'christoph-rumpel.test',
-                'data:',
-            ])
+            ->addDirective(Directive::SCRIPT, $this->origin)
+            ->addDirective(Directive::STYLE, $this->origin)
             ->addDirective(Directive::FORM_ACTION, [
-                'christoph-rumpel.com',
-                'christoph-rumpel.test',
+                $this->origin,
                 'christoph-rumpel.us5.list-manage.com'
             ])
             ->addDirective(Directive::IMG, [

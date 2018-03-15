@@ -59,8 +59,8 @@ class CustomPolicies extends Policy
     private function addGoogleAnalyticsPolicies()
     {
         $this->addDirective(Directive::SCRIPT, [
-            '*.googletagmanager.com'.
-            'google-analytics.com'
+            '*.googletagmanager.com',
+            '*.google-analytics.com'
         ])
             ->addNonceForDirective(Directive::SCRIPT);
     }

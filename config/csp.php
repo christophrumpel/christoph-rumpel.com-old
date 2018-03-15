@@ -8,13 +8,13 @@ return [
      * A policy will determine which CSP headers will be set. A valid CSP policy is
      * any class that extends `Spatie\Csp\Policies\Policy`
      */
-    'policy' => '',
+    'policy' => CustomPolicies::class,
 
     /*
      * This policy which will be put in report only mode. This is great for testing out
      * a new policy or changes to existing csp policy without breaking anyting.
      */
-    'report_only_policy' => CustomPolicies::class,
+    'report_only_policy' => '',
 
     /*
      * All violations against the policy will be reported to this url.

@@ -26,7 +26,7 @@
     </div>
 </div>
 
-@if(app()->environment('production'))
+@if(env('ANALYTICS_ID'))
     @include('layouts.partials.analytics')
 @endif
 </body>

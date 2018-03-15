@@ -9,10 +9,9 @@
 
 @yield('content')
 
-@if(app()->environment('production'))
+@if(env('ANALYTICS_ID'))
     @include('layouts.partials.analytics')
 @endif
-
 <script nonce="{{ cspNonce() }}">
     window.fbAsyncInit = function() {
         FB.init({

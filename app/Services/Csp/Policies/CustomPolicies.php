@@ -62,6 +62,7 @@ class CustomPolicies extends Policy
             '*.googletagmanager.com',
             '*.google-analytics.com'
         ])
+            ->addDirective(Directive::IMG, '*.google-analytics.com')
             ->addNonceForDirective(Directive::SCRIPT);
     }
 

@@ -10,18 +10,24 @@ class CustomPolicies extends Policy
     /** @var App's origin */
     protected $origin;
 
+    /**
+     * @throws \Spatie\Csp\Exceptions\InvalidDirective
+     */
     public function configure()
     {
-        $this->origin = parse_url(env('APP_URL'))['host'];
-
-        $this->addGeneralDirectives();
-        $this->addDirectivesForGoogleFonts();
-        $this->addDirectivesForGoogleAnalytics();
-        $this->addDirectivesForGoogleTagManager();
-        $this->addDirectivesForFacebookChatPlugin();
+        $this->setDefaultPolicies();
+        $this->addGoogleFontPolicies();
+        $this->addGoogleAnalyticsPolicies();
+        $this->addGravatarPolicies();
+        $this->addFacebookChatbotPolicies();
+        $this->addMailChimpPolicies();
     }
 
-    protected function addGeneralDirectives()
+    /**
+     * @return Policy
+     * @throws \Spatie\Csp\Exceptions\InvalidDirective
+     */
+    private function setDefaultPolicies()
     {
         return $this->addDirective(Directive::BASE, 'self')
             ->addDirective(Directive::CONNECT, 'self')
@@ -29,76 +35,57 @@ class CustomPolicies extends Policy
             ->addDirective(Directive::FORM_ACTION, 'self')
             ->addDirective(Directive::IMG, 'self')
             ->addDirective(Directive::MEDIA, 'self')
-            ->addDirective(Directive::OBJECT, 'none')
+            ->addDirective(Directive::OBJECT, 'self')
             ->addDirective(Directive::SCRIPT, 'self')
-            ->addDirective(Directive::STYLE, 'self')
-            ->addNonceForDirective(Directive::SCRIPT)
-            ->addDirective(Directive::SCRIPT, $this->origin)
-            ->addDirective(Directive::STYLE, $this->origin)
-            ->addDirective(Directive::FORM_ACTION, [
-                $this->origin,
-                'christoph-rumpel.us5.list-manage.com'
-            ])
-            ->addDirective(Directive::IMG, [
-                '*',
-                'unsafe-inline',
-                'data:',
-            ])
-            ->addDirective(Directive::OBJECT, [
-                'none',
-            ]);
+            ->addDirective(Directive::STYLE, 'self');
     }
 
     /**
-     * @return \Spatie\Csp\Policies\Policy
      * @throws \Spatie\Csp\Exceptions\InvalidDirective
      */
-    private function addDirectivesForGoogleFonts()
+    private function addGoogleFontPolicies()
     {
-        return $this->addDirective(Directive::FONT, [
+        $this->addDirective(Directive::FONT, [
             'fonts.gstatic.com',
+            'fonts.googleapis.com',
             'data:',
         ])
-            ->addDirective(Directive::SCRIPT, 'fonts.googleapis.com')
             ->addDirective(Directive::STYLE, 'fonts.googleapis.com');
     }
 
     /**
-     * @return CustomPolicies
      * @throws \Spatie\Csp\Exceptions\InvalidDirective
      */
-    protected function addDirectivesForGoogleAnalytics(): self
+    private function addGoogleAnalyticsPolicies()
     {
-        return $this->addDirective(Directive::SCRIPT, '*.google-analytics.com');
+        $this->addDirective(Directive::SCRIPT, '*.googletagmanager.com')
+            ->addNonceForDirective(Directive::SCRIPT);
     }
 
     /**
-     * @return CustomPolicies
      * @throws \Spatie\Csp\Exceptions\InvalidDirective
      */
-    protected function addDirectivesForGoogleTagManager(): self
+    private function addGravatarPolicies()
     {
-        return $this->addDirective(Directive::SCRIPT, '*.googletagmanager.com');
+        $this->addDirective(Directive::IMG, '*.gravatar.com');
     }
 
     /**
-     * @return CustomPolicies
      * @throws \Spatie\Csp\Exceptions\InvalidDirective
      */
-    protected function addDirectivesForFacebookChatPlugin(): self
+    private function addFacebookChatbotPolicies()
     {
-        return $this->addDirective(Directive::SCRIPT, [
-            '*.facebook.com',
-            '*.facebook.net',
-        ])
-            ->addDirective(Directive::FRAME, [
-                '*.facebook.com',
-            ])
-            ->addDirective(Directive::STYLE, [
-                '*.facebook.com',
-                '*.facebook.net',
-                'unsafe-inline',
-            ]);
+        $this->addDirective(Directive::SCRIPT, '*.facebook.net')
+            ->addDirective(Directive::IMG, '*.facebook.com')
+            ->addDirective(Directive::FRAME, '*.facebook.com')
+            ->addDirective(Directive::STYLE, 'unsafe-inline');
     }
 
+    /**
+     * @throws \Spatie\Csp\Exceptions\InvalidDirective
+     */
+    private function addMailChimpPolicies()
+    {
+        $this->addDirective(Directive::FORM_ACTION, 'christoph-rumpel.us5.list-manage.com');
+    }
 }

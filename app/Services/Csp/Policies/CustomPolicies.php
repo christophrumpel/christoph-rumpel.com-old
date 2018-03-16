@@ -21,6 +21,7 @@ class CustomPolicies extends Policy
         $this->addGravatarPolicies();
         $this->addFacebookChatbotPolicies();
         $this->addMailChimpPolicies();
+        $this->addImagesFromNme();
     }
 
     /**
@@ -91,5 +92,13 @@ class CustomPolicies extends Policy
     private function addMailChimpPolicies()
     {
         $this->addDirective(Directive::FORM_ACTION, 'christoph-rumpel.us5.list-manage.com');
+    }
+
+    /**
+     * @throws \Spatie\Csp\Exceptions\InvalidDirective
+     */
+    private function addImagesFromNme()
+    {
+        $this->addDirective(Directive::IMG, 'screenshots.nomoreencore.com');
     }
 }

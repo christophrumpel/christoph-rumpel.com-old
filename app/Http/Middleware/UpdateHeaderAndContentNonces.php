@@ -16,7 +16,6 @@ class UpdateHeaderAndContentNonces
      */
     public function handle($request, Closure $next)
     {
-
         /** @var Response $response */
         $response = $next($request);
 
@@ -25,8 +24,6 @@ class UpdateHeaderAndContentNonces
         $response->headers->set('Content-Security-Policy', $newCsp);
 
         $newContent = preg_replace('/(?<=nonce=")(.*)(?=")/', cspNonce(), $response->getContent());
-
-
         $response->setContent($newContent);
 
         return $response;

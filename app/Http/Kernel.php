@@ -3,7 +3,10 @@
 namespace App\Http;
 
 use App\Http\Middleware\SetReferrerPolicy;
+use App\Http\Middleware\UpdateHeaderAndContentNonces;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
+use Spatie\Csp\AddCspHeaders;
+use Spatie\ResponseCache\Middlewares\CacheResponse;
 
 class Kernel extends HttpKernel
 {
@@ -41,6 +44,7 @@ class Kernel extends HttpKernel
             \App\Http\Middleware\Robots::class,
             \Spatie\Csp\AddCspHeaders::class,
             SetReferrerPolicy::class,
+            UpdateHeaderAndContentNonces::class
         ],
 
         'api' => [
@@ -63,5 +67,12 @@ class Kernel extends HttpKernel
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+    ];
+
+
+    protected $middlewarePriority = [
+        UpdateHeaderAndContentNonces::class,
+        CacheResponse::class,
+        AddCspHeaders::class,
     ];
 }

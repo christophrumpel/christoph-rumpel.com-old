@@ -19,8 +19,6 @@
     </div>
 </div>
 
-@if(env('ANALYTICS_ID'))
-    @include('layouts.partials.analytics')
-@endif
+@include('layouts.partials.analytics')
 </body>
 </html>

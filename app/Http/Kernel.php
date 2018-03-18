@@ -3,10 +3,7 @@
 namespace App\Http;
 
 use App\Http\Middleware\SetReferrerPolicy;
-use App\Http\Middleware\UpdateHeaderAndContentNonces;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
-use Spatie\Csp\AddCspHeaders;
-use Spatie\ResponseCache\Middlewares\CacheResponse;
 
 class Kernel extends HttpKernel
 {
@@ -32,7 +29,6 @@ class Kernel extends HttpKernel
      */
     protected $middlewareGroups = [
         'web' => [
-            UpdateHeaderAndContentNonces::class,
             \Spatie\ResponseCache\Middlewares\CacheResponse::class,
             \App\Http\Middleware\CacheControl::class,
             \App\Http\Middleware\Robots::class,

@@ -61,10 +61,10 @@ class CustomPolicies extends Policy
     {
         $this->addDirective(Directive::SCRIPT, [
             '*.googletagmanager.com',
-            '*.google-analytics.com'
+            '*.google-analytics.com',
         ])
             ->addDirective(Directive::IMG, '*.google-analytics.com')
-            ->addNonceForDirective(Directive::SCRIPT);
+            ->addDirective(Directive::SCRIPT, '\'sha256-2eu3x9C6JPt7NvPk4iAcvrQ2g+UHBEyUsilOqkWukiU=\'');
     }
 
     /**
@@ -83,7 +83,8 @@ class CustomPolicies extends Policy
         $this->addDirective(Directive::SCRIPT, '*.facebook.net')
             ->addDirective(Directive::IMG, '*.facebook.com')
             ->addDirective(Directive::FRAME, '*.facebook.com')
-            ->addDirective(Directive::STYLE, 'unsafe-inline');
+            ->addDirective(Directive::STYLE, 'unsafe-inline')
+            ->addDirective(Directive::SCRIPT, '\'sha256-P70IONn7LzR0v1pnyUiwOX+9oJzqbc7ZGp+eujcwZsE=\'');
     }
 
     /**

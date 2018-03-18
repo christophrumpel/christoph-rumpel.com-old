@@ -9,10 +9,8 @@
 
 @yield('content')
 
-@if(env('ANALYTICS_ID'))
-    @include('layouts.partials.analytics')
-@endif
-<script nonce="{{ cspNonce() }}">
+@include('layouts.partials.analytics')
+<script>
     window.fbAsyncInit = function() {
         FB.init({
             appId            : '1961726034144563',

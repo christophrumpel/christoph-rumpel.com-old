@@ -1,27 +1,6 @@
-@php
-    $showHomeLink = $showHomeLink ?? request()->path() !== '/';
+@extends('layouts.home')
 
-    $title = $title ?? array_random([
-        '¯\_(ツ)_/¯', 'Awkward.', 'Bantha fodder.', 'Hmmm...', 'Oh no!',
-        'Peculiar.', 'Uh oh.', 'Whoops!',
-    ]);
-@endphp
-
-@component('layouts.home', [
-    'title' => $title,
-    'header' => false,
-])
-    <section class="error">
-        <h1 class="error__title">
-            {{ $title }}
-        </h1>
-        <p class="error__message">
-            {{ $message }}
-        </p>
-        @if($showHomeLink)
-            <a href="{{ url('/') }}" class="button">
-                Go home
-            </a>
-        @endunless
-    </section>
-@endcomponent
+@section('content')
+    <blockquote>"As long as one keeps searching the answers will come." (Joan Baez)</blockquote>
+    <p>This site doesn't exist yet. What about checking out my <a href="/">latest blog articles</a> or my <a href="/build-chatbots-with-php">chatbots book project</a>?</p>
+@endsection

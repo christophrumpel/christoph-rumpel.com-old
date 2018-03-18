@@ -35,4 +35,9 @@ class PagesTest extends TestCase
         $this->get('/category/laravel')->assertStatus(200);
         $this->get('/category/general')->assertStatus(200);
     }
+
+    public function test_it_displays_an_error_page()
+    {
+        $this->get('/not-existing-content')->assertStatus(404);
+    }
 }

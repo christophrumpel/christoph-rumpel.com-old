@@ -111,7 +111,8 @@ class Posts extends Provider
                     'contents' => markdown($document->body()),
                     'summary' => markdown($document->summary ?? $document->body()),
                     'summary_short' => mb_strimwidth($document->summary ?? $document->body(), 0, 140, "..."),
-                    'preview_image' => $document->preview_image ? 'https://christoph-rumpel.com/'.$document->preview_image : 'https://christoph-rumpel.com/images/cr_image_v3.jpg',
+                    'preview_image' => $document->preview_image ? route('home').'/'.$document->preview_image : 'https://christoph-rumpel.com/images/cr_image_v3.jpg',
+                    'preview_image_twitter' => route('home').'/'.$document->preview_image_twitter ?? '',
                     'published' => $document->published ?? true,
                 ];
             })

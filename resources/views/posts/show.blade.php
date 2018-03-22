@@ -11,7 +11,7 @@
     <meta name="twitter:site" content="@christophrumpel" />
     <meta name="twitter:title" content="{{ $post->title }}" />
     <meta name="twitter:description" content="{{ strip_tags($post->summary) }}" />
-    <meta name="twitter:image" content="{{ $post->preview_image }}" />
+    <meta name="twitter:image" content="{{ $post->preview_image_twitter ?? $post->preview_image }}" />
 @endsection
 
 @section('content')

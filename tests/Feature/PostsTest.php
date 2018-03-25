@@ -2,14 +2,12 @@
 
 namespace Tests\Unit;
 
-use Tests\CreatesApplication;
+use Illuminate\Support\Facades\Artisan;
+use Tests\TestCase;
 use Illuminate\Support\Facades\Storage;
-use Illuminate\Foundation\Testing\TestCase;
 
 class PagesTest extends TestCase
 {
-
-    use CreatesApplication;
 
     public function setUp()
     {
@@ -22,11 +20,11 @@ class PagesTest extends TestCase
      */
     public function it_shows_post_on_home()
     {
-        $this->createBlogPost();
+        $this->createBlogPost('content');
 
         $response = $this->get('/');
         $response->assertStatus(200);
-        $response->assertSee('Blog Post Title');
+        $response->assertSee('Blog Post Title 1');
         $response->assertSee('category1');
         $response->assertSee('Summary test');
         $response->assertSee('January 2018');
@@ -37,8 +35,8 @@ class PagesTest extends TestCase
      */
     public function it_shows_multiple_posts_on_home()
     {
-        $this->createBlogPost();
-        $this->createBlogPost('2');
+        $this->createBlogPost('content');
+        $this->createBlogPost('content', '2');
 
         $response = $this->get('/');
         $response->assertStatus(200);
@@ -46,8 +44,6 @@ class PagesTest extends TestCase
         $response->assertSee('Blog Post Title 2');
 
     }
-
-
 
     /**
      * @test
@@ -148,24 +144,5 @@ class PagesTest extends TestCase
         $response = $this->get('/');
         $response->assertStatus(200);
         $response->assertSee('general');
-    }
-
-    /**
-     * @param string $postNumber
-     */
-    private function createBlogPost(string $postNumber = '1')
-    {
-        Storage::disk('content')
-            ->put('/posts/2018-01-17.post'.$postNumber.'.md', file_get_contents(base_path('tests/fixtures/blog-post'.$postNumber.'.md')));
-    }
-
-    /**
-     *
-     */
-    private function createUnpublishedBlogPost()
-    {
-        Storage::disk('content')
-            ->put('/posts/2018-01-17.unpublished-post.md',
-                file_get_contents(base_path('tests/fixtures/unpublished-blog-post.md')));
     }
 }

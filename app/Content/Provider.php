@@ -19,6 +19,11 @@ abstract class Provider
         $this->disk = $filesystem->disk('content');
     }
 
+    public function setDisk($disk)
+    {
+        $this->disk = $disk;
+    }
+
     protected function cache(string $key, callable $callback)
     {
         return $this->cache->rememberForever("content:{$key}", $callback);

@@ -12,11 +12,6 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "dependencies": {
-    "babel-core": "^6.24.1",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.4.0",
-    "css-loader": "^0.26.1",
-    "extract-text-webpack-plugin": "^2.0.0-beta",
     "highlight.js": "^9.1.0",
     "turbolinks": "^5.1.1",
     "webpack": "^3.11.0",

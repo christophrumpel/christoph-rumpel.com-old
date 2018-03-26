@@ -14,7 +14,6 @@ abstract class TestCase extends BaseTestCase
      */
     public function createBlogPost(string $postNumber = '1')
     {
-        Storage::fake('content');
         Storage::disk('content')
             ->put('/posts/2018-01-17.post'.$postNumber.'.md',
                 file_get_contents(base_path('tests/fixtures/blog-post'.$postNumber.'.md')));
@@ -22,7 +21,6 @@ abstract class TestCase extends BaseTestCase
 
     public function createUnpublishedBlogPost()
     {
-        Storage::fake('content');
         Storage::disk('content')
             ->put('/posts/2018-01-17.unpublished-post.md',
                 file_get_contents(base_path('tests/fixtures/unpublished-blog-post.md')));

@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Content\Posts;
+use App\Content\Post;
 use Carbon\Carbon;
 use Illuminate\Routing\Controller;
 
 class HomeController
 {
-    public function index(Posts $posts)
+    public function index(Post $posts)
     {
         $posts = $posts->published()->simplePaginate(3);
 

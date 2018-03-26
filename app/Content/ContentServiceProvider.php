@@ -14,7 +14,7 @@ class ContentServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(Posts::class);
+        $this->app->singleton(Post::class);
 
         $this->app->singleton(CommonMarkConverter::class, function () {
             return new CommonMarkConverter();

@@ -4,16 +4,18 @@ namespace App\Content;
 
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Storage;
 use Spatie\YamlFrontMatter\YamlFrontMatter;
 
-class Posts extends Provider
+class Post
 {
     /**
      * @return Collection
      */
     public function all()
     {
-        $posts = $this->cache('posts.all', function () {
+        $posts = Cache::get('posts.all', function () {
             return $this->gather();
         });
 
@@ -42,7 +44,7 @@ class Posts extends Provider
      */
     public function paginate($perPage = 15, $pageName = 'page', $page = null)
     {
-        return $this->cache('posts.paginate.'.request('page', 1), function () use ($perPage, $pageName, $page) {
+        return Cache::get('posts.paginate.'.request('page', 1), function () use ($perPage, $pageName, $page) {
             return $this->all()
                 ->simplePaginate($perPage, $pageName, $page);
         });
@@ -68,7 +70,7 @@ class Posts extends Provider
 
     public function feed()
     {
-        return $this->cache('posts.feed', function () {
+        return Cache::get('posts.feed', function () {
             return $this->published()
                 ->map(function ($post) {
                     return [
@@ -90,7 +92,7 @@ class Posts extends Provider
      */
     private function gather()
     {
-        return collect($this->disk->files('posts'))
+        return collect(Storage::disk('content')->files('posts'))
             ->filter(function ($path) {
                 return ends_with($path, '.md');
             })
@@ -98,7 +100,7 @@ class Posts extends Provider
                 $filename = str_after($path, 'posts/');
                 [$date, $slug, $extension] = explode('.', $filename, 3);
                 $date = Carbon::createFromFormat('Y-m-d', $date);
-                $document = YamlFrontMatter::parse($this->disk->get($path));
+                $document = YamlFrontMatter::parse(Storage::disk('content')->get($path));
 
                 return (object) [
                     'path' => $path,

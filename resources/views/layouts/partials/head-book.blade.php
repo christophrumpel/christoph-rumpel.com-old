@@ -2,7 +2,7 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
 <meta name="description"
-      content="Build Chatbots with PHP">
+      content="Build Chatbots with PHP, an ebook about building chatbots with PHP, Laravel and BotMan">
 <meta name="author" content="Christoph Rumpel">
 @if(isset($canonical_url) && $canonical_url)
     <link rel="canonical" href="{{ $canonical_url }}">

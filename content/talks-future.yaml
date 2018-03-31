@@ -6,3 +6,11 @@
   url: https://2018.vienna.wordcamp.org/schedule/
   slides:
   video:
+-
+  date: 10.06.2018
+  event: PHP fwdays'18
+  city: Kiev, Ukraine
+  talk: The Beauty of Laravel's Notification System and How It Helped Me to Create My First Laravel Package
+  url: https://fwdays.com/en/event/php-fwdays-2018
+  slides:
+  video:

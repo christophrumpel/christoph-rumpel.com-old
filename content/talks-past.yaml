@@ -1,4 +1,12 @@
 -
+  date: 14.04.2018
+  event: WordCamp Vienna 2018
+  city: Vienna, Austria
+  talk: Content Security Policy 101
+  url: https://2018.vienna.wordcamp.org/schedule/
+  slides: https://speakerdeck.com/christophrumpel/content-security-policy-101
+  video:
+-
   date: 01.02.2018
   event: Magento Meetup Austria
   city: Vienna, Austria

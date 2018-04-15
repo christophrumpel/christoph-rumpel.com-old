@@ -1,8 +1,13 @@
 <ul class="flex flex-col p-0 mt-0 mb-0 sm:justify-center w-full white flex-grow">
     @foreach($posts as $post)
         <li class="mb-4 w-full list-reset">
-            <time class="mb-0 text-grey-darkest font-bold uppercase text-sm font-sans tracking-wide">{{ $post->dateShort }} |
-                <a href="{{route('posts.category', ['category' => $post->category])}}" class="text-orange">{{ $post->category }}</a>
+            <time class="mb-0 text-grey-darkest font-bold uppercase text-sm font-sans tracking-wide">{{ $post->dateShort }}
+                |
+                @foreach($post->categories as $category)
+                    <a href="{{route('posts.category', ['category' => $category])}}"
+                       class="text-orange">{{ $category }}</a>
+                @endforeach
+
             </time>
 
             @if($post->external_url)

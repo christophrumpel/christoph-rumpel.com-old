@@ -25,4 +25,11 @@ abstract class TestCase extends BaseTestCase
             ->put('/posts/2018-01-17.unpublished-post.md',
                 file_get_contents(base_path('tests/fixtures/unpublished-blog-post.md')));
     }
+
+    public function createMultiCategoryArticle()
+    {
+        Storage::disk('content')
+            ->put('/posts/2018-01-17.multiple-categories-post.md',
+                file_get_contents(base_path('tests/fixtures/blog-post-multiple-categories.md')));
+    }
 }

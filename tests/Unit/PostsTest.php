@@ -104,7 +104,7 @@ class PostsTest extends Testcase
 
         // Then
         $this->assertEquals('Blog Post Title 1', $post->title);
-        $this->assertEquals('category1', $post->category);
+        $this->assertEquals(['category1'], $post->categories);
         $this->assertEquals("<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed!</p>\n",
             $post->summary);
         $this->assertEquals("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, ...",
@@ -117,6 +117,22 @@ class PostsTest extends Testcase
         $this->assertEquals('posts/2018-01-17.post1.md', $post->path);
         $this->assertEquals(route('posts.show', ['2018', '01', 'post1']), $post->url);
 
+    }
+
+    /**
+     * @test
+     **/
+    public function it_allows_multiple_categories()
+    {
+    	// Given
+        $post = new Post;
+        $this->createMultiCategoryArticle();
+
+    	// When
+        $categoriesPost = $post->find('2018', 'multiple-categories-post');
+
+    	// Then
+        $this->assertEquals(['laravel', 'chatbots'], $categoriesPost->categories);
     }
 
 }

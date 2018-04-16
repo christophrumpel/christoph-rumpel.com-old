@@ -32,7 +32,7 @@ class Post
     {
         return $this->all()
             ->filter(function ($post) {
-                return $post->published ==! false;
+                return $post->published == ! false;
             });
     }
 
@@ -64,7 +64,7 @@ class Post
     {
         return $this->published()
             ->filter(function ($article) use ($category) {
-                return trim(strtolower($article->category)) === trim(strtolower($category));
+                return in_array(trim(strtolower($category)), $article->categories);
             });
     }
 
@@ -78,6 +78,7 @@ class Post
                         'title' => $post->title,
                         'updated' => $post->date,
                         'summary' => $post->contents,
+
                         'link' => $post->url,
                         'author' => 'Christoph Rumpel',
                     ];
@@ -92,7 +93,8 @@ class Post
      */
     private function gather()
     {
-        return collect(Storage::disk('content')->files('posts'))
+        return collect(Storage::disk('content')
+            ->files('posts'))
             ->filter(function ($path) {
                 return ends_with($path, '.md');
             })
@@ -100,7 +102,8 @@ class Post
                 $filename = str_after($path, 'posts/');
                 [$date, $slug, $extension] = explode('.', $filename, 3);
                 $date = Carbon::createFromFormat('Y-m-d', $date);
-                $document = YamlFrontMatter::parse(Storage::disk('content')->get($path));
+                $document = YamlFrontMatter::parse(Storage::disk('content')
+                    ->get($path));
 
                 return (object) [
                     'path' => $path,
@@ -109,7 +112,7 @@ class Post
                     'url' => route('posts.show', [$date->format('Y'), $date->format('m'), $slug]),
                     'external_url' => $document->external_url ?? false,
                     'title' => $document->title,
-                    'category' => $document->category ?? 'general',
+                    'categories' => $this->getCategories($document->categories),
                     'contents' => markdown($document->body()),
                     'summary' => markdown($document->summary ?? $document->body()),
                     'summary_short' => mb_strimwidth($document->summary ?? $document->body(), 0, 140, "..."),
@@ -119,5 +122,12 @@ class Post
                 ];
             })
             ->sortByDesc('date');
+    }
+
+    private function getCategories($categories)
+    {
+        $categories = $categories ?? 'general';
+
+        return explode(',', strtolower($categories));
     }
 }

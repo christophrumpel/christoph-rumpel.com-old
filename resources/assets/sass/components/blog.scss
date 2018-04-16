@@ -12,7 +12,7 @@ blockquote {
   }
 }
 
-article ul {
+article ul, article ol {
   @apply .mt-8 .mb-8;
 }
 

@@ -25,10 +25,6 @@ class PostsController
     {
         $post = $posts->find($year, $slug);
 
-        if($post->published === false && App::environment('production')) {
-            return redirect()->route('home');
-        }
-
         return view('posts.show', [
             'post' => $post,
         ]);

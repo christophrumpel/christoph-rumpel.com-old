@@ -49,7 +49,7 @@
             <div class="my-12 w-4/5 md:w-100">
                 @include('partials.book-form', ['buttonText' => 'Sign me up'])
             </div>
-            <footer class="mt-8 p-8 mb-0 text-center w-screen">
+            <footer class="mt-8 p-8 mb-0 text-center w-full">
                 <p class="font-landing text-lg mb-2">More information coming soon!</p>
                 <p class="font-landing text-sm">&copy; Christoph Rumpel {{ date('Y') }}
                     - <a class="text-grey-darkest" href="https://christoph-rumpel.com">Blog</a>

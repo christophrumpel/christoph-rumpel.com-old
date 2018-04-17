@@ -40,4 +40,9 @@ class PagesTest extends TestCase
     {
         $this->get('/not-existing-content')->assertStatus(404);
     }
+
+    public function test_it_displays_newsletterchatbot_policy_page()
+    {
+        $this->get('/policy-newsletterchatbot')->assertStatus(200);
+    }
 }

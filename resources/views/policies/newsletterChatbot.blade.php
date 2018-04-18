@@ -33,7 +33,7 @@
             <li>Subscribe you</li>
             <li>Send you updates on the book Build Chatbots with PHP (Updates will be sent once or twice a month)</li>
         </ul>
-        <p>Who the data is shared with</p>
+        <p>Who the data is shared with:</p>
         <ul>
             <li>The application is deployed on servers from <a href="https://www.digitalocean.com/security/gdpr/">DigitalOcean</a> and <a href="https://all-inkl.com/datenschutz/">ALL-INKL.COM</a></li>
             <li>No other service is receiving any personal data</li>

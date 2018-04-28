@@ -45,4 +45,9 @@ class PagesTest extends TestCase
     {
         $this->get('/policy-newsletterchatbot')->assertStatus(200);
     }
+
+    public function test_it_displays_blog_privacy_policy_page()
+    {
+        $this->get('/privacy-policy')->assertStatus(200);
+    }
 }

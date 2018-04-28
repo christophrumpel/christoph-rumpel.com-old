@@ -10,7 +10,7 @@
 
         gtag('js', new Date());
 
-        gtag('config', '{{ config('services.analytics.id') }}');
+        gtag('config', '{{ config('services.analytics.id') }}', { 'anonymize_ip': true });
     </script>
 @endif
 

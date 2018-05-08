@@ -69,6 +69,8 @@
                     | <a class="text-grey-darkest" href="https://twitter.com/christophrumpel">Twitter</a>
                     | <a class="text-grey-darkest"
                          href="https://github.com/christophrumpel/christoph-rumpel.com">GitHub</a>
+                    | <a class="text-grey-darkest"
+                         href="https://christoph-rumpel.com/privacy-policy">Privacy Policy</a>
                 </p>
             </footer>
         </div>

@@ -85,6 +85,10 @@ let colors = {
 
 module.exports = {
 
+    plugins: [
+
+    ],
+
     /*
     |-----------------------------------------------------------------------------
     | Colors                                  https://tailwindcss.com/docs/colors

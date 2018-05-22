@@ -82,7 +82,7 @@ class CustomPolicies extends Policy
     {
         $this->addDirective(Directive::SCRIPT, '*.facebook.net')
             ->addDirective(Directive::IMG, '*.facebook.com')
-            ->addDirective(Directive::FRAME, '*.facebook.com')
+            ->addDirective(Directive::FRAME, '*.facebook.com *.youtube.com')
             ->addDirective(Directive::STYLE, '\'sha256-wBw6YmX3Lhxkl6S8PnlNxVcwALnNr89VRt5yOv5yQqE=\'')
             ->addDirective(Directive::SCRIPT, '\'sha256-P70IONn7LzR0v1pnyUiwOX+9oJzqbc7ZGp+eujcwZsE=\'');
     }

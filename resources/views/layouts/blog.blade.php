@@ -15,8 +15,7 @@
         </header>
         @yield('content')
 
-
-        @if(in_array(' chatbots', $post->categories))
+        @if(in_array('chatbots', $post->categories))
             @include('partials.book-form-blog-footer')
         @else
             @include('partials.signup')

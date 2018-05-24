@@ -128,6 +128,6 @@ class Post
     {
         $categories = $categories ?? 'general';
 
-        return explode(',', strtolower($categories));
+        return explode(',', trim(strtolower($categories)));
     }
 }

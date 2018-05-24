@@ -14,7 +14,14 @@
             @include('partials.nav')
         </header>
         @yield('content')
-        @include('partials.signup')
+
+
+        @if(in_array(' chatbots', $post->categories))
+            @include('partials.book-form-blog-footer')
+        @else
+            @include('partials.signup')
+        @endif
+
         @include('partials.footer')
     </div>
 </div>

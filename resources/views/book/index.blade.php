@@ -50,6 +50,10 @@
                         <li class="mb-2 md:ml-4">want to innovate your company's or client's services</li>
                         <li class="mb-2 md:ml-4">you want to contribute to the future of conversational interfaces</li>
                     </ul>
+
+                    <h2 class="mt-10 mb-4 font-bold font-landing text-4xl">When will it be released? 🎉</h2>
+                    <p class="mb-4">The book will be released on the 12th of July.</p>
+
                     <h2 class="mt-10 mb-4 font-bold font-landing text-4xl">Subscribe to my mailing list 💌</h2>
                     <p class="mb-4">Have I caught your attention? Perfect! Sign up and...</p>
                     <ul>

@@ -1,4 +1,12 @@
 -
+  date: 10.06.2018
+  event: PHP fwdays'18
+  city: Kiev, Ukraine
+  talk: The Beauty of Laravel's Notification System and How It Helped Me to Create My First Laravel Package
+  url: https://fwdays.com/en/event/php-fwdays-2018
+  slides: https://speakerdeck.com/christophrumpel/the-beauty-of-laravels-notification-system-1
+  video: https://www.youtube.com/watch?v=IDoQ5fLLURg&t=58s
+-
   date: 23.04.2018
   event: webclerks Meetup #12
   city: Vienna, Austria

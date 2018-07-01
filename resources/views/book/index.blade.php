@@ -37,7 +37,7 @@
                         <li class="mb-2 md:ml-4">Build Your First Chatbot in Plain PHP</li>
                         <li class="mb-2 md:ml-4">Chatbot Frameworks</li>
                         <li class="mb-2 md:ml-4">Chatbots and the GDPR</li>
-                        <li class="mb-2 md:ml-4">Let’s Build A Secret Multi-Platform Chatbot with BotMan</li>
+                        <li class="mb-2 md:ml-4">Let's Build a Conference Chatbot for Laracon EU</li>
                         <li class="mb-2 md:ml-4">Next Steps And Tools</li>
                     </ul>
                     <h2 class="mt-10 mb-4 font-bold font-landing text-4xl">Who this book is for 🤔</h2>

@@ -22,6 +22,7 @@ class CustomPolicies extends Policy
         $this->addFacebookChatbotPolicies();
         $this->addMailChimpPolicies();
         $this->addImagesFromNme();
+        $this->addSmoothScrool();
     }
 
     /**
@@ -101,5 +102,13 @@ class CustomPolicies extends Policy
     private function addImagesFromNme()
     {
         $this->addDirective(Directive::IMG, 'screenshots.nomoreencore.com');
+    }
+
+    /**
+     * @throws \Spatie\Csp\Exceptions\InvalidDirective
+     */
+    private function addSmoothScrool()
+    {
+        $this->addDirective(Directive::SCRIPT, '\'sha256-pjpfKUw4LCwwr0e2/ABrZCkRUktaJDW5Wmg7psjFXLs=\'');
     }
 }

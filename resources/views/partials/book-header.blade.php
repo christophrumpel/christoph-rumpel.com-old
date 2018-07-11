@@ -7,14 +7,16 @@
     <div class="md:mt-10 flex w-full justify-center items-center flex-row">
         <div class="flex flex-col flex-col-reverse md:flex-row mb-4 w-100 items-center">
             <div class="w-3/4 md:w-1/2 mb-8 text-center">
-                <h3 class="mt-2 mb-2 book-yellow uppercase font-landing text-xl">NEW BOOK COMING SOON</h3>
+                <h3 class="mt-2 mb-2 book-yellow uppercase font-landing text-xl">NEW BOOK OUT</h3>
                 <h2 class="mt-0 text-white font-landing text-4xl leading-normal">Build Chatbots <br/>with PHP
                 </h2>
 
-                <p class="text-white text-md mb-8 font-landing font-light leading-tight">Interested? Let me keep you
-                    updated on the development of my book and grab your first <b>CHAPTER</b> for <b>FREE</b>.</p>
+                <p class="text-white text-md mb-8 font-landing font-light leading-tight">After 6 months of writing my first ebook is <b>now available</b>! Follow the link below to the store and the available packages.</p>
 
-                @include('partials.book-form')
+                <button class="bg-yellow hover:bg-yellow-darker text-black font-landing font-bold uppercase text-sm md:text-lg py-4 px-2 w-full h-full" type="submit">View Packages</button>
+                <a href="#subscribe" class="scroll block no-underline mt-4 bg-yellow hover:bg-yellow-darker text-black font-landing font-bold uppercase text-sm md:text-lg py-4 px-2 w-full h-full">Or Sign Up for a free chapter</a>
+
+
 
             </div>
             <div class="w-1/2 flex justify-center items-center flex-col ml-4">

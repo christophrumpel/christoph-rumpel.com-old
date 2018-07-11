@@ -38,7 +38,6 @@
                         <li class="mb-2 md:ml-4">Chatbot Frameworks</li>
                         <li class="mb-2 md:ml-4">Chatbots and the GDPR</li>
                         <li class="mb-2 md:ml-4">Let's Build a Conference Chatbot for Laracon EU</li>
-                        <li class="mb-2 md:ml-4">Next Steps And Tools</li>
                     </ul>
                     <h2 class="mt-10 mb-4 font-bold font-landing text-4xl">Who this book is for 🤔</h2>
                     <p class="mb-4">You are the right person for this book if you...</p>
@@ -52,14 +51,14 @@
                     </ul>
 
                     <h2 class="mt-10 mb-4 font-bold font-landing text-4xl">When will it be released? 🎉</h2>
-                    <p class="mb-4">The book will be released on the 12th of July.</p>
+                    <p class="mb-4">The book has been released on the 12th of July.</p>
 
-                    <h2 class="mt-10 mb-4 font-bold font-landing text-4xl">Subscribe to my mailing list 💌</h2>
+                    <h2 id="subscribe" class="mt-10 mb-4 font-bold font-landing text-4xl">Subscribe to my mailing list 💌</h2>
                     <p class="mb-4">Have I caught your attention? Perfect! Sign up and...</p>
                     <ul>
-                        <li class="mb-2 md:ml-4">You get the first Chapter for FREE</li>
+                        <li class="mb-2 md:ml-4">You get two sample chapters for FREE</li>
                         <li class="mb-2 md:ml-4">I will notify you about news on the book</li>
-                        <li class="mb-2 md:ml-4">You will get a discount at the release</li>
+                        <li class="mb-2 md:ml-4">You will get a discount</li>
                     </ul>
                 </div>
             </div>
@@ -67,7 +66,6 @@
                 @include('partials.book-form', ['buttonText' => 'Sign me up'])
             </div>
             <footer class="mt-8 p-8 mb-0 text-center w-full">
-                <p class="font-landing text-lg mb-2">More information coming soon!</p>
                 <p class="font-landing text-sm">&copy; Christoph Rumpel {{ date('Y') }}
                     - <a class="text-grey-darkest" href="https://christoph-rumpel.com">Blog</a>
                     | <a class="text-grey-darkest" href="https://twitter.com/christophrumpel">Twitter</a>

@@ -1,16 +1,8 @@
 -
-  date: 24.07.2018
-  event: PHP Ghent
-  city: Gent, Belgium
-  talk: TBA
-  url: https://www.meetup.com/phpgent/
-  slides:
-  video:
--
-  date: 25.07.2018
-  event: Full Stack Antwerp
-  city: Antwerp, Belgium
-  talk: TBA
-  url: https://www.meetup.com/fullstackantwerp/events/vtkdppyxkbhc/
+  date: 29.11.2018
+  event: Codemotion Milan 2018
+  city: Milan, Italy
+  talk: The Beauty of Laravel's Notification System
+  url: https://milan2018.codemotionworld.com/
   slides:
   video:

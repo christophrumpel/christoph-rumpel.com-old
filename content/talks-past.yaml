@@ -1,17 +1,17 @@
 -
-  date: 24.07.2018
-  event: PHP Ghent
-  city: Gent, Belgium
-  talk: Content Security Policy 101
-  url: https://www.meetup.com/phpgent/
-  slides: https://speakerdeck.com/christophrumpel/content-security-policy-2
-  video:
--
   date: 25.07.2018
   event: Full Stack Antwerp
   city: Antwerp, Belgium
   talk: Content Security Policy 101
   url: https://www.meetup.com/fullstackantwerp/events/vtkdppyxkbhc/
+  slides: https://speakerdeck.com/christophrumpel/content-security-policy-2
+  video:
+-
+  date: 24.07.2018
+  event: PHP Ghent
+  city: Gent, Belgium
+  talk: Content Security Policy 101
+  url: https://www.meetup.com/phpgent/
   slides: https://speakerdeck.com/christophrumpel/content-security-policy-2
   video:
 -

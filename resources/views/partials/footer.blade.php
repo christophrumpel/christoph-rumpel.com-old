@@ -5,3 +5,4 @@
         <a class="ml-4 no-underline" href="{{ url('feed') }}" data-turbolinks="false">{{ svg('rss') }}</a>
     </p>
 </footer>
+

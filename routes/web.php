@@ -12,10 +12,6 @@ Route::get('/talks', 'TalksController@index')->name('talks');
 Route::get('/newsletter', 'NewsletterController@index')->name('newsletter');
 Route::get('build-chatbots-with-php', 'BookController@index')->name('book');
 
-Route::get('googled862d31747b38e45.html', function(){
-   return 'google-site-verification: googled862d31747b38e45.html';
-});
-
 // Policies
 Route::get('/policy-newsletterchatbot', 'PolicyController@newsletterChatbot')->name('policy.newsletterchatbot');
 Route::get('/privacy-policy', 'PolicyController@blog')->name('policy.privacy.blog');

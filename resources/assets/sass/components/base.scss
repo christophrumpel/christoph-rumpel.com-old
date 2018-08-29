@@ -1,7 +1,7 @@
 @responsive {
   .profile-column {
-    background: url(/images/cr_image_v3.jpg) no-repeat top center;
-    background-size: cover;
+    @apply bg-no-repeat bg-cover;
+    background-image: url(/images/cr_image_v3.jpg);
   }
 }
 

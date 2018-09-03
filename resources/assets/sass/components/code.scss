@@ -58,7 +58,7 @@
 }
 
 .hljs-link {
-    text-decoration: underline;
+    @apply underline;
 }
 
 pre {

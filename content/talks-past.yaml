@@ -1,4 +1,12 @@
 -
+  date: 30.08.2018
+  event: Laracon EU Unconference
+  city: Amsterdam, Netherlands
+  talk: Content Security Policy 101
+  url: https://laracon.eu
+  slides: https://speakerdeck.com/christophrumpel/content-security-policy-2
+  video:
+-
   date: 25.07.2018
   event: Full Stack Antwerp
   city: Antwerp, Belgium

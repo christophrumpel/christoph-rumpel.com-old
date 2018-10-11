@@ -1,4 +1,12 @@
 -
+  date: 11.10.2018
+  event: SAE Alumni Convention
+  city: Cologne, Germany
+  talk: The PHP Developer Stack for Building Chatbots
+  url: https://alumni.sae.edu/convention/
+  slides:
+  video:
+-
   date: 30.08.2018
   event: Laracon EU Unconference
   city: Amsterdam, Netherlands

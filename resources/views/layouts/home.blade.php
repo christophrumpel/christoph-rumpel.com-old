@@ -12,7 +12,7 @@
         <div class="hidden sm:profile-column sm:flex items-end p-8 justify-center h-full w-full bg-center text-white">
             <div class="text-center sm:pb-8">
                 <h1 class="mb-2 hidden sm:block text-sh text-shadow text-white">christoph rumpel</h1>
-                <p class="text-green text-xl hidden sm:block text-shadow">web developer</p>
+                <p class="text-green text-xl hidden sm:block text-shadow">web and chatbot developer</p>
             </div>
         </div>
     </div>

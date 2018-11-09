@@ -41,10 +41,10 @@ iframe {
 }
 
 .embed-container {
-  @apply relative overflow-hidden w-full h-auto;
+  @apply relative overflow-hidden w-full h-auto my-8;
   padding-bottom: 56.25%; /* ratio 16x9 */
 }
 .embed-container iframe {
-  @pply absolute pin-t pin-l w-full h-full;
+  @apply absolute pin-t pin-l w-full h-full;
 }
 

@@ -5,11 +5,11 @@
     <div class="md:mt-10 flex w-full justify-center items-center flex-row">
         <div class="flex flex-col flex-col-reverse md:flex-row mb-4 w-100 items-center">
             <div class="w-3/4 md:w-1/2 mb-8 text-center">
-                <h3 class="mt-2 mb-2 book-yellow uppercase font-landing text-lg">NEW BOOK OUT</h3>
+                <h3 class="mt-2 mb-2 book-yellow uppercase font-landing text-lg">NEW BOOK AND VIDEO COURSE OUT</h3>
                 <h2 class="mt-0 text-white font-landing text-2xl leading-normal">Build Chatbots <br/>with PHP
                 </h2>
 
-                <p class="text-white text-md mb-8 font-landing font-light leading-tight">After 6 months of writing my first ebook is <b>now out</b>! Follow the link below to the available packages in the store or subscribe to the newsletter to get a free sample chapter.</p>
+                <p class="text-white text-md mb-8 font-landing font-light leading-tight">After 6 months of writing my first ebook and video course are <b>now out</b>! Follow the link below to the available packages in the store or subscribe to the newsletter to get a free sample chapter.</p>
 
                 <a href="https://store.christoph-rumpel.com/" class="mb-4 block no-underline bg-yellow hover:bg-yellow-darker text-black font-landing font-bold uppercase text-sm md:text-lg py-4 px-2 w-full h-full">View Packages</a>
 

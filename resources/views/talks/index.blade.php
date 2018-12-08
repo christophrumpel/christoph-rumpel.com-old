@@ -35,7 +35,11 @@
         </ul>
 
         <h2>Upcoming talks</h2>
-        @include('partials.talks-list', ['talks' => $talksFuture])
+        @if($talksFuture->count())
+            @include('partials.talks-list', ['talks' => $talksFuture])
+        @else
+            <p>No upcoming talks planned.</p>
+        @endif
 
         <h2>My last talks</h2>
         @include('partials.talks-list', ['talks' => $talksPast])

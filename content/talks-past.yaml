@@ -1,4 +1,20 @@
 -
+  date: 08.12.2018
+  event: CODEiD PHP
+  city: Odesa, Ukrain
+  talk: The PHP Developer Stack for Building Chatbots
+  url: http://codeid.com.ua
+  slides:
+  video:
+-
+  date: 29.11.2018
+  event: Codemotion Milan 2018
+  city: Milan, Italy
+  talk: The Beauty of Laravel's Notification System
+  url: https://milan2018.codemotionworld.com/
+  slides:
+  video:
+-
   date: 11.10.2018
   event: SAE Alumni Convention
   city: Cologne, Germany

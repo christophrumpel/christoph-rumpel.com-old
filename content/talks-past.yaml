@@ -31,6 +31,14 @@
   slides: https://speakerdeck.com/christophrumpel/content-security-policy-2
   video:
 -
+  date: 16.08.2018
+  event: Laravel Vienna Meetup
+  city: Vienna, Austria
+  talk: The PHP Developer Stack for Building Chatbots
+  url: https://www.meetup.com/Laravel-Frameworkers-Vienna/events/253056928/
+  slides: https://speakerdeck.com/christophrumpel/the-php-developer-stack-for-building-chatbots-sae
+  video:
+-
   date: 25.07.2018
   event: Full Stack Antwerp
   city: Antwerp, Belgium

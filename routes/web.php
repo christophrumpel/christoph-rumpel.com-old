@@ -15,3 +15,4 @@ Route::get('build-chatbots-with-php', 'BookController@index')->name('book');
 // Policies
 Route::get('/policy-newsletterchatbot', 'PolicyController@newsletterChatbot')->name('policy.newsletterchatbot');
 Route::get('/privacy-policy', 'PolicyController@blog')->name('policy.privacy.blog');
+Route::get('/privacy-policy-lca', 'PolicyController@lca')->name('policy.privacy.lca');

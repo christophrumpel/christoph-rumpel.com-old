@@ -11,6 +11,11 @@ class PolicyController extends Controller
         return view('policies.blog');
     }
 
+    public function lca()
+    {
+        return view('policies.lca');
+    }
+
     public function newsletterChatbot()
     {
         return view('policies.newsletterChatbot');

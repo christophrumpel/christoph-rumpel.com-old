@@ -60,7 +60,7 @@
 
         <h2>Our Details</h2>
         <p>Laravel Core Adventures is owned and operated by Christoph Rumpel.
-        <p>You can contact us at: c.rumpel@kabsi.at
+        <p>You can contact us at: christoph@laravelcoreadventures.com
 
         <p>Our business is located at:
 

@@ -64,7 +64,7 @@
 
         <h2>Our Details</h2>
         <p>This blog is owned and operated by Christoph Rumpel.
-        <p>You can contact us at: c.rumpel@kabsi.at
+        <p>You can contact us at: christoph@christoph-rumpel.com
 
         <p>Our business is located at:
 

@@ -28,10 +28,10 @@
         <br/><br/>
         <p>Right now I am talking about these topics</p>
         <ul>
-            <li>The State Of Chatbots 2018</li>
-            <li>Content Security Policy 101</li>
-            <li>The Beauty of Laravel's Notification System and How It Helped Me to Create My First Laravel Package</li>
+            <li>The Laravel Core - Demystify The Beast</li>
+            <li>The Beauty of Laravel's Notification System</li>
             <li>The PHP Developer Stack for Building Chatbots</li>
+            <li>Content Security Policy 101</li>
         </ul>
 
         <h2>Upcoming talks</h2>

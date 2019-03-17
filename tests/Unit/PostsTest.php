@@ -16,7 +16,7 @@ class PostsTest extends Testcase
 
     use CreatesApplication;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
         Storage::fake('content');

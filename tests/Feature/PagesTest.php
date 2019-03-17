@@ -50,4 +50,14 @@ class PagesTest extends TestCase
     {
         $this->get('/privacy-policy')->assertStatus(200);
     }
+
+    public function test_it_displays_book_newsletter_confirm_page()
+    {
+        $this->get('/build-chatbots-with-php-newsletter-confirm')->assertStatus(200);
+    }
+
+    public function test_it_displays_book_newsletter_success_page()
+    {
+        $this->get('/build-chatbots-with-php-newsletter-success')->assertStatus(200);
+    }
 }

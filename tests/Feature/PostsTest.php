@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Storage;
 class PagesTest extends TestCase
 {
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         Storage::fake('content');

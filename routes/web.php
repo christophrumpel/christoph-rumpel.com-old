@@ -11,6 +11,8 @@ Route::get('/category/{category}', 'PostsController@category')->name('posts.cate
 Route::get('/talks', 'TalksController@index')->name('talks');
 Route::get('/newsletter', 'NewsletterController@index')->name('newsletter');
 Route::get('build-chatbots-with-php', 'BookController@index')->name('book');
+Route::get('/build-chatbots-with-php-newsletter-confirm', 'BookController@newsletterConfirm')->name('book-newsletter-confirm');
+Route::get('/build-chatbots-with-php-newsletter-success', 'BookController@newsletterSuccess')->name('book-newsletter-success');
 
 // Policies
 Route::get('/policy-newsletterchatbot', 'PolicyController@newsletterChatbot')->name('policy.newsletterchatbot');

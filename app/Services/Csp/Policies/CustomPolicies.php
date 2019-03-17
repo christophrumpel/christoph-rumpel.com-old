@@ -20,7 +20,7 @@ class CustomPolicies extends Policy
         $this->addGoogleAnalyticsPolicies();
         $this->addGravatarPolicies();
         $this->addFacebookChatbotPolicies();
-        $this->addMailChimpPolicies();
+        $this->addMailFormPolicies();
         $this->addImagesFromNme();
         $this->addSmoothScroll();
     }
@@ -91,9 +91,9 @@ class CustomPolicies extends Policy
     /**
      * @throws \Spatie\Csp\Exceptions\InvalidDirective
      */
-    private function addMailChimpPolicies()
+    private function addMailFormPolicies()
     {
-        $this->addDirective(Directive::FORM_ACTION, 'christoph-rumpel.us5.list-manage.com');
+        $this->addDirective(Directive::FORM_ACTION, 'https://app.convertkit.com');
     }
 
     /**

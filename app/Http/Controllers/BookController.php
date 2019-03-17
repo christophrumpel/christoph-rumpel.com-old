@@ -10,4 +10,15 @@ class BookController extends Controller
     {
         return view('book.index');
     }
+
+    public function newsletterConfirm()
+    {
+        return view('book.newsletter-confirm');
+    }
+
+
+    public function newsletterSuccess()
+    {
+        return view('book.newsletter-success');
+    }
 }

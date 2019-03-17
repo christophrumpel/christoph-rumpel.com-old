@@ -16,7 +16,6 @@ class BookController extends Controller
         return view('book.newsletter-confirm');
     }
 
-
     public function newsletterSuccess()
     {
         return view('book.newsletter-success');

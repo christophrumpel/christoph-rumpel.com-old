@@ -7,21 +7,21 @@
         </div>
         <div class="w-full sm:w-1/2 ">
             <form class="mt-4 sm:ml-8"
-                  action="https://christoph-rumpel.us5.list-manage.com/subscribe/post?u=c9b366927da1fe9e64cd96c9c&amp;id=f465253c55"
-                  method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+                  action="https://app.convertkit.com/forms/879727/subscriptions" class="seva-form formkit-form"
+                  method="post" name="mc-embedded-subscribe-form" target="_blank">
                 <div class="mb-4">
                     <label class="block text-grey-darkest text-sm font-bold mb-2" for="email">
                         E-Mail
                     </label>
                     <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-dark" id="email"
-                           name="EMAIL" type="text" placeholder="Your E-Mail">
+                           name="email_address" type="text" placeholder="Your E-Mail" required>
                 </div>
                 <div class="mb-4">
                     <label class="block text-grey-darkest text-sm font-bold mb-2" for="firstname">
                         First name (optional)
                     </label>
                     <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-dark" id="firstname"
-                           name="FNAME" type="text" placeholder="Your first name">
+                           name="fields[first_name]" type="text" placeholder="Your first name">
                 </div>
                 <div class="flex items-center justify-between">
                     <button class="bg-green hover:bg-green-dark text-white font-bold py-2 px-4 rounded" type="submit">

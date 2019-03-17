@@ -11,3 +11,4 @@ Homestead.yaml
 .env
 
 storage/framework/testing/disks
+.phpunit.result.cache

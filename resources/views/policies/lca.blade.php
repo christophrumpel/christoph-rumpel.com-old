@@ -28,7 +28,7 @@
         <p>Who the data is shared with:</p>
         <ul>
             <li>The application is deployed on servers from <a href="https://www.digitalocean.com/security/gdpr/">DigitalOcean</a> and <a href="https://all-inkl.com/datenschutz/">ALL-INKL.COM</a></li>
-            <li>The email is sent to MailChimp. It gets added to the newsletter list there. You can find MailChimp's <a href="https://mailchimp.com/legal/privacy/">privacy policy here</a>. </li>
+            <li>The email is sent to ConverKit. It gets added to the newsletter list there. You can find ConverKit's <a href="https://convertkit.com/privacy/">privacy policy here</a>. </li>
         </ul>
         <h2>How Long the Information Is Stored</h2>
         <p>The information is stored as long as you are subscribed to one of the newsletters. When you end the subscription, it will automatically be deleted.</p>

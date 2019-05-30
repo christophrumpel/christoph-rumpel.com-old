@@ -12,17 +12,17 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "dependencies": {
-    "highlight.js": "^9.1.0",
-    "turbolinks": "^5.1.1",
+    "highlight.js": "^9.15.8",
+    "turbolinks": "^5.2.0",
     "webpack": "^3.12.0",
     "webpack-manifest-plugin": "^1.1.0"
   },
   "devDependencies": {
     "axios": "^0.17",
-    "cross-env": "^5.1.5",
+    "cross-env": "^5.2.0",
     "laravel-mix": "^2.1.14",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.11",
     "tailwindcss": "^0.5.3",
-    "vue": "^2.5.16"
+    "vue": "^2.6.10"
   }
 }

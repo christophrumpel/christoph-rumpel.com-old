@@ -11,6 +11,7 @@ document.addEventListener('turbolinks:click', function(e) {
 }, false);
 
 document.addEventListener('turbolinks:load', function(e) {
+    Highlight.start();
     if (window.location.hash) {
         // 1. You may also need to decodeURIComponent the hash if it contains certain characters.
         // 2. Change query element to fit your situation

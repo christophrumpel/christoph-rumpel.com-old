@@ -20,7 +20,7 @@
 
             </div>
             <div class="w-1/2 flex justify-center items-center flex-col ml-4">
-                <img class="ml-8 w-64 md:w-100" src="/images/book/book_v1.png"
+                <img class="ml-8 w-full self-center" src="/images/book/book_v1.png"
                      width="500" alt="Build Chatbots in PHP book cover">
             </div>
         </div>

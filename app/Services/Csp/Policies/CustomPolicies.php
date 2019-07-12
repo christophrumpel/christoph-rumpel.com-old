@@ -4,6 +4,7 @@ namespace App\Services\Csp\Policies;
 
 use Spatie\Csp\Directive;
 use Spatie\Csp\Policies\Policy;
+use Spatie\Csp\Exceptions\InvalidDirective;
 
 class CustomPolicies extends Policy
 {
@@ -11,7 +12,7 @@ class CustomPolicies extends Policy
     protected $origin;
 
     /**
-     * @throws \Spatie\Csp\Exceptions\InvalidDirective
+     * @throws InvalidDirective
      */
     public function configure()
     {
@@ -27,7 +28,7 @@ class CustomPolicies extends Policy
 
     /**
      * @return Policy
-     * @throws \Spatie\Csp\Exceptions\InvalidDirective
+     * @throws InvalidDirective
      */
     private function setDefaultPolicies()
     {
@@ -43,7 +44,7 @@ class CustomPolicies extends Policy
     }
 
     /**
-     * @throws \Spatie\Csp\Exceptions\InvalidDirective
+     * @throws InvalidDirective
      */
     private function addGoogleFontPolicies()
     {
@@ -56,7 +57,7 @@ class CustomPolicies extends Policy
     }
 
     /**
-     * @throws \Spatie\Csp\Exceptions\InvalidDirective
+     * @throws InvalidDirective
      */
     private function addGoogleAnalyticsPolicies()
     {
@@ -69,7 +70,7 @@ class CustomPolicies extends Policy
     }
 
     /**
-     * @throws \Spatie\Csp\Exceptions\InvalidDirective
+     * @throws InvalidDirective
      */
     private function addGravatarPolicies()
     {
@@ -77,7 +78,7 @@ class CustomPolicies extends Policy
     }
 
     /**
-     * @throws \Spatie\Csp\Exceptions\InvalidDirective
+     * @throws InvalidDirective
      */
     private function addFacebookChatbotPolicies()
     {
@@ -89,7 +90,7 @@ class CustomPolicies extends Policy
     }
 
     /**
-     * @throws \Spatie\Csp\Exceptions\InvalidDirective
+     * @throws InvalidDirective
      */
     private function addMailFormPolicies()
     {
@@ -97,7 +98,7 @@ class CustomPolicies extends Policy
     }
 
     /**
-     * @throws \Spatie\Csp\Exceptions\InvalidDirective
+     * @throws InvalidDirective
      */
     private function addImagesFromNme()
     {
@@ -105,10 +106,11 @@ class CustomPolicies extends Policy
     }
 
     /**
-     * @throws \Spatie\Csp\Exceptions\InvalidDirective
+     * @throws InvalidDirective
      */
     private function addSmoothScroll()
     {
         $this->addDirective(Directive::SCRIPT, '\'sha256-pjpfKUw4LCwwr0e2/ABrZCkRUktaJDW5Wmg7psjFXLs=\'');
     }
+
 }

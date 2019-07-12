@@ -7,7 +7,7 @@
     <div class="md:mt-10 flex w-full justify-center items-center flex-row">
         <div class="flex flex-col flex-col-reverse md:flex-row mb-4 w-100 items-center">
             <div class="w-3/4 md:w-1/2 mb-8 text-center">
-                <h3 class="mt-2 mb-2 book-yellow uppercase font-landing text-xl">NEW BOOK OUT</h3>
+                <h3 class="mt-2 mb-2 book-yellow uppercase font-landing text-xl">BOOK OUT</h3>
                 <h2 class="mt-0 text-white font-landing text-4xl leading-normal">Build Chatbots <br/>with PHP
                 </h2>
 
@@ -20,7 +20,7 @@
 
             </div>
             <div class="w-1/2 flex justify-center items-center flex-col ml-4">
-                <img class="ml-8 w-64 md:w-100" src="/images/book/book_v1.png"
+                <img class="ml-8 w-full self-center" src="/images/book/book_v1.png"
                      width="500" alt="Build Chatbots in PHP book cover">
             </div>
         </div>

@@ -13,7 +13,7 @@
 
                 <p class="text-white text-md mb-8 font-landing font-light leading-tight">After 6 months of writing my first ebook is <b>now available</b>! Follow the link below to the store and the available packages.</p>
 
-                <a href="https://store.christoph-rumpel.com/" class="block no-underline bg-yellow hover:bg-yellow-darker text-black font-landing font-bold uppercase text-sm md:text-lg py-4 px-2 w-full h-full">View Packages</a>
+                <a href="https://store.christoph-rumpel.com/" class="block no-underline bg-yellow hover:bg-yellow-darker text-black font-landing font-bold uppercase text-sm md:text-lg py-4 px-2 w-full h-full">Get It Now</a>
                 <a href="#subscribe" class="scroll block no-underline mt-4 bg-yellow hover:bg-yellow-darker text-black font-landing font-bold uppercase text-sm md:text-lg py-4 px-2 w-full h-full">Or Sign Up for a free chapter</a>
 
 

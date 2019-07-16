@@ -14,7 +14,7 @@
                         E-Mail
                     </label>
                     <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-dark" id="email"
-                           name="email_address" type="text" placeholder="Your E-Mail" required>
+                           name="email_address" type="email" placeholder="Your E-Mail" required>
                 </div>
                 <div class="mb-4">
                     <label class="block text-grey-darkest text-sm font-bold mb-2" for="firstname">

@@ -17,6 +17,8 @@
         <p>We may collect the following information:</p>
         <ul>
             <li>Email address</li>
+            <li>Name</li>
+            <li>Address</li>
         </ul>
 
         <h2>What We Do with the Information We Gather</h2>
@@ -25,6 +27,8 @@
         <ul>
             <li>Send news about Laravel Core Adventure Videos</li>
             <li>To log you in</li>
+            <li>If you purchase LCA, we need to send you your invoice.</li>
+
         </ul>
         <p>Who the data is shared with:</p>
         <ul>

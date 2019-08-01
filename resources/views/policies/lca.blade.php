@@ -17,6 +17,8 @@
         <p>We may collect the following information:</p>
         <ul>
             <li>Email address</li>
+            <li>Name</li>
+            <li>Address</li>
         </ul>
 
         <h2>What We Do with the Information We Gather</h2>
@@ -24,14 +26,19 @@
         <p>We do need this information in order to:</p>
         <ul>
             <li>Send news about Laravel Core Adventure Videos</li>
+            <li>To log you in</li>
+            <li>If you purchase LCA, we need to send you your invoice.</li>
+
         </ul>
         <p>Who the data is shared with:</p>
         <ul>
             <li>The application is deployed on servers from <a href="https://www.digitalocean.com/security/gdpr/">DigitalOcean</a> and <a href="https://all-inkl.com/datenschutz/">ALL-INKL.COM</a></li>
             <li>The email is sent to ConverKit. It gets added to the newsletter list there. You can find ConverKit's <a href="https://convertkit.com/privacy/">privacy policy here</a>. </li>
+            <li>While the payment process your name, email and adress will be stored at Quaderno.io. This service is used for the payment process. Find their privacy policy <a href="https://quaderno.io/privacy/">here</a>.</li>
         </ul>
         <h2>How Long the Information Is Stored</h2>
-        <p>The information is stored as long as you are subscribed to one of the newsletters. When you end the subscription, it will automatically be deleted.</p>
+        <p>If you are only subscribed to the newsletter, the information is stored as long as you are subscribed to one of the newsletters. When you end the subscription, it will automatically be deleted.</p>
+        <p>If you need to delete your LCA account, just contact me at christoph@christoph-rumpel.com. Then we will delete are of your data.</p>
         <h2>Security</h2>
 
         <p>We are committed to ensuring that your information is secure. In order to prevent unauthorised access or

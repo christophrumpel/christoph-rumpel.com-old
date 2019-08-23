@@ -1,4 +1,16 @@
 -
+  date: 24.07.2019
+  event: Laracon US
+  city: New York, USA 🇺🇸
+  talk: The Laravel Core - Demystify The Beast
+  url: https://laracon.us/
+-
+    date: 10.06.2019
+    event: Laravel Live
+    city: London, England 🏴󠁧󠁢󠁥󠁮󠁧󠁿
+    talk: The Laravel Core - Demystify The Beast
+    url: https://laravellive.uk/
+-
   date: 03.03.2019
   event: Laravel Live
   city: Mumbai, India 🇮🇳

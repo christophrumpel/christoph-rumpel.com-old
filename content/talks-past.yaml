@@ -1,9 +1,16 @@
 -
+    date: 28.08.2019
+    event: Laracon EU
+    city: Amsterdam, Netherlands 🇳🇱
+    talk: The Beauty of Laravel's Notification System
+    url: https://laracon.eu
+-
   date: 24.07.2019
   event: Laracon US
   city: New York, USA 🇺🇸
   talk: The Laravel Core - Demystify The Beast
   url: https://laracon.us/
+  video: https://www.youtube.com/watch?v=4FKldmJiz1Y
 -
     date: 10.06.2019
     event: Laravel Live

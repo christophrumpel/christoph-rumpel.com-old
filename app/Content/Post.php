@@ -89,7 +89,7 @@ class Post
     /**
      * Get all articles and parse them to objects
      *
-     * @return static
+     * @return Collection
      */
     private function gather()
     {

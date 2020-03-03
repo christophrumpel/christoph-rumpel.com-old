@@ -7,8 +7,11 @@
 @if(isset($canonical_url) && $canonical_url)
     <link rel="canonical" href="{{ $canonical_url }}">
 @endif
-
-<title>{{ isset($title) ? ($title . ' — Christoph Rumpel') : 'Christoph Rumpel - Blog, Talks and books' }}</title>
+@if(isset($post->title))
+    <title>{{ $post->title }} - Christoph Rumpel</title>
+@else
+    <title>{{ isset($title) ? ($title . ' — Christoph Rumpel') : 'Christoph Rumpel - Blog, Talks and books' }}</title>
+@endif
 
 @include('feed::links')
 

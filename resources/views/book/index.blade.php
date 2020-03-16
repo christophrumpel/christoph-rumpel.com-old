@@ -53,17 +53,7 @@
                     <h2 class="mt-10 mb-4 font-bold font-landing text-4xl">When will it be released? 🎉</h2>
                     <p class="mb-4">The book has been released on the 12th of July.</p>
 
-                    <h2 id="subscribe" class="mt-10 mb-4 font-bold font-landing text-4xl">Subscribe to my mailing list 💌</h2>
-                    <p class="mb-4">Have I caught your attention? Perfect! Sign up and...</p>
-                    <ul>
-                        <li class="mb-2 md:ml-4">You get two sample chapters for FREE</li>
-                        <li class="mb-2 md:ml-4">I will notify you about news on the book</li>
-                        <li class="mb-2 md:ml-4">You will get a discount</li>
-                    </ul>
                 </div>
-            </div>
-            <div class="my-12 w-4/5 md:w-100">
-                @include('partials.book-form', ['buttonText' => 'Sign me up'])
             </div>
             <footer class="mt-8 p-8 mb-0 text-center w-full">
                 <p class="font-landing text-sm">&copy; Christoph Rumpel {{ date('Y') }}

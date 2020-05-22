@@ -2,12 +2,11 @@
 
 namespace Tests\Unit;
 
-use Tests\TestCase;
 use Illuminate\Support\Facades\Storage;
+use Tests\TestCase;
 
-class PagesTest extends TestCase
+class PostsTest extends TestCase
 {
-
     public function setUp(): void
     {
         parent::setUp();
@@ -49,7 +48,6 @@ class PagesTest extends TestCase
         $response->assertStatus(200);
         $response->assertSee('Blog Post Title 1');
         $response->assertSee('Blog Post Title 2');
-
     }
 
     /**

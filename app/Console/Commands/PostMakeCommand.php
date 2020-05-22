@@ -40,6 +40,6 @@ class PostMakeCommand extends Command
 
         Storage::disk('content')->put($path, $contents);
 
-        $this->info("Post created successfully.");
+        $this->info('Post created successfully.');
     }
 }

@@ -13,7 +13,6 @@ use Tests\TestCase;
 
 class PostsTest extends Testcase
 {
-
     use CreatesApplication;
 
     protected function setUp(): void
@@ -107,7 +106,7 @@ class PostsTest extends Testcase
         $this->assertEquals(['category1'], $post->categories);
         $this->assertEquals("<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed!</p>\n",
             $post->summary);
-        $this->assertEquals("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, ...",
+        $this->assertEquals('Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, ...',
             $post->summary_short);
         $this->assertEquals(route('home').'/preview_image.png', $post->preview_image);
         $this->assertEquals(route('home').'/preview_image_twitter.png', $post->preview_image_twitter);
@@ -116,7 +115,6 @@ class PostsTest extends Testcase
         $this->assertEquals(Carbon::createFromFormat('Y-m-d', '2018-01-17'), $post->date);
         $this->assertEquals('posts/2018-01-17.post1.md', $post->path);
         $this->assertEquals(route('posts.show', ['2018', '01', 'post1']), $post->url);
-
     }
 
     /**
@@ -124,15 +122,14 @@ class PostsTest extends Testcase
      **/
     public function it_allows_multiple_categories()
     {
-    	// Given
+        // Given
         $post = new Post;
         $this->createMultiCategoryArticle();
 
-    	// When
+        // When
         $categoriesPost = $post->find('2018', 'multiple-categories-post');
 
-    	// Then
+        // Then
         $this->assertEquals(['laravel', 'chatbots'], $categoriesPost->categories);
     }
-
 }

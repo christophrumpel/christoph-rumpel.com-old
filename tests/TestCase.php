@@ -2,8 +2,8 @@
 
 namespace Tests;
 
-use Illuminate\Support\Facades\Storage;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
+use Illuminate\Support\Facades\Storage;
 
 abstract class TestCase extends BaseTestCase
 {

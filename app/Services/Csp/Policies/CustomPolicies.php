@@ -3,8 +3,8 @@
 namespace App\Services\Csp\Policies;
 
 use Spatie\Csp\Directive;
-use Spatie\Csp\Policies\Policy;
 use Spatie\Csp\Exceptions\InvalidDirective;
+use Spatie\Csp\Policies\Policy;
 
 class CustomPolicies extends Policy
 {
@@ -112,5 +112,4 @@ class CustomPolicies extends Policy
     {
         $this->addDirective(Directive::SCRIPT, '\'sha256-pjpfKUw4LCwwr0e2/ABrZCkRUktaJDW5Wmg7psjFXLs=\'');
     }
-
 }

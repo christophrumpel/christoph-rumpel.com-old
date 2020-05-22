@@ -2,6 +2,7 @@
 
 namespace App\Content;
 
+use Illuminate\Support\Str;
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
@@ -96,10 +97,10 @@ class Post
         return collect(Storage::disk('content')
             ->files('posts'))
             ->filter(function ($path) {
-                return ends_with($path, '.md');
+                return Str::endsWith($path, '.md');
             })
             ->map(function ($path) {
-                $filename = str_after($path, 'posts/');
+                $filename = Str::after($path, 'posts/');
                 [$date, $slug, $extension] = explode('.', $filename, 3);
                 $date = Carbon::createFromFormat('Y-m-d', $date);
                 $document = YamlFrontMatter::parse(Storage::disk('content')

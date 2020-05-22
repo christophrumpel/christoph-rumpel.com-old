@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use Illuminate\Support\Str;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Storage;
@@ -30,7 +31,7 @@ class PostMakeCommand extends Command
     public function handle()
     {
         $title = $this->input->getArgument('title');
-        $slug = strtolower(str_slug($title));
+        $slug = strtolower(Str::slug($title));
         $date = Carbon::now();
 
         $contents = file_get_contents(__DIR__.'/stubs/post.stub');

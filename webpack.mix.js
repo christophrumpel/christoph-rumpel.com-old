@@ -1,5 +1,4 @@
-let mix = require('laravel-mix');
-var tailwindcss = require('tailwindcss');
+const mix = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -12,11 +11,5 @@ var tailwindcss = require('tailwindcss');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-    .sass('resources/assets/sass/main.scss', 'public/css')
-    .options({
-        processCssUrls: false,
-        postCss: [tailwindcss('tailwind.js')],
-    });
-
-mix.version();
+mix.js('resources/js/app.js', 'public/js')
+    .sass('resources/sass/app.scss', 'public/css');

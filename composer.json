@@ -8,24 +8,26 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=7.1",
+        "php": "^7.2",
         "fideloper/proxy": "~4.0",
         "laravel-frontend-presets/tailwindcss": "^0.6.1",
-        "laravel/framework": "5.8.*",
+        "laravel/framework": "^6.18",
         "league/commonmark": "^0.15.0",
-        "spatie/laravel-collection-macros": "^5.0",
-        "spatie/laravel-csp": "^2.0",
-        "spatie/laravel-feed": "^2.0",
-        "spatie/laravel-responsecache": "^4.0",
+        "spatie/laravel-collection-macros": "^6.0",
+        "spatie/laravel-csp": "^2.4",
+        "spatie/laravel-feed": "^2.4",
+        "spatie/laravel-responsecache": "^6.2",
         "spatie/laravel-robots-middleware": "^1.0",
-        "spatie/laravel-sitemap": "^5.2",
-        "spatie/laravel-tail": "^3.0",
-        "spatie/yaml-front-matter": "^2.0.0"
+        "spatie/laravel-sitemap": "^5.4",
+        "spatie/laravel-tail": "^3.3",
+        "spatie/yaml-front-matter": "^2.0.0",
+        "laravel/tinker": "^2.0"
     },
     "require-dev": {
         "graham-campbell/analyzer": "^1.1",
         "phpunit/phpunit": "~8.0",
-        "filp/whoops": "~2.0"
+        "nunomaduro/collision": "^3.0",
+        "facade/ignition": "^1.4"
     },
     "autoload": {
         "classmap": [

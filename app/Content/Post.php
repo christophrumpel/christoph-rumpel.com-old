@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 use Spatie\YamlFrontMatter\YamlFrontMatter;
 
 class Post
@@ -87,7 +88,7 @@ class Post
     }
 
     /**
-     * Get all articles and parse them to objects
+     * Get all articles and parse them to objects.
      *
      * @return Collection
      */
@@ -96,10 +97,10 @@ class Post
         return collect(Storage::disk('content')
             ->files('posts'))
             ->filter(function ($path) {
-                return ends_with($path, '.md');
+                return Str::endsWith($path, '.md');
             })
             ->map(function ($path) {
-                $filename = str_after($path, 'posts/');
+                $filename = Str::after($path, 'posts/');
                 [$date, $slug, $extension] = explode('.', $filename, 3);
                 $date = Carbon::createFromFormat('Y-m-d', $date);
                 $document = YamlFrontMatter::parse(Storage::disk('content')
@@ -115,7 +116,7 @@ class Post
                     'categories' => $this->getCategories($document->categories),
                     'contents' => markdown($document->body()),
                     'summary' => markdown($document->summary ?? $document->body()),
-                    'summary_short' => mb_strimwidth($document->summary ?? $document->body(), 0, 140, "..."),
+                    'summary_short' => mb_strimwidth($document->summary ?? $document->body(), 0, 140, '...'),
                     'preview_image' => $document->preview_image ? route('home').'/'.$document->preview_image : 'https://christoph-rumpel.com/images/cr_image_v3.jpg',
                     'preview_image_twitter' => route('home').'/'.$document->preview_image_twitter ?? '',
                     'published' => $document->published ?? true,

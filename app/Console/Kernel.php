@@ -15,7 +15,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         Commands\PostMakeCommand::class,
-        GenerateSitemap::class
+        GenerateSitemap::class,
     ];
 
     /**

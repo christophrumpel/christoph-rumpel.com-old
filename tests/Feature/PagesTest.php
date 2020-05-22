@@ -2,8 +2,8 @@
 
 namespace Tests\Features;
 
-use Tests\CreatesApplication;
 use Illuminate\Foundation\Testing\TestCase;
+use Tests\CreatesApplication;
 
 class PagesTest extends TestCase
 {

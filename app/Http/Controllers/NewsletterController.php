@@ -7,7 +7,8 @@ use Illuminate\Routing\Controller;
 
 class NewsletterController extends Controller
 {
-    public function index() {
+    public function index()
+    {
         return view('newsletter.index');
     }
 

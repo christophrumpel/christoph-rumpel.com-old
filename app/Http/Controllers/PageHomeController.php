@@ -11,8 +11,6 @@ class PageHomeController extends Controller
     {
         $posts = PostCollector::all();
 
-        dd($posts);
-
         return view('pages.home', ['posts' => $posts]);
     }
 }

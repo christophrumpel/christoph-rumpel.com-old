@@ -2,8 +2,8 @@
 
 namespace Tests\Unit;
 
+use App\Post\Post;
 use Illuminate\Support\Facades\Storage;
-use PHPUnit\Framework\TestCase;
 use Tests\Factories\PostFactory;
 
 class PostFactoryTest extends \Tests\TestCase
@@ -14,11 +14,10 @@ class PostFactoryTest extends \Tests\TestCase
    {
         Storage::fake('posts');
 
-        $post = PostFactory::new()
+        $postPath = PostFactory::new()
             ->create();
 
-       $this->assertFileExists($post->destination);
-       $this->assertEquals('Dummy 1', $post->title);
+       $this->assertFileExists($postPath);
    }
 
     /** @test **/

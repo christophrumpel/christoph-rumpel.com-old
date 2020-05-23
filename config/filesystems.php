@@ -50,7 +50,7 @@ return [
 
         'posts' => [
             'driver' => 'local',
-            'root' => storage_path('app/posts'),
+            'root' => base_path('posts'),
         ],
 
         'public' => [

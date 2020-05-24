@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PageHomeController;
+use App\Http\Controllers\PagePostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', '\\' . PageHomeController::class)->name('page.home');
+
+Route::get('/{year}/{month}/{slug}', '\\' .PagePostController::class)->name('page.post');
+
 
 Auth::routes();
 

@@ -1,6 +1,6 @@
 ---
 title: {{blog_title}}
-categories: business
+categories: {{categories}}
 summary: Summary
 ---
 

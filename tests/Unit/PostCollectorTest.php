@@ -24,4 +24,19 @@ class PostCollectorTest extends TestCase
     	$this->assertCount(10, $posts);
     	$this->assertInstanceOf(Post::class, $posts->first());
     }
+
+    /** @test **/
+    public function it_finds_a_specific_post(): void
+    {
+        Storage::fake('posts');
+
+        PostFactory::new()
+            ->title('My Company Of One Story - Episode 2 Motivation')
+            ->create();
+
+        $post = PostCollector::find('my-company-of-one-story-episode-2-motivation');
+
+        $this->assertInstanceOf(Post::class, $post);
+        $this->assertEquals('My Company Of One Story - Episode 2 Motivation', $post->title);
+    }
 }

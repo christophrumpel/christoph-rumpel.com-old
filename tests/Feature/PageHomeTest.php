@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Storage;
 use Tests\Factories\PostFactory;
 use Tests\TestCase;
 
-class HomepageTest extends TestCase
+class PageHomeTest extends TestCase
 {
 
     /** @test * */
@@ -18,8 +18,8 @@ class HomepageTest extends TestCase
             ->createMultiple(3);
 
         $this->get('/')
-            ->assertSee('Blog Title 1')
-            ->assertSee('Blog Title 2')
-            ->assertSee('Blog Title 3');
+            ->assertSee('My Blog Title 1')
+            ->assertSee('My Blog Title 2')
+            ->assertSee('My Blog Title 3');
     }
 }

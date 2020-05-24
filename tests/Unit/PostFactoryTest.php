@@ -47,6 +47,18 @@ class PostFactoryTest extends \Tests\TestCase
     }
 
     /** @test **/
+    public function it_sets_the_post_content(): void
+    {
+        Storage::fake('posts');
+
+        PostFactory::new()
+            ->content('content')
+            ->create();
+
+        $this->assertStringContainsString('content', Storage::disk('posts')->get('my-blog-title.md'));
+    }
+
+    /** @test **/
     public function it_creates_multiple_post_files(): void
     {
         Storage::fake('posts');

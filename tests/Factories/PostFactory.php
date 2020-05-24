@@ -14,6 +14,8 @@ class PostFactory
 
     private array $categories = [];
 
+    private string $content = '';
+
     public static function new(): PostFactory
     {
         return new static();
@@ -27,30 +29,31 @@ class PostFactory
     public function createMultiple(int $times): Collection
     {
         return collect()->times($times, function ($currentCount) {
-            return $this->createPostFile($this->title.' '.$currentCount, $this->categories, Carbon::now());
+            return $this->createPostFile($this->title.' '.$currentCount);
         });
     }
 
-    private function createPostFile(string $title, array $categories, Carbon $date): string
+    private function createPostFile(string $title = null): string
     {
-        $slug = Str::slug($title);
+        $slug = Str::slug($title ?? $this->title);
         $destinationPath = Storage::disk('posts')
                 ->getAdapter()
                 ->getPathPrefix()."{$slug}.md";
 
         copy(base_path('tests/dummy.md'), $destinationPath);
-        $this->replaceFileDummyContent($title, $slug, $categories);
+        $this->replaceFileDummyContent($slug, $title);
 
         return $destinationPath;
     }
 
-    private function replaceFileDummyContent(string $title, string $slug, array $categories): void
+    private function replaceFileDummyContent(string $slug, string $title): void
     {
         $fileContent = Storage::disk('posts')
             ->get("{$slug}.md");
         $replacedFileContent = Str::of($fileContent)
             ->replace('{{blog_title}}', $title)
-            ->replace('{{categories}}', implode(', ', $categories));
+            ->replace('{{categories}}', implode(', ', $this->categories))
+            ->replace('{{content}}', $this->content);
         Storage::disk('posts')
             ->put("{$slug}.md", $replacedFileContent);
     }
@@ -67,6 +70,13 @@ class PostFactory
         $this->categories = $categories;
 
         return $this;
+    }
+
+    public function content(string $content): self
+    {
+       $this->content = $content;
+
+       return $this;
     }
 
 }

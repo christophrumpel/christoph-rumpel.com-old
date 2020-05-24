@@ -45,7 +45,8 @@ class PostCollector
                 return new Post([
                     'path' => $filePath,
                     'title' => $postMetaData->matter('title'),
-                    'categories' => explode(', ', $postMetaData->matter('categories'))
+                    'categories' => explode(', ', $postMetaData->matter('categories')),
+                    'content' => $postMetaData->body(),
                 ]);
             })
             ->first();

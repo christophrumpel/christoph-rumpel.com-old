@@ -11,10 +11,13 @@ class Post
 
     public array $categories = [];
 
+    public string $content;
+
     public function __construct(array $attributes)
     {
         $this->path = $attributes['path'];
         $this->title = $attributes['title'] ?? '';
         $this->categories = $attributes['categories'] ?? [];
+        $this->content = $attributes['content'] ?? '';
     }
 }

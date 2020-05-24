@@ -4,5 +4,6 @@ categories: {{categories}}
 summary: Summary
 ---
 
-text
+{{content}}
+
 

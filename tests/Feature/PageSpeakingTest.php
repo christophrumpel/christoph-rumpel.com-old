@@ -61,4 +61,24 @@ class PageSpeakingTest extends TestCase
             ->assertSee('Talk Location 2')
             ->assertSee('Event Name 2');
     }
+
+    /** @test **/
+    public function it_works_with_no_upcoming_talks(): void
+    {
+        TalkFactory::create([
+            'upcoming' => [],
+            'past' => [
+                [
+                    'title' => 'Talk Title',
+                    'date' => '20.02.2020',
+                    'location' => 'Talk Location',
+                    'event' => 'Event Name',
+                ],
+            ],
+        ]);
+
+        $this->get('/speaking')
+            ->assertSuccessful();
+
+    }
 }

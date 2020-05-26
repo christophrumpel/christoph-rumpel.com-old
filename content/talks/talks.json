@@ -1,7 +1,18 @@
-[
-    {
-        "title": "My talk",
-        "location": "Vienna/Austira",
-        "event": "Event Name"
-    }
-]
+{
+    "upcoming": [
+        {
+            "date": "20.02.2020",
+            "title": "My talk",
+            "location": "Vienna/Austira",
+            "event": "Event Name"
+        }
+    ],
+    "past": [
+        {
+            "date": "20.02.2019",
+            "title": "My talk",
+            "location": "Vienna/Austira",
+            "event": "Event Name"
+        }
+    ]
+}

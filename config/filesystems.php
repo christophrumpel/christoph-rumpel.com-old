@@ -50,7 +50,12 @@ return [
 
         'posts' => [
             'driver' => 'local',
-            'root' => base_path('posts'),
+            'root' => base_path('content/posts'),
+        ],
+
+        'talks' => [
+            'driver' => 'local',
+            'root' => base_path('content/talks'),
         ],
 
         'public' => [

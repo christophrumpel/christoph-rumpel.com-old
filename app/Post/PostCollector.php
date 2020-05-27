@@ -23,8 +23,17 @@ class PostCollector
             return new Post([
                 'path' => $filePath,
                 'title' => $postMetaData->matter('title'),
+                'categories' => explode(', ', $postMetaData->matter('categories')),
             ]);
         });
+    }
+
+    public static function category(string $category): Collection
+    {
+        return self::all()
+            ->filter(function (Post $post) use ($category) {
+                return in_array(strtolower($category), $post->categories);
+            });
     }
 
     public static function find(string $slug)
@@ -38,7 +47,6 @@ class PostCollector
                 $filePath = Storage::disk('posts')
                         ->getAdapter()
                         ->getPathPrefix().$fileName;
-
 
                 $postMetaData = YamlFrontMatter::parse(file_get_contents($filePath));
 

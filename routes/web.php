@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PageCategoryController;
 use App\Http\Controllers\PageHomeController;
 use App\Http\Controllers\PagePostController;
 use App\Http\Controllers\PageSpeakingController;
@@ -18,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', '\\' . PageHomeController::class)->name('page.home');
 Route::get('speaking', '\\' . PageSpeakingController::class)->name('page.speaking');
+Route::get('/category/{category}', '\\' . PageCategoryController::class)->name('page.category');
 
 Route::get('/{year}/{month}/{slug}', '\\' .PagePostController::class)->name('page.post');
 

@@ -39,4 +39,25 @@ class PostCollectorTest extends TestCase
         $this->assertInstanceOf(Post::class, $post);
         $this->assertEquals('My Company Of One Story - Episode 2 Motivation', $post->title);
     }
+
+    /** @test **/
+    public function it_finds_post_of_a_specific_category(): void
+    {
+        Storage::fake('posts');
+
+        PostFactory::new()
+            ->categories(['business'])
+            ->title('My Business')
+            ->create();
+
+        PostFactory::new()
+            ->categories(['laravel'])
+            ->title('My Laravel')
+            ->create();
+
+        $posts = PostCollector::category('business');
+
+        $this->assertCount(1, $posts);
+        $this->assertEquals('My Business', $posts->first()->title);
+    }
 }

@@ -15,6 +15,7 @@
     ],
     "require": {
         "php": "^7.2.5",
+        "ext-json": "*",
         "erusev/parsedown": "^1.7",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
@@ -23,8 +24,8 @@
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.0",
         "spatie/laravel-mailcoach": "^2.0.0",
-        "spatie/yaml-front-matter": "^2.0",
-        "ext-json": "*"
+        "spatie/laravel-mailcoach-unlayer": "^1.0",
+        "spatie/yaml-front-matter": "^2.0"
     },
     "require-dev": {
         "facade/ignition": "^2.0",

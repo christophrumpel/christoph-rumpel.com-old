@@ -48,6 +48,13 @@ return [
             'root' => storage_path('app'),
         ],
 
+        'mailcoach-uploads' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/mailcoach-uploads'),
+            'url' => env('APP_URL').'/storage/mailcoach-uploads',
+            'visibility' => 'public',
+        ],
+
         'posts' => [
             'driver' => 'local',
             'root' => base_path('content/posts'),

@@ -1,5 +1,7 @@
 <?php
 
+use Spatie\MailcoachUnlayer\UnlayerEditor;
+
 return [
 
     /*
@@ -40,7 +42,13 @@ return [
      * Here you can configure which template editor Mailcoach uses.
      * By default this is a text editor that highlights HTML.
      */
-    'editor' => \Spatie\Mailcoach\Support\Editor\TextEditor::class,
+    'editor' => UnlayerEditor::class,
+
+    'unlayer' => [
+        'disk_name' => env('MAILCOACH_UPLOAD_DISK', 'public'),
+        'max_width' => 1500,
+        'max_height' => 1500,
+    ],
 
     /*
      * Here you can specify which jobs should run on which queues.

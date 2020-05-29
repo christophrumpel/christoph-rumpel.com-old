@@ -21,7 +21,7 @@ Route::get('/', '\\' . PageHomeController::class)->name('page.home');
 Route::get('speaking', '\\' . PageSpeakingController::class)->name('page.speaking');
 Route::get('/category/{category}', '\\' . PageCategoryController::class)->name('page.category');
 
-Route::get('/{year}/{month}/{slug}', '\\' .PagePostController::class)->name('page.post');
+//Route::get('/{year}/{month}/{slug}', '\\' .PagePostController::class)->name('page.post');
 
 
 Auth::routes();

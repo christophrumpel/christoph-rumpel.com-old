@@ -13,7 +13,7 @@ class PostCollector
     public static function all(): Collection
     {
         return collect(Storage::disk('posts')
-            ->allFiles())->mapFileNamesToPosts();
+            ->allFiles())->mapFileNamesToPosts()->reverse();
     }
 
     public static function category(string $category): Collection

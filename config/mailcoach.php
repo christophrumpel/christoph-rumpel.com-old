@@ -74,7 +74,7 @@ return [
      * e-mail sending service. To use this feature you must have Redis installed.
      */
     'throttling' => [
-        'enabled' => true,
+        'enabled' => env('MAILCOACH_THROTTELING', true),
         'redis_connection_name' => 'default',
         'redis_key' => 'laravel-mailcoach',
         'allowed_number_of_jobs_in_timespan' => 10,

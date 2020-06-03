@@ -10,7 +10,7 @@ class PagePostController extends Controller
 
     public function __invoke(Request $request, int $year, int $month, string $slug)
     {
-        $post = PostCollector::find($slug);
+        $post = PostCollector::findBySlug($slug);
 
         return view('pages.post', ['post' => $post]);
     }

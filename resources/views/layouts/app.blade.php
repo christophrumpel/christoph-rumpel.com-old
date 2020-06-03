@@ -10,10 +10,14 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/main.css') }}" rel="stylesheet" />
+    @livewireStyles
 
 </head>
 
 <body>
+
 {{ $slot }}
+
+@livewireScripts
 </body>
 </html>

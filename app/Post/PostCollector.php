@@ -13,19 +13,7 @@ class PostCollector
     public static function all(): Collection
     {
         return collect(Storage::disk('posts')
-            ->allFiles())->map(function ($fileName) {
-            $filePath = Storage::disk('posts')
-                    ->getAdapter()
-                    ->getPathPrefix().$fileName;
-
-            $postMetaData = YamlFrontMatter::parse(file_get_contents($filePath));
-
-            return new Post([
-                'path' => $filePath,
-                'title' => $postMetaData->matter('title'),
-                'categories' => explode(', ', $postMetaData->matter('categories')),
-            ]);
-        });
+            ->allFiles())->mapFileNamesToPosts();
     }
 
     public static function category(string $category): Collection
@@ -36,27 +24,22 @@ class PostCollector
             });
     }
 
-    public static function find(string $slug)
+    public static function findBySlug(string $slug)
     {
         return collect(Storage::disk('posts')
             ->allFiles())
             ->filter(function ($fileName) use ($slug) {
                 return Str::contains($fileName, $slug);
             })
-            ->map(function ($fileName) {
-                $filePath = Storage::disk('posts')
-                        ->getAdapter()
-                        ->getPathPrefix().$fileName;
-
-                $postMetaData = YamlFrontMatter::parse(file_get_contents($filePath));
-
-                return new Post([
-                    'path' => $filePath,
-                    'title' => $postMetaData->matter('title'),
-                    'categories' => explode(', ', $postMetaData->matter('categories')),
-                    'content' => $postMetaData->body(),
-                ]);
-            })
+            ->mapFileNamesToPosts()
             ->first();
+    }
+
+    public static function findBySearchTerm(string $searchTerm): Collection
+    {
+        return collect(Storage::disk('posts')
+                ->allFiles())->filter(function ($fileName) use ($searchTerm) {
+                    return Str::contains($fileName, $searchTerm);
+                })->mapFileNamesToPosts();
     }
 }

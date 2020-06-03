@@ -26,7 +26,7 @@ class PostCollectorTest extends TestCase
     }
 
     /** @test **/
-    public function it_finds_a_specific_post(): void
+    public function it_finds_a_specific_post_by_slug(): void
     {
         Storage::fake('posts');
 
@@ -34,7 +34,7 @@ class PostCollectorTest extends TestCase
             ->title('My Company Of One Story - Episode 2 Motivation')
             ->create();
 
-        $post = PostCollector::find('my-company-of-one-story-episode-2-motivation');
+        $post = PostCollector::findBySlug('my-company-of-one-story-episode-2-motivation');
 
         $this->assertInstanceOf(Post::class, $post);
         $this->assertEquals('My Company Of One Story - Episode 2 Motivation', $post->title);
@@ -59,5 +59,21 @@ class PostCollectorTest extends TestCase
 
         $this->assertCount(1, $posts);
         $this->assertEquals('My Business', $posts->first()->title);
+    }
+
+    /** @test **/
+    public function it_searches_posts_by_search_term(): void
+    {
+        Storage::fake('posts');
+
+        PostFactory::new()
+            ->title('My Company Of One Story - Episode 2 Motivation')
+            ->create();
+
+        $results = PostCollector::findBySearchTerm('company');
+
+        $this->assertInstanceOf(Post::class, $results->first());
+        $this->assertCount(1, $results);
+        $this->assertEquals('My Company Of One Story - Episode 2 Motivation', $results->first()->title);
     }
 }

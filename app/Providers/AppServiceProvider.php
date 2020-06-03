@@ -2,10 +2,15 @@
 
 namespace App\Providers;
 
+use App\Post\Post;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\ServiceProvider;
+use Spatie\YamlFrontMatter\YamlFrontMatter;
 
 class AppServiceProvider extends ServiceProvider
 {
+
     /**
      * Register any application services.
      *
@@ -23,6 +28,21 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Collection::macro('mapFileNamesToPosts', function () {
+            return $this->map(function ($fileName) {
+                $filePath = Storage::disk('posts')
+                        ->getAdapter()
+                        ->getPathPrefix().$fileName;
+
+                $postMetaData = YamlFrontMatter::parse(file_get_contents($filePath));
+
+                return new Post([
+                    'path' => $filePath,
+                    'title' => $postMetaData->matter('title'),
+                    'categories' => explode(', ', $postMetaData->matter('categories')),
+                    'content' => $postMetaData->body(),
+                ]);
+            });
+        });
     }
 }

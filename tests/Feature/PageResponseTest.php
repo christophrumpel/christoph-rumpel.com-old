@@ -13,7 +13,7 @@ class PageResponseTest extends TestCase
     /** @test * */
     public function it_gives_successful_response_for_homepage(): void
     {
-
+        $this->withoutExceptionHandling();
        $this->get('/')
             ->assertSuccessful();
     }

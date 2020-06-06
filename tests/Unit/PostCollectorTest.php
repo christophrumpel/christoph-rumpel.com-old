@@ -23,6 +23,8 @@ class PostCollectorTest extends TestCase
 
     	$this->assertCount(10, $posts);
     	$this->assertInstanceOf(Post::class, $posts->first());
+    	$this->assertTrue($posts->first()->date->isToday());
+        $this->assertTrue($posts->skip(1)->first()->date->isYesterday());
     }
 
     /** @test **/
@@ -75,5 +77,21 @@ class PostCollectorTest extends TestCase
         $this->assertInstanceOf(Post::class, $results->first());
         $this->assertCount(1, $results);
         $this->assertEquals('My Company Of One Story - Episode 2 Motivation', $results->first()->title);
+    }
+
+    /** @test **/
+    public function it_paginates_post(): void
+    {
+        Storage::fake('posts');
+
+        PostFactory::new()
+            ->createMultiple(30);
+
+        $pageOnePosts = PostCollector::paginate(1);
+        $this->assertCount(15, $pageOnePosts);
+        $this->assertEquals('My Blog Title 30', $pageOnePosts->first()->title);
+
+
+        $this->assertCount(15, PostCollector::paginate(2));
     }
 }

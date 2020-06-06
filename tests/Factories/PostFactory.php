@@ -23,39 +23,43 @@ class PostFactory
 
     public function create(): string
     {
-        return $this->createPostFile($this->title, $this->categories, Carbon::now());
+        return $this->createPostFile($this->title, Carbon::now());
     }
 
     public function createMultiple(int $times): Collection
     {
-        return collect()->times($times, function ($currentCount) {
-            return $this->createPostFile($this->title.' '.$currentCount);
+        $date = Carbon::today();
+        return collect()->times($times, function ($currentCount, $key) use ($date, $times) {
+            $postTitleNumber = $times - ($currentCount -1);
+            return $this->createPostFile($this->title.' '.$postTitleNumber, $date->subDays($key));
         });
     }
 
-    private function createPostFile(string $title = null): string
+    private function createPostFile(string $title = null, \Carbon\Carbon $date = null): string
     {
+        $date = $date ?? Carbon::today();
         $slug = Str::slug($title ?? $this->title);
+        $path = "{$date->format('Y-m-d')}.{$slug}.md";
         $destinationPath = Storage::disk('posts')
                 ->getAdapter()
-                ->getPathPrefix()."{$slug}.md";
+                ->getPathPrefix().$path;
 
         copy(base_path('tests/dummy.md'), $destinationPath);
-        $this->replaceFileDummyContent($slug, $title);
+        $this->replaceFileDummyContent($path, $title);
 
         return $destinationPath;
     }
 
-    private function replaceFileDummyContent(string $slug, string $title): void
+    private function replaceFileDummyContent(string $path, string $title): void
     {
         $fileContent = Storage::disk('posts')
-            ->get("{$slug}.md");
+            ->get($path);
         $replacedFileContent = Str::of($fileContent)
             ->replace('{{blog_title}}', $title)
             ->replace('{{categories}}', implode(', ', $this->categories))
             ->replace('{{content}}', $this->content);
         Storage::disk('posts')
-            ->put("{$slug}.md", $replacedFileContent);
+            ->put($path, $replacedFileContent);
     }
 
     public function title(string $title): self

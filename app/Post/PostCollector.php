@@ -13,7 +13,7 @@ class PostCollector
     public static function all(): Collection
     {
         return collect(Storage::disk('posts')
-            ->allFiles())->mapFileNamesToPosts()->reverse();
+            ->allFiles())->mapFileNamesToPosts()->sortByDesc('date');
     }
 
     public static function category(string $category): Collection
@@ -41,5 +41,10 @@ class PostCollector
                 ->allFiles())->filter(function ($fileName) use ($searchTerm) {
                     return Str::contains($fileName, $searchTerm);
                 })->mapFileNamesToPosts();
+    }
+
+    public static function paginate(int $int): Collection
+    {
+        return self::all()->chunk(15)->first();
     }
 }

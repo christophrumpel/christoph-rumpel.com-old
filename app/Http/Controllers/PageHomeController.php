@@ -9,7 +9,7 @@ class PageHomeController extends Controller
 {
     public function __invoke()
     {
-        $posts = PostCollector::all();
+        $posts = PostCollector::paginate(1)->toArray();
 
         return view('pages.home', ['posts' => $posts]);
     }

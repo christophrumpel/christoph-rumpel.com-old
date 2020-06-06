@@ -35,12 +35,15 @@ class AppServiceProvider extends ServiceProvider
                         ->getPathPrefix().$fileName;
 
                 $postMetaData = YamlFrontMatter::parse(file_get_contents($filePath));
+                [$date, $slug,] = explode('.',$fileName);
 
                 return new Post([
                     'path' => $filePath,
                     'title' => $postMetaData->matter('title'),
                     'categories' => explode(', ', $postMetaData->matter('categories')),
                     'content' => $postMetaData->body(),
+                    'date' => $date,
+                    'slug' => $slug,
                 ]);
             });
         });

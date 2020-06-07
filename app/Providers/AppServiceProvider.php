@@ -37,11 +37,14 @@ class AppServiceProvider extends ServiceProvider
                 $postMetaData = YamlFrontMatter::parse(file_get_contents($filePath));
                 [$date, $slug,] = explode('.',$fileName);
 
+                $parsedown = new \Parsedown();
+
+
                 return new Post([
                     'path' => $filePath,
                     'title' => $postMetaData->matter('title'),
                     'categories' => explode(', ', $postMetaData->matter('categories')),
-                    'content' => $postMetaData->body(),
+                    'content' => $parsedown->text($postMetaData->body()),
                     'date' => $date,
                     'slug' => $slug,
                 ]);

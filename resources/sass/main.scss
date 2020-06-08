@@ -6,16 +6,6 @@
 
 .post {
 
-    .underline--magical {
-        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-        background-repeat: no-repeat;
-        background-size: 100% 0.3em;
-        background-position: 0 88%;
-        &:hover {
-            background-size: 100%;
-        }
-    }
-
     h1 {
         @apply relative;
     }
@@ -24,12 +14,26 @@
         @apply .font-display .font-bold .text-3xl .text-textBlue .mt-4 .mb-8;
     }
 
+    h3 {
+        @apply .font-display .font-bold .text-2xl .text-textBlue .mt-4 .mb-8;
+    }
+
     p {
         @apply .text-2xl .my-6;
     }
 
+    ul {
+        @apply .text-2xl .ml-10 .my-6 .list-disc;
+    }
+
+    code {
+        @apply .px-4 .py-2 .text-lg rounded;
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+
+    }
+
     a {
-        @apply .relative;
+        @apply .relative .italic;
 
         &:after {
             content: "";
@@ -44,6 +48,16 @@
             bottom: 3px;
             z-index: -1;
             transition: all 375ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    .title-highlight-underline {
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        background-repeat: no-repeat;
+        background-size: 100% 0.3em;
+        background-position: 0 88%;
+        &:hover {
+            background-size: 100%;
         }
     }
 }

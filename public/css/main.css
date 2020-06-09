@@ -19312,6 +19312,23 @@ video {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   list-style-type: disc;
+  list-style-type: none;
+}
+
+.post ul li {
+  position: relative;
+  margin-left: 3rem;
+}
+
+.post ul li:before {
+  border-radius: 9999px;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -50px;
+  top: 10px;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 }
 
 .post pre code {

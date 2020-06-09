@@ -19360,22 +19360,24 @@ video {
 .post blockquote {
   margin-top: 3rem;
   margin-bottom: 3rem;
-  padding: 2rem;
+  padding: 3rem;
   position: relative;
   font-family: Bitter;
   font-style: italic;
+  font-size: 1.5rem;
 }
 
 .post blockquote:before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 130%;
   height: 100%;
   top: 0%;
-  left: 0%;
+  left: -30%;
   z-index: -1;
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
   transform: rotate(2deg);
+  border-radius: 0.125rem;
 }
 
 .post .title-highlight-underline {

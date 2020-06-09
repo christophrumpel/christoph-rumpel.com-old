@@ -58,18 +58,19 @@
 
     blockquote {
 
-        @apply .my-12 .p-8 .relative .font-display .italic;
+        @apply .my-12 .p-12 .relative .font-display .italic .text-2xl;
 
        &:before {
            content: "";
            position: absolute;
-           width: 100%;
+           width: 130%;
            height: 100%;
            top: 0%;
-           left: 0%;
+           left: -30%;
            z-index: -1;
            background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
            transform: rotate(2deg);
+           @apply .rounded-sm;
        }
     }
 

@@ -19,6 +19,8 @@ class Post
 
     public string $slug;
 
+    public string $summary;
+
     public function __construct(array $attributes)
     {
         $this->path = $attributes['path'];
@@ -27,6 +29,7 @@ class Post
         $this->content = $attributes['content'] ?? '';
         $this->date = Carbon::createFromFormat('Y-m-d', $attributes['date']);
         $this->slug = $attributes['slug'] ?? '';
+        $this->summary = $attributes['summary'] ?? '';
     }
 
     public function link(): string

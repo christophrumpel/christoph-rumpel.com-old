@@ -18,13 +18,14 @@ class PagePostTest extends TestCase
         PostFactory::new()
             ->title('My Company Of One Story - Episode 3 The Transition')
             ->content('My blog content')
-            ->categories(['Business'])
+            ->categories(['Business', 'Laravel'])
             ->create();
 
         $this->get('2020/03/my-company-of-one-story-episode-3-the-transition')
             ->assertSuccessful()
             ->assertSee('My Company Of One Story - Episode 3 The Transition')
             ->assertSee('Business')
+            ->assertSee('Laravel')
             ->assertSee('My blog content');
     }
 

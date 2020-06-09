@@ -21,6 +21,7 @@
 <div class="container mx-auto  max-w-5xl p-12">
     {{ $slot }}
 </div>
+<footer>&copy; Christoph Rumpel {{ date('Y') }}</footer>
 
 @livewireScripts
 </body>

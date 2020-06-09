@@ -19308,7 +19308,7 @@ video {
 
 .post ul {
   font-size: 1.5rem;
-  margin-left: 2.5rem;
+  margin-left: 3rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   list-style-type: disc;
@@ -19321,7 +19321,7 @@ video {
   padding-bottom: 0.5rem;
   font-size: 1.125rem;
   border-radius: 0.25rem;
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-image: linear-gradient(120deg, #8fd3f4 0%, #b6def1 100%);
 }
 
 .post a {

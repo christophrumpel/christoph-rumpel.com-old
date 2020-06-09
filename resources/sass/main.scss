@@ -23,13 +23,12 @@
     }
 
     ul {
-        @apply .text-2xl .ml-10 .my-6 .list-disc;
+        @apply .text-2xl .ml-12 .my-6 .list-disc;
     }
 
     code {
         @apply .px-4 .py-2 .text-lg rounded;
-        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-
+        background-image: linear-gradient(120deg, #8fd3f4 0%, #b6def1 100%);
     }
 
     a {

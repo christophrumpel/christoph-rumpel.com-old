@@ -19343,6 +19343,7 @@ video {
   background-repeat: no-repeat;
   background-size: 100% 0.3em;
   background-position: 0 88%;
+  transition: 0.2s ease all;
 }
 
 .post .title-highlight-underline:hover {

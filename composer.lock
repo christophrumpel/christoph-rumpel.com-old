@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c2a2ae3fe8fefa7108faa348a1e5d0b",
+    "content-hash": "e9eb19f19293f39f6a215da143622e72",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2651,6 +2651,125 @@
                 "uuid"
             ],
             "time": "2020-03-29T20:13:32+00:00"
+        },
+        {
+            "name": "scrivo/highlight.php",
+            "version": "v9.18.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scrivo/highlight.php.git",
+                "reference": "52fc21c99fd888e33aed4879e55a3646f8d40558"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scrivo/highlight.php/zipball/52fc21c99fd888e33aed4879e55a3646f8d40558",
+                "reference": "52fc21c99fd888e33aed4879e55a3646f8d40558",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8|^5.7",
+                "sabberworm/php-css-parser": "^8.3",
+                "symfony/finder": "^2.8|^3.4",
+                "symfony/var-dumper": "^2.8|^3.4"
+            },
+            "suggest": {
+                "ext-dom": "Needed to make use of the features in the utilities namespace"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Highlight\\": "",
+                    "HighlightUtilities\\": ""
+                },
+                "files": [
+                    "HighlightUtilities/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Geert Bergman",
+                    "homepage": "http://www.scrivo.org/",
+                    "role": "Project Author"
+                },
+                {
+                    "name": "Vladimir Jimenez",
+                    "homepage": "https://allejo.io",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Martin Folkers",
+                    "homepage": "https://twobrain.io",
+                    "role": "Contributor"
+                }
+            ],
+            "description": "Server side syntax highlighter that supports 185 languages. It's a PHP port of highlight.js",
+            "keywords": [
+                "code",
+                "highlight",
+                "highlight.js",
+                "highlight.php",
+                "syntax"
+            ],
+            "time": "2020-03-02T05:59:21+00:00"
+        },
+        {
+            "name": "spatie/commonmark-highlighter",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/commonmark-highlighter.git",
+                "reference": "c36ea12432e6ce65df299e3f5ed31a0e880d0060"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/commonmark-highlighter/zipball/c36ea12432e6ce65df299e3f5ed31a0e880d0060",
+                "reference": "c36ea12432e6ce65df299e3f5ed31a0e880d0060",
+                "shasum": ""
+            },
+            "require": {
+                "league/commonmark": "^1.0",
+                "php": "^7.2",
+                "scrivo/highlight.php": "^9.15.6.1"
+            },
+            "require-dev": {
+                "larapack/dd": "^1.0",
+                "phpunit/phpunit": "^8.0",
+                "spatie/phpunit-snapshot-assertions": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\CommonMarkHighlighter\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian De Deyne",
+                    "email": "sebastian@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Highlight your markdown code blocks with league/commonmark",
+            "homepage": "https://github.com/spatie/commonmark-highlighter",
+            "keywords": [
+                "commonmark-highlighter",
+                "spatie"
+            ],
+            "time": "2019-11-21T15:49:51+00:00"
         },
         {
             "name": "spatie/image",
@@ -6670,75 +6789,6 @@
             "time": "2020-05-22T13:51:52+00:00"
         },
         {
-            "name": "scrivo/highlight.php",
-            "version": "v9.18.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/scrivo/highlight.php.git",
-                "reference": "52fc21c99fd888e33aed4879e55a3646f8d40558"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/scrivo/highlight.php/zipball/52fc21c99fd888e33aed4879e55a3646f8d40558",
-                "reference": "52fc21c99fd888e33aed4879e55a3646f8d40558",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "ext-mbstring": "*",
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8|^5.7",
-                "sabberworm/php-css-parser": "^8.3",
-                "symfony/finder": "^2.8|^3.4",
-                "symfony/var-dumper": "^2.8|^3.4"
-            },
-            "suggest": {
-                "ext-dom": "Needed to make use of the features in the utilities namespace"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Highlight\\": "",
-                    "HighlightUtilities\\": ""
-                },
-                "files": [
-                    "HighlightUtilities/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Geert Bergman",
-                    "homepage": "http://www.scrivo.org/",
-                    "role": "Project Author"
-                },
-                {
-                    "name": "Vladimir Jimenez",
-                    "homepage": "https://allejo.io",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Martin Folkers",
-                    "homepage": "https://twobrain.io",
-                    "role": "Contributor"
-                }
-            ],
-            "description": "Server side syntax highlighter that supports 185 languages. It's a PHP port of highlight.js",
-            "keywords": [
-                "code",
-                "highlight",
-                "highlight.js",
-                "highlight.php",
-                "syntax"
-            ],
-            "time": "2020-03-02T05:59:21+00:00"
-        },
-        {
             "name": "sebastian/code-unit-reverse-lookup",
             "version": "1.0.1",
             "source": {
@@ -7448,7 +7498,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.2.5",
+        "php": "^7.4",
         "ext-json": "*"
     },
     "platform-dev": []

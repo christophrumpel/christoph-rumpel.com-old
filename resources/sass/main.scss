@@ -30,6 +30,11 @@
         @apply .p-8 .rounded-sm;
     }
 
+    p code {
+        @apply .px-4 .py-1 .text-lg .rounded-sm;
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    }
+
     a {
         @apply .relative .italic;
 
@@ -55,6 +60,7 @@
         background-size: 100% 0.3em;
         background-position: 0 88%;
         transition: .2s ease all;
+
         &:hover {
             background-size: 100%;
         }

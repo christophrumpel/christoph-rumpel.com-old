@@ -7,7 +7,7 @@
                 class="title-highlight-underline">{{$post->title}}</span></h1>
 
         @foreach($post->categories as $category)
-            <span class="border-black border-2 rounded p-2 uppercase">{{$category}}</span>
+            <a href="{{ route('page.category', $category) }}" class="border-black border-2 rounded p-2 uppercase bg-yellow-400">{{$category}}</a>
         @endforeach
 
         <p>

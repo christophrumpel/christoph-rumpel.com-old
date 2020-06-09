@@ -3,6 +3,7 @@
 namespace App\Post;
 
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Spatie\YamlFrontMatter\YamlFrontMatter;
@@ -12,10 +13,14 @@ class PostCollector
 
     public static function all(): Collection
     {
-        return collect(Storage::disk('posts')
-            ->allFiles())
-            ->map(fn($file) => FileToPostMapper::map($file))
-            ->sortByDesc('date');
+
+        return Cache::remember('posts', 3600, function () {
+            return collect(Storage::disk('posts')
+                ->allFiles())
+                ->map(fn($file) => FileToPostMapper::map($file))
+                ->sortByDesc('date');
+        });
+
     }
 
     public static function category(string $category): Collection

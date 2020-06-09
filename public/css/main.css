@@ -19319,6 +19319,16 @@ video {
   border-radius: 0.125rem;
 }
 
+.post p code {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 1.125rem;
+  border-radius: 0.125rem;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
 .post a {
   position: relative;
   font-style: italic;

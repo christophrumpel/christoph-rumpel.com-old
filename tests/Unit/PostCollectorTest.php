@@ -4,6 +4,7 @@ namespace Tests\Unit;
 
 use App\Post\Post;
 use App\Post\PostCollector;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Storage;
 use Tests\Factories\PostFactory;
 use Tests\TestCase;
@@ -11,7 +12,7 @@ use Tests\TestCase;
 class PostCollectorTest extends TestCase
 {
 
-    /** @test **/
+    /** @test * */
     public function it_collects_all_given_posts_from_filesystem(): void
     {
         Storage::fake('posts');
@@ -19,15 +20,16 @@ class PostCollectorTest extends TestCase
         PostFactory::new()
             ->createMultiple(10);
 
-    	$posts = PostCollector::all();
+        $posts = PostCollector::all();
 
-    	$this->assertCount(10, $posts);
-    	$this->assertInstanceOf(Post::class, $posts->first());
-    	$this->assertTrue($posts->first()->date->isToday());
-        $this->assertTrue($posts->skip(1)->first()->date->isYesterday());
+        $this->assertCount(10, $posts);
+        $this->assertInstanceOf(Post::class, $posts->first());
+        $this->assertTrue($posts->first()->date->isToday());
+        $this->assertTrue($posts->skip(1)
+            ->first()->date->isYesterday());
     }
 
-    /** @test **/
+    /** @test * */
     public function it_finds_a_specific_post_by_slug(): void
     {
         Storage::fake('posts');
@@ -42,7 +44,7 @@ class PostCollectorTest extends TestCase
         $this->assertEquals('My Company Of One Story - Episode 2 Motivation', $post->title);
     }
 
-    /** @test **/
+    /** @test * */
     public function it_finds_post_of_a_specific_category(): void
     {
         Storage::fake('posts');
@@ -63,7 +65,7 @@ class PostCollectorTest extends TestCase
         $this->assertEquals('My Business', $posts->first()->title);
     }
 
-    /** @test **/
+    /** @test * */
     public function it_searches_posts_by_search_term(): void
     {
         Storage::fake('posts');
@@ -79,7 +81,7 @@ class PostCollectorTest extends TestCase
         $this->assertEquals('My Company Of One Story - Episode 2 Motivation', $results->first()->title);
     }
 
-    /** @test **/
+    /** @test * */
     public function it_paginates_post(): void
     {
         Storage::fake('posts');
@@ -91,7 +93,21 @@ class PostCollectorTest extends TestCase
         $this->assertCount(15, $pageOnePosts);
         $this->assertEquals('My Blog Title 30', $pageOnePosts->first()->title);
 
-
         $this->assertCount(15, PostCollector::paginate(2));
+    }
+
+    /** @test **/
+    public function it_caches_posts(): void
+    {
+        PostCollector::all();
+
+        PostCollector::all();
+
+
+        Cache::shouldReceive('remember')
+            ->once()
+            ->with('posts')
+            ->andReturn('value');
+
     }
 }

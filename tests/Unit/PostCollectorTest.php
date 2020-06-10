@@ -96,18 +96,4 @@ class PostCollectorTest extends TestCase
         $this->assertCount(15, PostCollector::paginate(2));
     }
 
-    /** @test **/
-    public function it_caches_posts(): void
-    {
-        PostCollector::all();
-
-        PostCollector::all();
-
-
-        Cache::shouldReceive('remember')
-            ->once()
-            ->with('posts')
-            ->andReturn('value');
-
-    }
 }

@@ -35,8 +35,7 @@ class FileToPostMapper
         return new Post([
             'path' => $filePath,
             'title' => $postMetaData->matter('title'),
-            'categories' => explode(', ', $postMetaData->matter('categories')),
-            //'content' => $parsedown->text($postMetaData->body()),
+            'categories' => explode(', ', strtolower($postMetaData->matter('categories'))),
             'content' => $commonMarkConverter->convertToHtml($postMetaData->body()),
             'date' => $date,
             'slug' => $slug,

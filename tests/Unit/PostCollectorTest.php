@@ -89,11 +89,22 @@ class PostCollectorTest extends TestCase
         PostFactory::new()
             ->createMultiple(30);
 
-        $pageOnePosts = PostCollector::paginate(1);
+        $pageOnePosts = PostCollector::paginate(15, 1);
         $this->assertCount(15, $pageOnePosts);
         $this->assertEquals('My Blog Title 30', $pageOnePosts->first()->title);
 
-        $this->assertCount(15, PostCollector::paginate(2));
+        $this->assertCount(15, PostCollector::paginate(15, 2));
+    }
+
+    /** @test */
+    public function it_counts_posts(): void
+    {
+        Storage::fake('posts');
+
+        PostFactory::new()
+            ->createMultiple(5);
+
+        $this->assertEquals(5, PostCollector::count());
     }
 
 }

@@ -13,8 +13,7 @@ class PostCollector
 
     public static function all(): Collection
     {
-
-        return Cache::remember('posts', 3600, function () {
+        return Cache::remember('posts', 0, function () {
             return collect(Storage::disk('posts')
                 ->allFiles())
                 ->map(fn($file) => FileToPostMapper::map($file))
@@ -51,10 +50,16 @@ class PostCollector
             })
             ->map(fn($file) => FileToPostMapper::map($file));    }
 
-    public static function paginate(int $int): Collection
+    public static function paginate(int $postsPerPage, int $page): Collection
     {
         return self::all()
-            ->chunk(15)
-            ->first();
+            ->skip($page - 1)
+            ->take($postsPerPage);
+    }
+
+    public static function count(): int
+    {
+        return collect(Storage::disk('posts')
+            ->allFiles())->count();
     }
 }

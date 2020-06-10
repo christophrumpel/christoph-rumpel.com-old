@@ -12,6 +12,10 @@
         @apply .font-display .font-bold .text-2xl .text-textBlue .mt-4 .mb-8;
     }
 
+    h4 {
+        @apply .font-display .font-bold .text-xl .text-textBlue .mt-4 .mb-8;
+    }
+
     p {
         @apply .text-2xl .my-6;
     }
@@ -99,5 +103,23 @@
         &:hover {
             background-size: 100%;
         }
+    }
+
+    .blognote {
+        @apply .bg-highlightYellow .px-4 py-2 .my-12 .relative .rounded-sm;;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0%;
+            right: -15%;
+            z-index: -1;
+            background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            transform: rotate(2deg);
+            @apply .rounded-sm;
+        }
+
     }
 }

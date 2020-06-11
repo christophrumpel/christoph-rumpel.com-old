@@ -20,12 +20,12 @@ class PostList extends Component
 
     public function mount(): void
     {
-        $this->pagesCount = PostCollector::count() / $this->postPerPage + 1;
+        $this->pagesCount = ceil(PostCollector::count() / $this->postPerPage);
     }
 
     public function render()
     {
-        $results = $this->searchTerm ? $this->searchResults($this->searchTerm) : PostCollector::paginate($this->postPerPage,
+        $results = $this->searchTerm ? $this->searchResults() : PostCollector::paginate($this->postPerPage,
             $this->currentPage);
 
         return view('livewire.postList', ['results' => $results]);

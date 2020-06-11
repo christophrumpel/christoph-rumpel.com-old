@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Post\PostCollector;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Facades\Storage;
@@ -30,6 +31,23 @@ class LiveWirePostListTest extends TestCase
             ->call('previousPage')
             ->assertSee('Blog Title 30')
             ->assertDontSee('Blog Title 15');
+    }
+
+    /** @test **/
+    public function it_shows_post_pagination_during_browsing(): void
+    {
+        Storage::fake('posts');
+
+        PostFactory::new()
+            ->createMultiple(30);
+
+
+        Livewire::test('post-list',)
+            ->assertSee('Next')
+            ->assertDontSee('Previous')
+            ->call('nextPage')
+            ->assertDontSee('Next')
+            ->assertSee('Previous');
 
     }
 }

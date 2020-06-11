@@ -6,18 +6,17 @@ use App\Post\PostCollector;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use Livewire\Component;
-use Livewire\WithPagination;
 
 class PostList extends Component
 {
 
     public int $currentPage = 1;
 
-    public string $searchTerm = '';
-
     public int $pagesCount;
 
     public int $postPerPage = 15;
+
+    public string $searchTerm = '';
 
     public function mount(): void
     {
@@ -39,7 +38,8 @@ class PostList extends Component
         return PostCollector::all()
             ->filter(fn($post) => Str::of($post->title)
                     ->lower()
-                    ->contains($searchTerm) || Str::of(implode(',', $post->categories))->contains($searchTerm));
+                    ->contains($searchTerm) || Str::of(implode(',', $post->categories))
+                    ->contains($searchTerm));
     }
 
     public function nextPage(): void

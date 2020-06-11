@@ -56,4 +56,10 @@ class PageHomeTest extends TestCase
         $this->get('/')
             ->assertDontSee('My Blog Title 15');
     }
+
+    /** @test  */
+    function it_sees_post_list_component_on_home_page()
+    {
+        $this->get('/')->assertSeeLivewire('post-list');
+    }
 }

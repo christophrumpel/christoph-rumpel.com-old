@@ -1,5 +1,5 @@
 <x-app-layout>
-    @livewire('search')
+    @livewire('post-list')
 
     <main class="home">
 

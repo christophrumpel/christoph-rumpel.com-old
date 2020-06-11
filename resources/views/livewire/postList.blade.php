@@ -33,7 +33,7 @@
             </div>
             <div class="hidden md:flex">
                 <a href="#"
-                   class="-mt-px border-t-2 border-indigo-500 pt-4 px-4 inline-flex items-center text-sm leading-5 font-medium text-indigo-600 focus:outline-none focus:text-indigo-800 focus:border-indigo-700 transition ease-in-out duration-150">
+                   class="-mt-px border-t-2 border-textBlue pt-4 px-4 inline-flex items-center text-sm leading-5 font-medium text-textBlue focus:outline-none focus:textBlue focus:textBlue transition ease-in-out duration-150">
                     {{ $currentPage }} / {{ $pagesCount }}
                 </a>
             </div>

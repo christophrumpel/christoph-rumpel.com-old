@@ -9,7 +9,7 @@
 @import "highlight";
 
 .home {
-    a {
+    nav a {
         @apply .relative .italic;
 
         &:after {
@@ -32,13 +32,8 @@
         }
     }
 
-    ul {
-        li:nth-child(odd) {
-            background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-        }
-
-        li:nth-child(even) {
-            background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-        }
+    code {
+        @apply .px-4 .py-1 .rounded-sm;
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     }
 }

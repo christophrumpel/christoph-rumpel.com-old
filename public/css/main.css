@@ -19891,12 +19891,12 @@ video {
   font-weight: bold;
 }
 
-.home a {
+.home nav a {
   position: relative;
   font-style: italic;
 }
 
-.home a:after {
+.home nav a:after {
   content: "";
   position: absolute;
   transform: rotate(-2deg);
@@ -19910,15 +19910,16 @@ video {
   transition: all 375ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.home a:hover:after {
+.home nav a:hover:after {
   height: 100%;
 }
 
-.home ul li:nth-child(odd) {
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-}
-
-.home ul li:nth-child(even) {
+.home code {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-radius: 0.125rem;
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 }
 

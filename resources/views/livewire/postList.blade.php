@@ -1,6 +1,11 @@
 <div>
-    <input wire:model="searchTerm" type="text" placeholder="Search for..."
-           class="form-input relative rounded-md shadow-sm p-2"/>
+    <div class="flex flex-row">
+
+        <input wire:model="searchTerm" type="text" placeholder="Search for..."
+               class="form-input relative rounded-md shadow-sm p-2"/>
+
+        <h2 class="font-display text-2xl text-textBlue">Here is what I have been writing lately.</h2>
+    </div>
 
     <ul>
         @foreach($results as $result)

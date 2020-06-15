@@ -1,44 +1,5 @@
 .post {
 
-    h1 {
-        @apply relative;
-    }
-
-    h2 {
-        @apply .font-display .font-bold .text-3xl .text-textBlue .mt-4 .mb-8;
-    }
-
-    h3 {
-        @apply .font-display .font-bold .text-2xl .text-textBlue .mt-4 .mb-8;
-    }
-
-    h4 {
-        @apply .font-display .font-bold .text-xl .text-textBlue .mt-4 .mb-8;
-    }
-
-    p {
-        @apply .text-2xl .my-6;
-    }
-
-    ul {
-        @apply .text-2xl .ml-12 .my-6 .list-disc .list-none;
-
-        li {
-            @apply .relative .ml-12;
-
-            &:before {
-                @apply .rounded-full;
-                content: '';
-                position: absolute;
-                width: 20px;
-                height: 20px;
-                left: -50px;
-                top: 10px;
-                background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-            }
-        }
-    }
-
     pre code {
         @apply .p-8 .rounded-sm;
     }

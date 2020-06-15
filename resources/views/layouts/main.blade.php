@@ -18,14 +18,9 @@
 </head>
 
 <body class="bg-bgBlue">
-<div class="container mx-auto  max-w-5xl p-12">
     {{ $slot }}
-</div>
-<footer class="flex justify-center p-12">
-    <div>
-        &copy; Christoph Rumpel {{ date('Y') }}
-    </div>
-</footer>
+
+@include('partials.footer')
 
 @livewireScripts
 </body>

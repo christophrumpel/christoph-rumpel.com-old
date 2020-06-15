@@ -17,4 +17,12 @@ class PageResponseTest extends TestCase
        $this->get('/')
             ->assertSuccessful();
     }
+
+    /** @test * */
+    public function it_gives_successful_response_for_privacy_policy_page(): void
+    {
+        $this->withoutExceptionHandling();
+        $this->get('/privacy-policy')
+            ->assertSuccessful();
+    }
 }

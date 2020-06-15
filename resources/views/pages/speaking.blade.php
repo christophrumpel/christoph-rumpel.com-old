@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-main-layout>
     <h2>Upcoming</h2>
     <ul>
     @foreach($talks->upcoming as $talk)
@@ -18,4 +18,4 @@
             <li>{{ $talk->event }}</li>
         @endforeach
     </ul>
-</x-app-layout>
+</x-main-layout>

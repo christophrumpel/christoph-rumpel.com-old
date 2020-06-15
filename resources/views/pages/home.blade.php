@@ -1,20 +1,25 @@
-<x-app-layout>
+<x-home-layout>
     <main class="home">
 
-        <header class="flex flex-col mb-16 p-12">
+        <header class="flex justify-center mb-16 p-12">
+            <div class="flex flex-col">
 
-            <nav class="w-full">
-                <ul class="list-none flex justify-end">
-                    <li class="text-2xl p-4"><a href="">Products</a></li>
-                    <li class="text-2xl p-4"><a href="">Speaking</a></li>
-                </ul>
-            </nav>
+                @include('partials.nav')
 
-            <img src="{{ asset('images/cr.png') }}" alt="Christoph Photo" width="200" height="200">
-            <h2 class="font-display text-textBlue font-bold text-5xl">Hey, I'm Christoph. I <code>write</code>, <code>speak</code> and <code>teach</code>.</h2>
+
+                        <img src="{{ asset('images/cr.png') }}" alt="Christoph Photo" width="200" height="200">
+                        <h2 class="font-display text-textBlue font-bold text-5xl">Hey, I'm Christoph. I
+                            <code>write</code>,<br>
+                            <code>speak</code>
+                            and <code>teach</code>.</h2>
+
+            </div>
         </header>
 
-        @livewire('post-list')
+        <div class="container mx-auto  max-w-5xl p-12">
+
+            @livewire('post-list')
+        </div>
 
     </main>
-</x-app-layout>
+</x-home-layout>

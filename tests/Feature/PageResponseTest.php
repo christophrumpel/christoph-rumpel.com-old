@@ -25,4 +25,20 @@ class PageResponseTest extends TestCase
         $this->get('/privacy-policy')
             ->assertSuccessful();
     }
+
+    /** @test * */
+    public function it_gives_successful_response_for_privacy_policy_lca_page(): void
+    {
+        $this->withoutExceptionHandling();
+        $this->get('/privacy-policy-lca')
+            ->assertSuccessful();
+    }
+
+    /** @test * */
+    public function it_gives_successful_response_for_uses_page(): void
+    {
+        $this->withoutExceptionHandling();
+        $this->get('/uses')
+            ->assertSuccessful();
+    }
 }

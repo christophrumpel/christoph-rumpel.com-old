@@ -19646,7 +19646,7 @@ video {
 .page h2 {
   font-family: Bitter;
   font-weight: 700;
-  font-size: 1.875rem;
+  font-size: 2.25rem;
   --text-opacity: 1;
   color: #0f1b61;
   color: rgba(15, 27, 97, var(--text-opacity));
@@ -19657,7 +19657,7 @@ video {
 .page h3 {
   font-family: Bitter;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.875rem;
   --text-opacity: 1;
   color: #0f1b61;
   color: rgba(15, 27, 97, var(--text-opacity));
@@ -19668,7 +19668,7 @@ video {
 .page h4 {
   font-family: Bitter;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   --text-opacity: 1;
   color: #0f1b61;
   color: rgba(15, 27, 97, var(--text-opacity));

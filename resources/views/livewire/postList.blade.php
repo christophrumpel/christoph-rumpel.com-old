@@ -1,10 +1,8 @@
 <div>
-    <div class="flex flex-row">
-
+    <div class="flex justify-between">
+        <h2 class="font-display text-2xl text-textBlue">Here is what I have been writing lately.</h2>
         <input wire:model="searchTerm" type="text" placeholder="Search for..."
                class="form-input relative rounded-md shadow-sm p-2"/>
-
-        <h2 class="font-display text-2xl text-textBlue">Here is what I have been writing lately.</h2>
     </div>
 
     <ul>

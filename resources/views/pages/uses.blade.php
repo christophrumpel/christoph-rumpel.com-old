@@ -188,6 +188,12 @@
 
             <p>If you feel like I'm missing any important tools I didn't mention, please <a href="https://twitter.com/christophrumpel">let me know</a>.</p>
 
+            <h3>Mac Menu Bar Icons</h3>
+            <ul>
+                <li>With <a href="https://www.macbartender.com/">Bartender</a> I customize my menu icons.</li>
+            </ul>
+            <p>A lot of those icons you do not need to that regularly. So with Bartender you can hide them and everything looks a little more cleaned up.</p>
+
 
         </article>
     </div>

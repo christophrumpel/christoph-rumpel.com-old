@@ -11,6 +11,6 @@ class PageCategoryController extends Controller
     {
        $posts = PostCollector::category($category);
 
-       return view('pages.category', ['posts' => $posts]);
+       return view('pages.category', ['posts' => $posts, 'category' => $category]);
     }
 }

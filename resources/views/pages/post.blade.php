@@ -1,7 +1,7 @@
 <x-main-layout>
-    <div class="container mx-auto  max-w-5xl p-12">
+    <main class="post page">
 
-        <article class="post page">
+        <article class="mt-16">
 
             <time class="text-textBlue font-bold"
                   datetime="{{ $post->date->format('Y-m-d') }}">{{ $post->date->format('F Y') }}</time>
@@ -21,5 +21,5 @@
         </article>
 
         @include('partials.newsletter')
-    </div>
+    </main>
 </x-main-layout>

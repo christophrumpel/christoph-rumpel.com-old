@@ -19737,6 +19737,15 @@ video {
   height: 100%;
 }
 
+.page p code, .page ul code {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-radius: 0.125rem;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
 .post pre code {
   padding: 2rem;
   border-radius: 0.125rem;
@@ -19947,21 +19956,6 @@ nav a:after {
 
 nav a:hover:after {
   height: 100%;
-}
-
-.diagonal-box {
-  position: relative;
-}
-
-.diagonal-box {
-  background-image: linear-gradient(45deg, #654ea3, #eaafc8);
-  transform: skewY(-11deg);
-}
-
-.content {
-  max-width: 50em;
-  margin: 0 auto;
-  transform: skewY(11deg);
 }
 
 .home code {

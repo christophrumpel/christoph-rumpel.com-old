@@ -65,4 +65,9 @@
             height: 100%;
         }
     }
+
+    p code, ul code {
+        @apply .px-4 .py-1 .rounded-sm;
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    }
 }

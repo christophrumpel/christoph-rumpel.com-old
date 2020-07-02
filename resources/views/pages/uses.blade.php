@@ -1,8 +1,6 @@
 <x-main-layout>
-    <div class="container mx-auto  max-w-5xl p-12">
-
-        @include('partials.nav')
-        <article class="page">
+    <main class="page home">
+        <article>
 
             <h1>Uses</h1>
 
@@ -118,9 +116,13 @@
 
             <ul>
                 <li>PhpStorm is my favorite IDE</li>
-                <li>In <a href="/2019/01/my-current-dark-and-light-theme">this post</a> I share my current light and dark theme</li>
+                <li>In <a href="/2019/01/my-current-dark-and-light-theme">this post</a> I share my current light and
+                    dark
+                    theme
+                </li>
 
-                <li>I share all my favorite 🧪 PhpStorm Tips & Tricks on this <a href="https://twitter.com/i/events/1268886882013917184">Twitter Moment</a></li>
+                <li>I share all my favorite 🧪 PhpStorm Tips & Tricks on this <a
+                        href="https://twitter.com/i/events/1268886882013917184">Twitter Moment</a></li>
                 <li>I recorded <a href="https://www.youtube.com/playlist?list=PLQ176FUIyIUZjFbdm7Ux3Okalij5jMAgw">some
                         videos</a> for JetBrains to share my PhpStorm setup
                 </li>
@@ -137,7 +139,9 @@
             <ul>
                 <li>I use <a href="https://laravel.com/docs/master/valet">Laravel Valet</a> for local dev system</li>
                 <li>Depending on my clients, I sometimes also use <a href="https://www.docker.com/">Docker</a></li>
-                <li>In 2019, I switched from <a href="https://www.sequelpro.com/">SequelPro</a> to <a href="https://tableplus.com/">TablePlus</a> to manage my relational databases</li>
+                <li>In 2019, I switched from <a href="https://www.sequelpro.com/">SequelPro</a> to <a
+                        href="https://tableplus.com/">TablePlus</a> to manage my relational databases
+                </li>
             </ul>
 
             <h3>Screencasts</h3>
@@ -155,20 +159,25 @@
             <h3>Productivity</h3>
             <ul>
                 <li><a href="https://www.alfredapp.com/">Alfred</a> is the best!</li>
-                <li>In <a href="https://www.youtube.com/watch?v=okb6GIKbHD8">this video</a> I give a preview of all the Alfred workflows I am using</li>
+                <li>In <a href="https://www.youtube.com/watch?v=okb6GIKbHD8">this video</a> I give a preview of all the
+                    Alfred workflows I am using
+                </li>
             </ul>
 
             <h3>MacOS Window Manager</h3>
             <ul>
                 <li>I need to move and resize windows all the time</li>
                 <li><a href="https://www.spectacleapp.com/">Spectacle</a> is my app of choice</li>
-                <li>Unfortunately, it is <a href="https://github.com/eczarny/spectacle#important-note">not maintained anymore</a>.</li>
+                <li>Unfortunately, it is <a href="https://github.com/eczarny/spectacle#important-note">not maintained
+                        anymore</a>.
+                </li>
             </ul>
 
             <h3>Cloud Storage</h3>
             <ul>
                 <li>I'm using <a href="https://www.dropbox.com/">Dropbox</a> to backup all my file</li>
-                <li><a href="https://www.google.at/drive/about.html">Google Drive</a> is where I store all my documents</li>
+                <li><a href="https://www.google.at/drive/about.html">Google Drive</a> is where I store all my documents
+                </li>
             </ul>
 
             <h3>Password Manager</h3>
@@ -186,15 +195,17 @@
             <p>If you are interested, <a href="/2018/10/my-current-setup-in-2018">this was my setup in 2018.</a> Quite a
                 lot changed since then.</p>
 
-            <p>If you feel like I'm missing any important tools I didn't mention, please <a href="https://twitter.com/christophrumpel">let me know</a>.</p>
+            <p>If you feel like I'm missing any important tools I didn't mention, please <a
+                    href="https://twitter.com/christophrumpel">let me know</a>.</p>
 
             <h3>Mac Menu Bar Icons</h3>
             <ul>
                 <li>With <a href="https://www.macbartender.com/">Bartender</a> I customize my menu icons.</li>
             </ul>
-            <p>A lot of those icons you do not need to that regularly. So with Bartender you can hide them and everything looks a little more cleaned up.</p>
+            <p>A lot of those icons you do not need to that regularly. So with Bartender you can hide them and
+                everything
+                looks a little more cleaned up.</p>
 
 
         </article>
-    </div>
 </x-main-layout>

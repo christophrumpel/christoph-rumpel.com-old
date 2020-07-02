@@ -18,7 +18,11 @@
 </head>
 
 <body class="bg-bgBlue">
+<div class="container mx-auto  max-w-5xl p-12">
+    @include('partials.nav')
+
     {{ $slot }}
+</div>
 
 @include('partials.footer')
 

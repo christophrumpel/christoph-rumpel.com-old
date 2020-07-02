@@ -2,6 +2,13 @@
     "upcoming": [],
     "past": [
         {
+            "date": "19.07.2020",
+            "event": "Full-stack Utrecht",
+            "location": "All Over The World 🌏",
+            "title": "PhpStorm - A Master Setup",
+            "url": "https://www.meetup.com/Full-stack-Utrecht/events/271029100"
+        },
+        {
             "date": "26.02.2020",
             "event": "Laracon Online",
             "location": "All Over The World 🌏",

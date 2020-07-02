@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\View\Components\MainLayout;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
@@ -15,6 +16,6 @@ class BladeServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Blade::component('layouts.main', 'main-layout');
+        Blade::component('layouts.main', MainLayout::class);
     }
 }

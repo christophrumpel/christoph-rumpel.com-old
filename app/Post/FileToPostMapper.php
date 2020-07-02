@@ -36,6 +36,8 @@ class FileToPostMapper
             'path' => $filePath,
             'title' => $postMetaData->matter('title'),
             'categories' => explode(', ', strtolower($postMetaData->matter('categories'))),
+            'preview_image' => $postMetaData->matter('preview_image'),
+            'preview_image_twitter' => $postMetaData->matter('preview_image_twitter'),
             'content' => $commonMarkConverter->convertToHtml($postMetaData->body()),
             'date' => $date,
             'slug' => $slug,

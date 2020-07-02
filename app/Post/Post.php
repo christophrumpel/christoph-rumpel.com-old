@@ -13,6 +13,10 @@ class Post
 
     public array $categories = [];
 
+    public string $previewImage;
+
+    public string $previewImageTwitter;
+
     public string $content;
 
     public \Carbon\Carbon $date;
@@ -26,6 +30,8 @@ class Post
         $this->path = $attributes['path'];
         $this->title = $attributes['title'] ?? '';
         $this->categories = $attributes['categories'] ?? [];
+        $this->previewImage = $attributes['preview_image'] ?? '';
+        $this->previewImageTwitter = $attributes['preview_image_twitter'] ?? '';
         $this->content = $attributes['content'] ?? '';
         $this->date = Carbon::createFromFormat('Y-m-d', $attributes['date']);
         $this->slug = $attributes['slug'] ?? '';

@@ -15,6 +15,10 @@
           rel="stylesheet">
     @livewireStyles
 
+    @isset($post)
+        @include('partials.postMeta')
+    @endisset
+
 </head>
 
 <body class="bg-bgBlue">

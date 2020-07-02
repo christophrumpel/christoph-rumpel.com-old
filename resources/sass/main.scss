@@ -11,7 +11,6 @@
 @import "highlight";
 
 
-
 nav a {
     @apply .relative .italic;
 
@@ -40,6 +39,28 @@ nav a {
     code {
         @apply .px-4 .py-1 .rounded-sm;
         background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    }
+
+    .post-list {
+        li {
+            @apply .relative;
+
+            &:hover:after {
+                content: "";
+                position: absolute;
+                -webkit-transform: rotate(-2deg);
+                transform: rotate(-2deg);
+                width: 100%;
+                height: 60%;
+                border-radius: 3px;
+                background-image: linear-gradient(120deg, #f4e04d 0%, rgb(238, 226, 124) 100%);
+                //background: #f4e04d;
+                left: 0;
+                bottom: 3px;
+                z-index: -1;
+                transition: all 375ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        }
     }
 }
 

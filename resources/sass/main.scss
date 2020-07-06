@@ -24,7 +24,7 @@ nav a {
         border-radius: 3px;
         background: #f4e04d;
         left: 0;
-        bottom: 3px;
+        bottom: 6px;
         z-index: -1;
         transition: all 375ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -45,23 +45,32 @@ nav a {
         li {
             @apply .relative;
 
-            &:hover:after {
+            &:after {
                 content: "";
                 position: absolute;
-                -webkit-transform: rotate(-2deg);
-                transform: rotate(-2deg);
                 width: 100%;
-                height: 60%;
+                height: 100%;
                 border-radius: 3px;
                 background-image: linear-gradient(120deg, #f4e04d 0%, rgb(238, 226, 124) 100%);
                 //background: #f4e04d;
-                left: 0;
-                bottom: 3px;
+                left: 8px;
+                bottom: -8px;
                 z-index: -1;
                 transition: all 375ms cubic-bezier(0.4, 0, 0.2, 1);
             }
+
+            &:hover:after {
+                transform: rotate(-2deg);
+            }
         }
     }
+}
+
+.logo {
+    display: block;
+    background-image: url("/images/logo-bg.svg");
+    background-size: cover;
+    background-position: center;
 }
 
 

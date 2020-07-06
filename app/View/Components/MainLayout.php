@@ -9,9 +9,9 @@ use Illuminate\View\View;
 class MainLayout extends Component
 {
 
-    public Post $post;
+    public $post;
 
-    public function __construct(Post $post)
+    public function __construct($post = null)
     {
         $this->post = $post;
     }

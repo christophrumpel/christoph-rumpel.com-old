@@ -25,6 +25,7 @@ class PostList extends Component
 
     public function render()
     {
+
         $results = $this->searchTerm ? $this->searchResults() : PostCollector::paginate($this->postPerPage,
             $this->currentPage);
 
@@ -33,6 +34,9 @@ class PostList extends Component
 
     private function searchResults(): Collection
     {
+        // Reset current page
+        $this->currentPage = 1;
+
         $searchTerm = strtolower($this->searchTerm);
 
         return PostCollector::all()

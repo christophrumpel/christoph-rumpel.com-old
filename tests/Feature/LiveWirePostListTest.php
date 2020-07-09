@@ -50,4 +50,23 @@ class LiveWirePostListTest extends TestCase
             ->assertSee('Previous');
 
     }
+
+    /** @test **/
+    public function it_resets_pagination_after_search(): void
+    {
+        Storage::fake('posts');
+
+        PostFactory::new()
+            ->createMultiple(100);
+
+
+        Livewire::test('post-list',)
+            ->call('nextPage')
+            ->assertSet('currentPage', 2)
+            ->set('searchTerm', 'laravel')
+            ->assertDontSee('Next')
+            ->set('searchTerm', '')
+            ->assertSee('Next')
+            ->assertSet('currentPage', 1);
+    }
 }

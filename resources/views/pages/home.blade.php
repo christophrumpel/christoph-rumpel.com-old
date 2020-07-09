@@ -1,15 +1,13 @@
 <x-main-layout>
     <main class="home">
 
-        <header class="flex justify-center mb-16 p-12">
-            <div class="flex flex-col">
+        <header class="flex flex-row justify-evenly items-center my-20 py-12">
 
-                <img src="{{ asset('images/cr.png') }}" alt="Christoph Photo" width="200" height="200">
-                <h2 class="font-display text-textBlue font-bold text-5xl">Hey, I'm Christoph. I
-                    <code>code</code>. I <code>teach</code> how to code.
-                    I <code>write</code> about how I teach to code.</h2>
+            <img class="mr-12" src="{{ asset('images/cr.png') }}" alt="Christoph Photo" width="200" height="200">
+            <h2 class="font-display text-textBlue text-3xl">Hey, I'm Christoph. I
+                <code>code</code>. I <code>write</code> about code. I <code>teach</code> how I write code.
+                I <code>talk</code> at conferences about how I teach to code.</h2>
 
-            </div>
         </header>
 
 

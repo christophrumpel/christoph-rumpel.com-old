@@ -6,14 +6,18 @@
                     Do you enjoy my articles?
                 </h2>
                 <p class="mt-3 max-w-3xl text-lg leading-6 text-indigo-200" id="newsletter-headline">
-                    Sign up for my  newsletter to stay up to date.
+                    Sign up for my newsletter to stay up to date.
                 </p>
             </div>
             <div class="mt-8 sm:w-full sm:max-w-md xl:mt-0 xl:ml-8">
-                <form class="sm:flex" aria-labelledby="newsletter-headline" method="POST" action="https://christoph-rumpel.test/mailcoach/subscribe/{{ getenv('MAILCOACH_LIST_ID') }}">
-                    <input aria-label="Email address" type="email" name="email" required class="appearance-none w-full px-5 py-3 border border-transparent text-base leading-6 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition duration-150 ease-in-out" placeholder="Enter your email" />
+                <form class="sm:flex" aria-labelledby="newsletter-headline" method="POST"
+                      action="{{ route('mailcoach.subscribe', ['emailListUuid' => getenv('MAILCOACH_LIST_ID')]) }}">
+                    <input aria-label="Email address" type="email" name="email" required
+                           class="appearance-none w-full px-5 py-3 border border-transparent text-base leading-6 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition duration-150 ease-in-out"
+                           placeholder="Enter your email"/>
                     <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                        <button type="submit" class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-400 focus:outline-none focus:bg-indigo-400 transition duration-150 ease-in-out">
+                        <button type="submit"
+                                class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-400 focus:outline-none focus:bg-indigo-400 transition duration-150 ease-in-out">
                             Let's do this
                         </button>
                     </div>

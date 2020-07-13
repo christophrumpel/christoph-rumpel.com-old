@@ -22,7 +22,7 @@
         </div>
         <div class="mt-8 md:mt-0 md:order-1">
             <p class="text-center text-base leading-6 text-gray-400">
-                &copy; 2020 Christoph Rumpel, All rights reserved.
+                &copy; 2020 Christoph Rumpel, All rights reserved - <a class="underline" href="{{ route('page.privacy-policy') }}">Privacy Policy</a>
             </p>
         </div>
     </div>

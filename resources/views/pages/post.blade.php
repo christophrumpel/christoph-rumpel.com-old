@@ -9,10 +9,10 @@
 
             @foreach($post->categories as $category)
                 <a href="{{ route('page.category', $category) }}"
-                   class="border-black border-2 rounded p-2 uppercase ">#{{$category}}</a>
+                   class="border-black border-2 rounded p-2 uppercase text-link">#{{$category}}</a>
             @endforeach
 
-            <p>
+            <p class="text-xl lg:text-2xl my-6 ">
                 {!! $post->summary !!}
             </p>
             <div class="post-markdown">

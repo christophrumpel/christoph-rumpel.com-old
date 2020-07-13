@@ -32,7 +32,7 @@ Route::get('uses', '\\'. PageUsesController::class)->name('page.uses');
 Route::get('products', '\\'. PageProductsController::class)->name('page.products');
 
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 

@@ -1,58 +1,5 @@
 .post {
 
-    pre code {
-        @apply .p-12 .rounded-sm;
-    }
-
-    p code {
-        @apply .px-4 .py-1 .text-lg .rounded-sm;
-        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-    }
-
-    a {
-        @apply .relative .italic;
-
-        &:after {
-            content: "";
-            position: absolute;
-            transform: rotate(-2deg);
-            width: 100%;
-            height: 6px;
-            border-radius: 3px;
-            background: #f4e04d;
-            left: 0;
-            bottom: 3px;
-            z-index: -1;
-            transition: all 375ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        &:hover:after {
-            height: 100%;
-        }
-    }
-
-    img {
-        @apply .my-12;
-    }
-
-    blockquote {
-
-        @apply .my-12 .p-12 .relative .font-display .italic .text-2xl;
-
-       &:before {
-           content: "";
-           position: absolute;
-           width: 130%;
-           height: 100%;
-           top: 0%;
-           left: -30%;
-           z-index: -1;
-           background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-           transform: rotate(2deg);
-           @apply .rounded-sm;
-       }
-    }
-
     .title-highlight-underline {
         background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
         background-repeat: no-repeat;
@@ -65,21 +12,12 @@
         }
     }
 
-    .blognote {
-        @apply .bg-highlightYellow .px-4 py-2 .my-12 .relative .rounded-sm;;
+    pre code {
+        @apply .p-12 .rounded-sm;
+    }
 
-        &:before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0%;
-            right: -15%;
-            z-index: -1;
-            background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-            transform: rotate(2deg);
-            @apply .rounded-sm;
-        }
-
+    p code {
+        @apply .px-4 .py-1 .text-lg .rounded-sm;
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     }
 }

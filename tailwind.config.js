@@ -1,5 +1,7 @@
 module.exports = {
-    purge: [],
+    purge: [
+        './resources/views/**/*blade.php',
+    ],
     theme: {
         fontFamily: {
             'display': ['Bitter'],

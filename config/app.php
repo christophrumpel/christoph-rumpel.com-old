@@ -1,6 +1,7 @@
 <?php
 
 use App\Providers\BladeServiceProvider;
+use App\Providers\CustomMailcoachProvider;
 
 return [
 
@@ -178,6 +179,8 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         BladeServiceProvider::class,
+
+        CustomMailcoachProvider::class,
 
     ],
 

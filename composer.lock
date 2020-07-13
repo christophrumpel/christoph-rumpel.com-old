@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0ebd638915cc9c43ff2d99b93d61ddb7",
+    "content-hash": "3855bd6af6927dbb16497c88403baf2b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3313,6 +3313,77 @@
                 "issues": "https://github.com/spatie/laravel-mailcoach/issues"
             },
             "time": "2020-07-10T14:38:39+00:00"
+        },
+        {
+            "name": "spatie/laravel-mailcoach-unlayer",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-mailcoach-unlayer.git",
+                "reference": "48314e7d1d8ed4e98db7c14dccc11b3516c1bdc4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.mailcoach.app/dist/spatie/laravel-mailcoach-unlayer/spatie-laravel-mailcoach-unlayer-48314e7d1d8ed4e98db7c14dccc11b3516c1bdc4-zip-9789ca.zip",
+                "reference": "48314e7d1d8ed4e98db7c14dccc11b3516c1bdc4",
+                "shasum": "ed993c89fc5f8c215d553f28b224fd7cbec3ca77"
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.4",
+                "spatie/laravel-mailcoach": "^2.0",
+                "spatie/laravel-medialibrary": "^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^5.0",
+                "phpunit/phpunit": "^9.0",
+                "symfony/var-dumper": "^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\MailcoachUnlayer\\MailcoachUnlayerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\MailcoachUnlayer\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Spatie\\MailcoachUnlayer\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ],
+                "test-coverage": [
+                    "vendor/bin/phpunit --coverage-html coverage"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Rias",
+                    "email": "rias@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An Unlayer editor package for Mailcoach",
+            "homepage": "https://github.com/spatie/laravel-mailcoach-unlayer",
+            "keywords": [
+                "laravel-mailcoach-unlayer",
+                "spatie"
+            ],
+            "support": {
+                "source": "https://github.com/spatie/laravel-mailcoach-unlayer/tree/1.2.0",
+                "issues": "https://github.com/spatie/laravel-mailcoach-unlayer/issues"
+            },
+            "time": "2020-07-08T08:18:42+00:00"
         },
         {
             "name": "spatie/laravel-medialibrary",

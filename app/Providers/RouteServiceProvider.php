@@ -42,8 +42,8 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map()
     {
-        //Route::mailcoach('mailcoach');
-        //Route::mailcoachUnlayer('mailcoachUnlayer');
+        Route::mailcoach('mailcoach');
+        Route::mailcoachUnlayer('mailcoachUnlayer');
 
         $this->mapApiRoutes();
 
@@ -78,7 +78,5 @@ class RouteServiceProvider extends ServiceProvider
             ->middleware('api')
             ->namespace($this->namespace)
             ->group(base_path('routes/api.php'));
-
-        Route::mailcoach('mailcoach');
     }
 }

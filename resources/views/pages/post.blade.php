@@ -1,11 +1,10 @@
 <x-main-layout :post="$post">
-    <main class="post page">
+    <main class="post page mt-16">
 
-        <article class="mt-16">
-
+        <article>
             <time class="text-textBlue font-bold"
                   datetime="{{ $post->date->format('Y-m-d') }}">{{ $post->date->format('F Y') }}</time>
-            <h1 class="font-display font-bold text-5xl mb-8 text-textBlue"><span
+            <h1 class="font-display font-bold text-3xl lg:text-5xl mb-8 text-textBlue"><span
                     class="title-highlight-underline">{{$post->title}}</span></h1>
 
             @foreach($post->categories as $category)
@@ -16,8 +15,9 @@
             <p>
                 {!! $post->summary !!}
             </p>
-
-            {!! $post->content !!}
+            <div class="post-markdown">
+                {!! $post->content !!}
+            </div>
         </article>
 
         @include('partials.newsletter')

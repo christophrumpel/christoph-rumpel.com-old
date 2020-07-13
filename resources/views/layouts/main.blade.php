@@ -23,7 +23,10 @@
 
 <body class="bg-bgBlue">
 <div class="container mx-auto  max-w-5xl p-12">
-    @include('partials.nav')
+    <header class="flex flex-col lg:flex-row items-center mb-12 lg:mb-16">
+        @include('partials.logo')
+        @include('partials.nav')
+    </header>
 
     {{ $slot }}
 </div>

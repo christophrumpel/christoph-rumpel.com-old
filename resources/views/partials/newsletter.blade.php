@@ -1,3 +1,4 @@
+<div class="bg-white">
     <div class="max-w-screen-xl mx-auto px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
         <div class="px-6 py-6 bg-indigo-700 rounded-lg md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
             <div class="xl:w-0 xl:flex-1">
@@ -26,3 +27,4 @@
             </div>
         </div>
     </div>
+</div>

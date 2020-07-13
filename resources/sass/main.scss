@@ -4,7 +4,7 @@
 
 @tailwind utilities;
 
-@import "page";
+@import "post-markdown";
 
 @import "post";
 
@@ -13,7 +13,7 @@
 [x-cloak] { display: none }
 
 
-nav a {
+nav a, .logo {
     @apply .relative .italic;
 
     &:after {
@@ -40,12 +40,16 @@ nav a {
 .home {
     code {
         @apply .px-4 .py-1 .rounded-sm;
-        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        background-image: linear-gradient(120deg, #A2F7B6 0%, #8fd3f4 100%);
     }
 
     .post-list {
         li {
-            @apply .relative;
+            @apply .relative .transition-all;
+
+            &:hover {
+                @apply text-center;
+            }
 
             &:after {
                 content: "";
@@ -54,7 +58,6 @@ nav a {
                 height: 100%;
                 border-radius: 3px;
                 background-image: linear-gradient(120deg, #f4e04d 0%, rgb(238, 226, 124) 100%);
-                //background: #f4e04d;
                 left: 8px;
                 bottom: -8px;
                 z-index: -1;
@@ -84,7 +87,7 @@ nav a {
         width: 101%;
         height: 101%;
         border-radius: 3px;
-        background: #4df4d8;
+        background: #A2F7B6;
         left: 0;
         bottom: 6px;
         z-index: -1;

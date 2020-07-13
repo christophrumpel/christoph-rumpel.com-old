@@ -1,15 +1,27 @@
-.page {
+.post-markdown {
 
     h1 {
-        @apply .font-display .text-5xl .text-textBlue .mb-16;
+        @apply .font-display .text-4xl .text-textBlue .mb-16;
+
+        @screen lg {
+            @apply .text-5xl;
+        }
     }
 
     h2 {
-        @apply .font-display .font-bold .text-4xl .text-textBlue .mt-4 .mb-8;
+        @apply .font-display .font-bold .text-3xl .text-textBlue .mt-4 .mb-8;
+
+        @screen lg {
+            @apply .text-4xl;
+        }
     }
 
     h3 {
-        @apply .font-display .font-bold .text-3xl .text-textBlue .mt-4 .mb-8;
+        @apply .font-display .font-bold .text-2xl .text-textBlue .mt-4 .mb-8;
+
+        @screen lg {
+            @apply .text-3xl;
+        }
     }
 
     h4 {
@@ -17,14 +29,18 @@
     }
 
     p {
-        @apply .text-2xl .my-6;
+        @apply .text-xl .my-6;
+
+        @screen lg {
+            @apply .text-2xl;
+        }
     }
 
     ul {
         @apply .text-2xl .ml-12 .my-6 .list-disc .list-none;
 
         li {
-            @apply .relative .ml-12;
+            @apply .relative .ml-12 .text-xl;
 
             &:before {
                 @apply .rounded-full;
@@ -35,6 +51,10 @@
                 left: -50px;
                 top: 10px;
                 background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            }
+
+            @screen lg {
+                @apply .text-2xl;
             }
         }
     }

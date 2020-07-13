@@ -17,7 +17,7 @@
                 <li class="my-8 bg-white border-textBlue border-2">
                     <a class="block p-8"
                        href="{{$result->link()}}">
-                        <h2 class="font-display text-3xl text-textBlue">
+                        <h2 class="font-display sm: text-xl lg:text-3xl text-textBlue">
                             {{ $result->title }}
                         </h2>
                     </a>

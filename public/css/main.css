@@ -19963,8 +19963,14 @@ video {
   width: 20px;
   height: 20px;
   left: -50px;
-  top: 10px;
+  top: 5px;
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+@media (min-width: 1024px) {
+  .page ul li:before {
+    top: 10px;
+  }
 }
 
 @media (min-width: 1024px) {

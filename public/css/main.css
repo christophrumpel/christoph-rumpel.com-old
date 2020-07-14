@@ -19863,7 +19863,7 @@ video {
 
 .page h1 {
   font-family: Bitter;
-  font-size: 2.25rem;
+  font-size: 1.875rem;
   --text-opacity: 1;
   color: #0f1b61;
   color: rgba(15, 27, 97, var(--text-opacity));
@@ -19935,11 +19935,19 @@ video {
 
 .page ul {
   font-size: 1.5rem;
-  margin-left: 3rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   list-style-type: disc;
   list-style-type: none;
+}
+
+@media (min-width: 1024px) {
+  .page ul {
+    margin-left: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .page ul li {

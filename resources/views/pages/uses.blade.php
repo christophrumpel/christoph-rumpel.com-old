@@ -1,5 +1,5 @@
 <x-main-layout>
-    <main class="page home">
+    <main class="page">
         <article>
 
             <h1>Uses</h1>

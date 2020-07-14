@@ -1,7 +1,7 @@
 .page {
 
     h1 {
-        @apply .font-display .text-4xl .text-textBlue .mb-16;
+        @apply .font-display .text-3xl .text-textBlue .mb-16;
 
         @screen lg {
             @apply .text-5xl;
@@ -37,7 +37,11 @@
     }
 
     ul {
-        @apply .text-2xl .ml-12 .my-12 .list-disc .list-none;
+        @apply .text-2xl .ml-4 .my-4 .list-disc .list-none;
+
+        @screen lg {
+            @apply .ml-12 .my-12;
+        }
 
         li {
             @apply .relative .ml-12 .text-xl;

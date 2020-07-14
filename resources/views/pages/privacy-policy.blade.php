@@ -1,6 +1,6 @@
 <x-main-layout>
-    <div class="container mx-auto  max-w-5xl p-12">
-        <article class="page">
+    <main class="page">
+        <article>
 
             <h1>Business Privacy Policy - Blog
                 christoph-rumpel.com</h1>
@@ -93,5 +93,5 @@
                 2380 Perchtoldsdorf<br/>
                 Austria</p>
         </article>
-    </div>
+    </main>
 </x-main-layout>

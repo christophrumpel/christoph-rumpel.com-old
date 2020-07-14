@@ -1,6 +1,6 @@
 <x-main-layout>
-    <div class="container mx-auto  max-w-5xl p-12">
-        <article class="page">
+    <main class="page">
+        <article>
 
             <h1>Business Privacy Policy - laravelcoreadventures.com</h1>
 
@@ -102,5 +102,5 @@
                 Austria</p>
         </article>
 
-    </div>
+    </main>
 </x-main-layout>

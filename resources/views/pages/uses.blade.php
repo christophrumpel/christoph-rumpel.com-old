@@ -6,7 +6,7 @@
 
             <img src="{{ asset('images/pages/uses_table.jpg') }}" alt="Christoph's working desk">
 
-            <p>This is my current development setup I. It includes all the hard- and software I need for my daily work
+            <p>This is my current development setup which includes all the hard- and software I need for my daily work
                 as a web developer and content creator.</p>
 
             <h2>Hardware</h2>
@@ -16,7 +16,7 @@
                 <li>MacBook Pro (13-inch, 2016)</li>
                 <li>3.3 GHz Dual-Core Intel Core i7</li>
                 <li>6 GB 2133 MHz LPDDR3</li>
-                <li>It still works quit good but gets sometimes slow</li>
+                <li>It still works quite good but gets slow sometimes</li>
                 <li>I will probably soon look for a new one</li>
             </ul>
 
@@ -24,7 +24,7 @@
             <ul>
                 <li>Apple Bluetooth Keyboard</li>
                 <li>Apple Magic Mouse 2</li>
-                <li>I'm at a point where I don't wanna see any cables on my desk :-)</li>
+                <li>I'm at a point where I don't want to see any cables on my desk :-)</li>
             </ul>
 
             <h3>Laptop Stand</h3>
@@ -36,7 +36,7 @@
             <ul>
                 <li>LG UltraFine 5K Display</li>
                 <li>It gets charged through the USB-Ca connection</li>
-                <li>I was looking for a cheaper option but none of them had a beautiful clean design</li>
+                <li>I was looking for a cheaper option, but none of them had a beautiful clean design</li>
                 <li>I didn't regret it</li>
             </ul>
 
@@ -46,23 +46,22 @@
                 <li>HyperX QuadCast - USB Condenser Gaming Microphone</li>
                 <li>Blue Compass microphone arm</li>
             </ul>
-            <p>I was using an AKG Perception 220 professional studio microphone before, which I had at home since I was
-                recording music. This was pretty good and I used it with an extra audio interface. Unfortunately, lately
-                I had troubles with the audio quality and noise. I couldn't tell when and where it came from so I
-                deciced to give an USB microphone a try. It came with a beautiful desk stand which I loved. The HyperX
-                Quadcast is a good microphone but you cannot compare it to my old one. I had to put up a lot of acoustic
-                foam in my office to make the sound ok. I also had to use the microphone arm, because with the HyperX
-                desk stand you are too far away from the microphone. Now, with the right setup, I enjoy this new
-                microphone and it was quite cheap compared to professional ones.
-            </p>
+            <p>I used an AKG Perception 220 professional studio microphone before, which I had at home since I was
+                recording music. This was pretty good, and I used it with an additional audio interface. Unfortunately,
+                lately, I had trouble with the audio quality and noise. I couldn't tell when and where it came from, so
+                I decided to give a USB microphone a try. It came with a beautiful desk stand which I loved. The HyperX
+                Quadcast is an excellent microphone, but you cannot compare it to my old one. I had to put up a lot of
+                acoustic foam in my office to make the sound ok. I also had to use the microphone arm because with the
+                HyperX desk stand, you are too far away from the microphone. With the right setup, I enjoy this new
+                microphone, and it was quite cheap compared to professional ones.</p>
             <h3>Light</h3>
             <ul>
                 <li>Elgato Key Light Air</li>
             </ul>
             <p>I do quite some video calls and now also more online conferences and so I decided to level up my video
-                quality. Light is an important factor of that and so I bought the Elgato Key Light Air. I first had the
-                bigger Elgato key Light which is also more powerful. The downside is it comes only with a mounting
-                system which didn't fit my desk. So I switched to the smaller Light version which is also more
+                quality. Light is an essential factor of that, and so I bought the Elgato Key Light Air. I first had the
+                more significant Elgato key Light, which is also more powerful. The downside is it comes only with a
+                mounting system which didn't fit my desk. So I switched to the smaller Light version, which is also more
                 beautiful. I like it a lot.</p>
 
             <h3>Desk Frame</h3>
@@ -71,20 +70,27 @@
                 <li>DIY adjustable height</li>
                 <li>Save different height settings</li>
             </ul>
-            <p>Since I spent so much time sitting in front of a computer, a standing desk was on my list for a long time
-                now. Since I moved last year, I finally had the chance and place to get one. I did a lot of research and
-                I'm super happy with my choice. For me it was important that I only get the frame so that I can use a
-                custom top.</p>
+            <p>Since I spent so much time sitting in front of a computer, a standing desk was on my list for a long
+                time. Since I moved last year, I finally had the chance and place to get one. I did a lot of research,
+                and I'm super happy with my choice. For me, it was important that I only get the frame so that I can use
+                a custom top.</p>
 
             <h3>Desk Top</h3>
             <ul>
                 <li>Custom Top</li>
             </ul>
-            <p>I needed a custom top for my desk so that it would fit a niche in my office room. I didn't find one to
+            <p>I needed a custom top for my desk to fit a niche in my office room. I didn't find one to buy, so I
+                decided to give it a try myself. I had no experience with woodworking so far, so I watched a lot of
+                youtube videos and talked to <a href="https://twitter.com/gonedark">Jason
+                    McCreary</a>, who is more experienced with that kind of work. In <a
+                    href="/2020/6/my-custom-wooden-desk-top">this post</a>, I share some images of the process building
+                the desk top.
+
+
+                I needed a custom top for my desk so that it would fit a niche in my office room. I didn't find one to
                 buy so I decided to give it a try myself. I had like no experiences with wood working so far, so I
-                watched a lot of youtube videos and also talked to <a href="https://twitter.com/gonedark">Jason
-                    McCreary</a> who is more experienced with that kind of work. In <a
-                    href="/2020/6/my-custom-wooden-desk-top">this post</a> I share some images of the process building
+                watched a lot of youtube videos and also talked to who is more experienced with that kind of work. In I
+                share some images of the process building
                 the desk top.</p>
 
             <h3>Chair</h3>
@@ -93,8 +99,8 @@
                 <li>Charcoal Blue SoftWeave® Fabric</li>
             </ul>
 
-            <p>During the cyber week in December 2019 there was a good deal for this chair. I wasn't sure if I should
-                try a gaming chair but I'm pretty satisfied. Especially the pillows for your head and back are
+            <p>During the cyber week in December 2019, there was a good deal for this chair. I wasn't sure if I should
+                try a gaming chair, but I'm pretty satisfied. Especially the pillows for your head and back are
                 comfortable and support your body.</p>
 
             <h3>Gaming</h3>
@@ -116,7 +122,7 @@
 
             <ul>
                 <li>PhpStorm is my favorite IDE</li>
-                <li>In <a href="/2019/01/my-current-dark-and-light-theme">this post</a> I share my current light and
+                <li>In <a href="/2019/01/my-current-dark-and-light-theme">this post</a>, I share my current light and
                     dark
                     theme
                 </li>
@@ -159,7 +165,7 @@
             <h3>Productivity</h3>
             <ul>
                 <li><a href="https://www.alfredapp.com/">Alfred</a> is the best!</li>
-                <li>In <a href="https://www.youtube.com/watch?v=okb6GIKbHD8">this video</a> I give a preview of all the
+                <li>In <a href="https://www.youtube.com/watch?v=okb6GIKbHD8">this video</a>, I give a preview of all the
                     Alfred workflows I am using
                 </li>
             </ul>
@@ -202,10 +208,11 @@
             <ul>
                 <li>With <a href="https://www.macbartender.com/">Bartender</a> I customize my menu icons.</li>
             </ul>
-            <p>A lot of those icons you do not need to that regularly. So with Bartender you can hide them and
+            <p>A lot of those icons you do not need to that regularly. So with Bartender, you can hide them and
                 everything
                 looks a little more cleaned up.</p>
 
 
         </article>
+    </main>
 </x-main-layout>

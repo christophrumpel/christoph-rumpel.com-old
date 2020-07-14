@@ -10,7 +10,7 @@
         <div id="search" x-cloak x-show="open">
             <input wire:model="searchTerm" type="text"
                    placeholder="Search for keywords like laravel, business, setup..."
-                   class="w-full form-input relative rounded-md shadow-sm p-4 text-2xl text-center rounded"/>
+                   class="w-full form-input relative rounded-md shadow-sm p-4 text-xs md:text-lg lg:text-2xl text-center rounded"/>
         </div>
 
         <ul class="post-list">

@@ -1,8 +1,5 @@
 <x-main-layout>
     <div class="container mx-auto  max-w-5xl p-12">
-
-        @include('partials.nav')
-
         <article class="page">
 
             <h1>Business Privacy Policy - laravelcoreadventures.com</h1>

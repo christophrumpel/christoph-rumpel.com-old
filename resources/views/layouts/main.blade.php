@@ -8,6 +8,7 @@
     <meta name="description"
           content="Hi, I am Christoph Rumpel and this is my personal blog where I share my Laravel, PHP anb business experiences.">
     <meta name="author" content="Christoph Rumpel">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Styles -->
     <link href="{{ asset('css/main.css') }}" rel="stylesheet"/>
@@ -22,8 +23,8 @@
 </head>
 
 <body class="bg-bgBlue">
-<div class="container mx-auto  max-w-5xl p-12">
-    <header class="flex flex-col lg:flex-row items-center mb-12 lg:mb-16">
+<div class="container mx-auto  max-w-5xl p-8 md:p-12">
+    <header class="flex flex-col lg:flex-row items-center mb-8 lg:mb-16">
         @include('partials.logo')
         @include('partials.nav')
     </header>

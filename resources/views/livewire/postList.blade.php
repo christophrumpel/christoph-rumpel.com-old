@@ -1,6 +1,6 @@
 <div>
     <div x-data="{ open: false }">
-        <div class="flex justify-between mb-16">
+        <div class="flex flex-col lg:flex-row items-center lg:justify-between mb-16">
             <h2 class="font-display text-4xl text-textBlue">From the blog:</h2>
             <button x-show="!open" @click="open = !open">Search posts</button>
             <button x-show="open" @click="open = !open">Hide search</button>

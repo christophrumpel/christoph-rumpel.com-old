@@ -41,4 +41,12 @@ class PageResponseTest extends TestCase
         $this->get('/uses')
             ->assertSuccessful();
     }
+
+    /** @test * */
+    public function it_gives_successful_response_for_bcwp_page(): void
+    {
+        $this->withoutExceptionHandling();
+        $this->get('build-chatbots-with-php')
+            ->assertSuccessful();
+    }
 }

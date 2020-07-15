@@ -2,9 +2,10 @@
     <div x-data="{ open: false }">
         <div class="flex flex-col lg:flex-row items-center lg:justify-between mb-16">
             <h2 class="font-display text-4xl text-textBlue">From the blog:</h2>
-            <button x-show="!open" @click="open = !open">Search posts</button>
-            <button x-show="open" @click="open = !open">Hide search</button>
 
+            <button class="search-btn flex flex-row" @click="open = !open">
+                @include('partials.svg.search')
+            </button>
 
         </div>
         <div id="search" x-cloak x-show="open">

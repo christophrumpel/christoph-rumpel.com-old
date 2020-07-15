@@ -14,6 +14,7 @@ module.exports = {
                 highlightYellow: '#f4e04d',
                 highlightBlue: '#8fd3f4',
                 highlightTurquoise: '#A2F7B6',
+                highlightPurple: '#D631E9'
             }
         },
     },

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PageBcwpController;
 use App\Http\Controllers\PageCategoryController;
 use App\Http\Controllers\PageHomeController;
 use App\Http\Controllers\PagePostController;
@@ -30,6 +31,7 @@ Route::get('/privacy-policy', '\\' .PagePrivacyPolicyController::class)->name('p
 Route::get('/privacy-policy-lca', '\\' .PagePrivacyLcaPolicyController::class)->name('page.privacy-policy-lca');
 Route::get('uses', '\\'. PageUsesController::class)->name('page.uses');
 Route::get('products', '\\'. PageProductsController::class)->name('page.products');
+Route::get('build-chatbots-with-php', '\\'. PageBcwpController::class)->name('page.bcwp');
 
 
 Auth::routes(['register' => false]);

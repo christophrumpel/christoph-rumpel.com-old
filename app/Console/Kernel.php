@@ -32,7 +32,7 @@ class Kernel extends ConsoleKernel
         $schedule->command('mailcoach:delete-old-unconfirmed-subscribers')->daily();
         $schedule->command('horizon:snapshot')->everyFiveMinutes();
         $schedule->command('backup:clean')->daily()->at('01:00');
-        $schedule->command('backup:run --only-db')->daily()->at('02:00');
+        $schedule->command('backup:run --only-db --disable-notifications')->daily()->at('02:00');
     }
 
     /**

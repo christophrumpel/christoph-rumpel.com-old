@@ -14,7 +14,7 @@
         "turbolinks": "^5.2.0"
     },
     "devDependencies": {
-        "axios": "^0.19",
+        "axios": "^0.21",
         "cross-env": "^5.1",
         "laravel-mix": "^4.0.7",
         "lodash": "^4.17.13",
